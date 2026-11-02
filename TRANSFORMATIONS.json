@@ -3,10 +3,16 @@
   "source_path_convention": "Neutral source aliases bind original bytes by SHA256. Local filesystem identities remain outside this public package.",
   "entries": [
     {
-      "released_path": "CITATION.cff",
-      "released_sha256": "e8d9564e10cd39fc7d091dd4425fb6a3b56760d30ad7ac81cc94652060ccfca2",
+      "released_path": "CHANGELOG.md",
+      "released_sha256": "89ff35685862cc36e0a59ebdc5a7d13876ba3a65fec66ec3f39831182d743cd1",
       "sources": [],
-      "exact_rule": "Newly authored citation metadata using the supplied reserved DOI, repository URL, dataset title, author names, ORCIDs and year; no venue or publication status asserted."
+      "exact_rule": "New release history: initial 1.0.0 archived commit a95ab090 and the scoped 1.0.1 changes."
+    },
+    {
+      "released_path": "CITATION.cff",
+      "released_sha256": "4ceb2d916370a36470d76a35f2b57c47048b41c41b53f9b6074df21fe8cf65c8",
+      "sources": [],
+      "exact_rule": "Newly authored citation metadata using the supplied reserved DOI, repository URL, dataset title, author names, ORCIDs and year; no venue or publication status asserted. Release 1.0.1: Set version 1.0.1 and date-released 2026-11-02."
     },
     {
       "released_path": "LICENSE",
@@ -16,14 +22,14 @@
     },
     {
       "released_path": "README.md",
-      "released_sha256": "ca9cc3b0269e313e01ef734ca6bf7e39efc39a487579b02c242400b564f7f1e0",
+      "released_sha256": "19115d598b0fbdc71fb28747ef5f04af09e1ccaa565ffea83939184d49c77809",
       "sources": [
         {
           "source_path": "sources/2adc82acbc82f901bf04/manuscript_v5_3.md",
           "source_sha256": "4b2334263ac15af07fe2356dfe7b3dd909757d2284a67d300e02433990bca135"
         }
       ],
-      "exact_rule": "Compose a release README from the scientific definitions, key numbers and limitations; preserve those definitions and displayed values, exclude administrative prose, and add relative reproduction commands and the original Figure 1 reference."
+      "exact_rule": "Compose a release README from the scientific definitions, key numbers and limitations; preserve those definitions and displayed values, exclude administrative prose, and add relative reproduction commands and the original Figure 1 reference. Release 1.0.1: Add the third-party notices section and Version 1.0.1 to the citation."
     },
     {
       "released_path": "SHA256SUMS",
@@ -80,9 +86,9 @@
     },
     {
       "released_path": "analysis/verify.py",
-      "released_sha256": "9734fa2a827c6ecca9b53dc61a45d2cf916c0821c52ea78e2f0e3620e15c777a",
+      "released_sha256": "94387318f4a6de22f9c7059acf170b00e15b7c504a613b7f7379dac377ea8b58",
       "sources": [],
-      "exact_rule": "Newly authored release file; no pre-existing source file was transformed."
+      "exact_rule": "Newly authored release file; no pre-existing source file was transformed. Release 1.0.1: Verify the four NVIDIA L40S inventory entries and membership of every GPU UUID in plain and gzip-compressed records."
     },
     {
       "released_path": "archive/dataset-new_train.jsonl.gz",
@@ -352,7 +358,7 @@
     },
     {
       "released_path": "data/archive_manifest.json",
-      "released_sha256": "4d06da2fd6f6d9fa553d2d413e2b40aec74873130347fa55781a864a6c091098",
+      "released_sha256": "6c11b9f198d435ed24aa4159f16e1c2cb2eff143c2c8a44fafad1992f63cbc54",
       "sources": [
         {
           "source_path": "sources/53fb7dcaac3401de4c2e/dataset-original_train.jsonl.gz",
@@ -379,7 +385,7 @@
           "source_sha256": "3d4aec6b03879768b61e4f8098b7b27505d6db1494c2a6a1b68bd792ee666614"
         }
       ],
-      "exact_rule": "Measure each complete compressed payload and each ordered 64,000,000-byte slice; record byte lengths and SHA256 values for verify-on-download reassembly, plus target paths and decompressed data identities."
+      "exact_rule": "Measure each complete compressed payload and each ordered 64,000,000-byte slice; record byte lengths and SHA256 values for verify-on-download reassembly, plus target paths and decompressed data identities. Release 1.0.1: regenerate ordered part byte lengths and SHA256 values using slices of at most 16,000,000 bytes; full payload identities unchanged."
     },
     {
       "released_path": "data/datasets.json",
@@ -6554,6 +6560,17 @@
       "exact_rule": "Replace private labels by scientific setting labels, local absolute paths by source aliases, and private project, task and execution-role tokens by neutral terms; preserve all numeric values and hashes. Rename every execution-role substring consistently; remove non-scientific paper-progress and disposition fields; preserve numerical measurements."
     },
     {
+      "released_path": "records/gpu_inventory_20261102.json",
+      "released_sha256": "9f4c488e5ea004f3ec7ce6d098a0c1d754dbfe2de0deb045c5dd4cb4c688102a",
+      "sources": [
+        {
+          "source_path": "sources/dffde40a0e0462856cc4/gpu_inventory_20261102.json",
+          "source_sha256": "9f4c488e5ea004f3ec7ce6d098a0c1d754dbfe2de0deb045c5dd4cb4c688102a"
+        }
+      ],
+      "exact_rule": "Byte-for-byte copy of the supplied dated device inventory; no hardware query executed during release preparation."
+    },
+    {
       "released_path": "records/main_layouts.json",
       "released_sha256": "dd36cd00d1aa16b60f0f5b2abcb72536d3d5fe5377424840546a38d3282578d9",
       "sources": [
@@ -8856,14 +8873,14 @@
     },
     {
       "released_path": "src/qdriver/workload.py",
-      "released_sha256": "77670f9b6529503ca58d5e7c82b1c860c469db7242baee3cb363259951c4c5ee",
+      "released_sha256": "995c4a59ceda9e0bc7b5dc6fbb07e48b6c9ac20c5744f304667451872e0ded3f",
       "sources": [
         {
           "source_path": "sources/c77e77dc8d6a99afcdbc/workload.py",
           "source_sha256": "c77df8ca540ae043df553ae05e079ac92c78b98a5352569a7770edcfa4414914"
         }
       ],
-      "exact_rule": "Replace private admission and immutable-inventory plumbing by relative release configuration construction and dataset SHA256/count checks. Preserve model/training option values and explicit effective-batch choice; original execution admission is outside the released training interface."
+      "exact_rule": "Replace private admission and immutable-inventory plumbing by relative release configuration construction and dataset SHA256/count checks. Preserve model/training option values and explicit effective-batch choice; original execution admission is outside the released training interface. Release 1.0.1: Read steps from shipped schedules, accepting act_steps as a fallback alias."
     },
     {
       "released_path": "src/reasoning/__init__.py",
@@ -8889,14 +8906,14 @@
     },
     {
       "released_path": "src/reasoning/model.py",
-      "released_sha256": "9cf0da1ace382c50dd379400edd2649e0bf88e61afd5f8483037e6c6be398aa5",
+      "released_sha256": "604d77359cc310db34428b02298e8f4bdfb0512478003a8f245a55290a23518c",
       "sources": [
         {
           "source_path": "sources/bb8890889091cee5ab42/model.py",
           "source_sha256": "61ef1a63f0f945c13aa9de4493b3f1a28dda1e4b4697dbfebd8f97ef3fafae96"
         }
       ],
-      "exact_rule": "Use relative release paths and neutral module names; remove private task and project labels from comments and identifiers. Preserve numerical model, optimizer, sampler, recurrence, checkpoint and training operations. Preserve frozen stochastic namespaces as hexadecimal byte constants."
+      "exact_rule": "Use relative release paths and neutral module names; remove private task and project labels from comments and identifiers. Preserve numerical model, optimizer, sampler, recurrence, checkpoint and training operations. Preserve frozen stochastic namespaces as hexadecimal byte constants. Release 1.0.1: Add the released HRM Apache license path to the existing attribution docstring; executable code unchanged."
     },
     {
       "released_path": "src/reasoning/optimizer.py",
@@ -9007,6 +9024,12 @@
         }
       ],
       "exact_rule": "Use relative release paths and neutral module names; remove private task and project labels from comments and identifiers. Preserve numerical model, optimizer, sampler, recurrence, checkpoint and training operations. Preserve frozen stochastic namespaces as hexadecimal byte constants. Use released fixture-output environment variable and dataset names; rename fresh-process helpers consistently."
+    },
+    {
+      "released_path": "src/tests/test_workload.py",
+      "released_sha256": "3144a6eb4bcfe3aa5680f717c7a8d1f69096c5723d5b54ca46ed382d122598b2",
+      "sources": [],
+      "exact_rule": "New standard-library regression tests loading all ten shipped schedules, the act_steps alias, steps precedence and missing-key rejection; no model execution."
     },
     {
       "released_path": "src/train.py",
@@ -9484,6 +9507,50 @@
         }
       ],
       "exact_rule": "Extract the named supplement table as CSV; retain displayed cell strings; remove internal version suffixes in file references. Exclude internal decision chronology and its eight source-class entries as required. No manuscript prose is included. Text copies normalize CRLF to LF; extracted Markdown tables use standard CSV serialization with CRLF records."
+    },
+    {
+      "released_path": "third_party/ADAM_ATAN2_LICENSE",
+      "released_sha256": "13b4464bb9292484ad939cdaffee0356158401a99feb9114d0234c2f6e66ab87",
+      "sources": [
+        {
+          "source_path": "sources/75d6802fdbc0f4e9b10a/ADAM_ATAN2_LICENSE",
+          "source_sha256": "13b4464bb9292484ad939cdaffee0356158401a99feb9114d0234c2f6e66ab87"
+        }
+      ],
+      "exact_rule": "Byte-for-byte copy; preserve original copyright and license text."
+    },
+    {
+      "released_path": "third_party/HRM_APACHE_LICENSE",
+      "released_sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+      "sources": [
+        {
+          "source_path": "sources/7d9ebfdcf1038e15f4b6/HRM_APACHE_LICENSE",
+          "source_sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+        }
+      ],
+      "exact_rule": "Byte-for-byte copy; preserve original copyright and license text."
+    },
+    {
+      "released_path": "third_party/NOTICE.md",
+      "released_sha256": "6065929e8a12728cb0ff2fc36d8847e9c56fd75a3b7e7249e61eccb38745ddfa",
+      "sources": [
+        {
+          "source_path": "sources/a5ec7eece47daedd3749/NOTICE.md",
+          "source_sha256": "27a230097243d4ef2740d7b0701cbd6b30a89f74b3fd2befe29ddcdda6f196ec"
+        }
+      ],
+      "exact_rule": "Retain the upstream table and explanation verbatim; remove only the final paragraph containing the internal source-access path."
+    },
+    {
+      "released_path": "third_party/TRM_MIT_LICENSE",
+      "released_sha256": "d0f3040c4aa4468bf36b4e19de1bf039bd0d691703966689487bf1b42b700e6a",
+      "sources": [
+        {
+          "source_path": "sources/9974409d2b82c865e605/TRM_MIT_LICENSE",
+          "source_sha256": "d0f3040c4aa4468bf36b4e19de1bf039bd0d691703966689487bf1b42b700e6a"
+        }
+      ],
+      "exact_rule": "Byte-for-byte copy; preserve original copyright and license text."
     }
   ]
 }

@@ -1,7 +1,8 @@
 """Shared Transformer recurrence and explicit parameter-occurrence estimators.
 
 Architecture equations: arXiv2609.39967v1. HRM shape conventions were inspected
-at ac15626f8db096a63c775b84c9dc868776a6feda (Apache2.0); no upstream model
+at ac15626f8db096a63c775b84c9dc868776a6feda (Apache2.0; see
+third_party/HRM_APACHE_LICENSE); no upstream model
 module is imported. Weighted norms, four-class head, fixed ACT and Torch math
 attention are explicit implementation choices, not verified recipe code.
 """

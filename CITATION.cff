@@ -1,6 +1,8 @@
 cff-version: 1.2.0
 message: "If you use these data or software, please cite this record."
 type: dataset
+version: "1.0.1"
+date-released: 2026-11-02
 title: "Memorization and incomplete fitting in a recursive arithmetic reasoner rebuilt from its published description: data, predictions and reproducible analysis"
 authors:
   - family-names: Jeong

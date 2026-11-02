@@ -73,9 +73,13 @@ GitHub repository: https://github.com/wwhite777/recursive-arithmetic-memorizatio
 
 Zenodo record: https://zenodo.org/records/23880859. Reserved DOI: https://doi.org/10.5281/zenodo.23880859 (resolves after publication).
 
-Jeong, W., & Oh, H. (2026). Memorization and incomplete fitting in a recursive arithmetic reasoner rebuilt from its published description: data, predictions and reproducible analysis [Data set and software]. Zenodo. https://doi.org/10.5281/zenodo.23880859
+Jeong, W., & Oh, H. (2026). Memorization and incomplete fitting in a recursive arithmetic reasoner rebuilt from its published description: data, predictions and reproducible analysis (Version 1.0.1) [Data set and software]. Zenodo. https://doi.org/10.5281/zenodo.23880859
 
 Machine-readable citation and both authors' ORCIDs are in `CITATION.cff`.
+
+## Third-party notices
+
+Upstream revisions, attribution and scope of use are in [third_party/NOTICE.md](third_party/NOTICE.md). The original [Adam-atan2 MIT](third_party/ADAM_ATAN2_LICENSE), [HRM Apache 2.0](third_party/HRM_APACHE_LICENSE) and [TRM MIT](third_party/TRM_MIT_LICENSE) notices are included there.
 
 ## Limitations
 

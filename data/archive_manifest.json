@@ -24,8 +24,18 @@
     "parts": [
       {
         "file": "dataset-new_train.jsonl.gz.part001",
-        "bytes": 41453260,
-        "sha256": "463fa0229e0e259c3ca6ac665b643a5d446d133f91e854dd23b8462129e7aa03"
+        "bytes": 16000000,
+        "sha256": "96042d659bc1b760a78938e9b780093e847ef02bf08af7c3b05db7831e04a57c"
+      },
+      {
+        "file": "dataset-new_train.jsonl.gz.part002",
+        "bytes": 16000000,
+        "sha256": "b7c1a38bd86f74e1472ffedeca93690faec077781fe6a410f87937e5e0b47714"
+      },
+      {
+        "file": "dataset-new_train.jsonl.gz.part003",
+        "bytes": 9453260,
+        "sha256": "759329199484f5af4bd0d19e40bed334b9136b8b292459c3090a47f8336dc38f"
       }
     ]
   },
@@ -69,8 +79,13 @@
     "parts": [
       {
         "file": "dataset-training_262144.jsonl.gz.part001",
-        "bytes": 20740255,
-        "sha256": "2eed796f930f8cbf211f71d376b27301b99371cb5e72afeace78f1eef052f625"
+        "bytes": 16000000,
+        "sha256": "a09b3b230b0ababef99b9f12780f19b1403ee37daa30d69c9462231177642f9f"
+      },
+      {
+        "file": "dataset-training_262144.jsonl.gz.part002",
+        "bytes": 4740255,
+        "sha256": "3d0b48a1ae257371934c9e3eff18bc6990568b2dca212f359eeb7f55ac90d5ca"
       }
     ]
   },
@@ -82,8 +97,13 @@
     "parts": [
       {
         "file": "predictions.zip.part001",
-        "bytes": 22384044,
-        "sha256": "3d4aec6b03879768b61e4f8098b7b27505d6db1494c2a6a1b68bd792ee666614"
+        "bytes": 16000000,
+        "sha256": "798bc3faf685439018ce3ebd774e18a0e88111cc0e1db11c59b487e44f003a7c"
+      },
+      {
+        "file": "predictions.zip.part002",
+        "bytes": 6384044,
+        "sha256": "0883d8d1dc04932f7c5fbef41af6230cd5b50838cd6fc1155fb676d450793520"
       }
     ]
   }

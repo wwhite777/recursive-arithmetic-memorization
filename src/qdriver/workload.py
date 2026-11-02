@@ -19,7 +19,8 @@ def validate_config(config):
     require(config['seed']==config['data_order_seed']==config['training']['seed'],'seed streams')
 
 def config_for_schedule(schedule, *, training_data=None, seed=101, model='recursive'):
-    return config_for(schedule['batch'],schedule['act_steps'],schedule['T'],effective_batch=schedule.get('effective_batch'),training_data=training_data,seed=seed,model=model)
+    steps = schedule['steps'] if 'steps' in schedule else schedule['act_steps']
+    return config_for(schedule['batch'],steps,schedule['T'],effective_batch=schedule.get('effective_batch'),training_data=training_data,seed=seed,model=model)
 
 def training_file(path,expected_sha256):
     path=Path(path).resolve()
