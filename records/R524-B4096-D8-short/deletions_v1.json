@@ -1,0 +1,21 @@
+{
+ "pruned_utc": "2026-10-24T04:00:24.763332+00:00",
+ "reason": "R524-B4096-D8-short calibration probes",
+ "files": [
+  {
+   "path": "segment-01/probe-b2048-s8/checkpoints/u000000000-4633833cf2ff461aaad0d7e8d8c4e3b4.pt",
+   "bytes": 109215194,
+   "sha256": "4ccd8cf7eb033e2d799a12f2ec5efa197a6695b41c865873513b3c7db066048c"
+  },
+  {
+   "path": "segment-01/probe-b2048-s8/checkpoints/u000000048-c9780c17eec646848300f284aae9d393.pt",
+   "bytes": 277190403,
+   "sha256": "27c2d98f2ff0a0fe62dc9a614a9edd1ee9b3c7be3c8425a6ca8b64e05a10c5d4"
+  },
+  {
+   "path": "segment-01/probe-b4096-s8/checkpoints/u000000000-ad9cb2f24cf24c358476e227c74b5cd1.pt",
+   "bytes": 109215194,
+   "sha256": "3563d0b0c97d48646d6050a6f27a8f9f40df248301df3c52debb37c16c42810d"
+  }
+ ]
+}

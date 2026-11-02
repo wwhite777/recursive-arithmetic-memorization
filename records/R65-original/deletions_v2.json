@@ -1,0 +1,11 @@
+{
+ "pruned_utc": "2026-10-19T12:01:54.584026+00:00",
+ "reason": "R524-B4096-D16-short storage (DECISION_experiment); R65-original fully analysed (evaluations recorded, experiment train-fit at this checkpoint)",
+ "files": [
+  {
+   "path": "curve/checkpoints/u000196608-ce9c9b32538340c28826ced54982fa94.pt",
+   "bytes": 973126679,
+   "sha256": "d4fb0332b670937f81f3dea6b4acb633176160d32303ca31e7855800fd1f36aa"
+  }
+ ]
+}

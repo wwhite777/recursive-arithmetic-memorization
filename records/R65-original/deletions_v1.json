@@ -1,0 +1,16 @@
+{
+ "pruned_utc": "2026-10-18T11:22:52.040389+00:00",
+ "reason": "R524 storage (DECISION_experiment) after experiment used u102400; final R65-original model u196608 kept",
+ "files": [
+  {
+   "path": "curve/checkpoints/u000102400-b55d18fcf7924b35a978da3d97a02efc.pt",
+   "bytes": 973033175,
+   "sha256": "f5e76476970a7257633407e60e5e1bc84456b631d0391a4540590586e7bf745f"
+  },
+  {
+   "path": "curve/checkpoints/u000194560-615924b55df1467b96fdfc015c194f23.pt",
+   "bytes": 973124695,
+   "sha256": "c9a8a8aa7942299e3c3a460d1063107acc29c1064069a9d10e61a7c07ee4437a"
+  }
+ ]
+}

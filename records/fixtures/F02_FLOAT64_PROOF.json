@@ -1,0 +1,10 @@
+{
+  "absolute_tolerance": 0.0,
+  "cuda_initialized": false,
+  "first_new_update": 13,
+  "k": 12,
+  "m": 12,
+  "normal_replay": "bitwise exact",
+  "planted_reset_lr_assertion": "tensor mismatch at planted reset LR.model.embedding.weight",
+  "relative_tolerance": 0.0
+}

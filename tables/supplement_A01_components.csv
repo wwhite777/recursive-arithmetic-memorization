@@ -1,0 +1,46 @@
+Component label,Component,Status,Implemented detail
+A01,Arithmetic problem and operand range,Follows,"Reverse Polish expressions; 3–8 operands, each drawn from 1–9."
+A02,Operator set and exact division,Follows,"Addition, subtraction, multiplication, and nonzero exact-integer division."
+A03,Expression proposal distribution,Departs,"Uniform proposed operand counts, digits, and Catalan shapes; enumerate attainable results instead of sampling operator assignments."
+A04,"Attainable targets, ties, and duplicates",Not Specified,"Uniform attainable in-range target; lexicographically first valid tuple in +,-,*,/ order; reject duplicate inputs."
+A05,Multiset split,Departs,Salted SHA256 assigns separate train/ID/OOD multiset buckets of 80/10/10.
+A06,Target ranges,Follows,Training and ID results 0–101; OOD results 102–201.
+A07,Training and evaluation population sizes,Not Specified,Dataset sizes vary across the completed settings; the development population is fixed.
+A08,Padded input and supervised positions,Follows,"Padded input, maximum 19 tokens; final result appended; loss at masked operator positions only."
+A09,Arithmetic tokenization,Not Specified,"Vocabulary 13; pad 0, mask 11, separator 12; result encoded digit by digit; digit tokens offset by 1."
+A10,Output head,Not Specified,Bias-free four-class operator head applied to high states; loss gathers masked positions.
+A11,Backbone dimensions and sharing,Follows,One shared four-layer stack; hidden width 512; eight heads.
+A12,"Activation, positional encoding, normalization",Follows,"SwiGLU expansion setting 4, rotary positions, RMSNorm, bfloat16 forward."
+A13,Backbone numerical conventions,Not Specified,"Weighted RMSNorm epsilon 1e-5; RoPE theta 10000; SwiGLU width 1536, rounded to 256; noncausal valid-key attention; bias-free projections."
+A14,Inner recurrence,Follows,Four high cycles; two low calls then one high call per cycle; inputs injected into low calls; shared stack.
+A15,"Bounded, gated low updates",Follows,"Per-token low-update relative bound .7, epsilon 1e-8; detached divisor; sigmoid scalar gate; post-cycle low/high normalization."
+A16,Gate initialization,Follows,Scale low-gate weights by .1; zero bias.
+A17,Gradient horizon,Follows,S22 retains final two high cycles and both low calls in each; earlier high-cycle ancestry detached.
+A18,Indirect truncation semantics,Not Specified,Earlier calls use no_grad; boundary low/high detach; no derivative transport through unrecorded low calls.
+A19,ACT and training depth,Departs,"Fixed eight-step trajectories in the default recursive, shallower larger-batch, and sweep settings; fixed sixteen-step trajectories in both deeper larger-batch settings. No adaptive stopping."
+A20,Halting head and losses,Departs,No Q-head or auxiliary halting losses; operator supervision only.
+A21,Detached carry,Follows,Return detached low/high states and detach incoming carry between fixed recurrence optimizer updates.
+A22,"ACT clock, resets, and row replacement",Not Specified,One optimizer/EMA update per fixed recurrence step; recompute embeddings; hold whole batch for 8/16 steps; reset all slots together.
+A23,Initial states and effective learning,Departs,"Parameterized low/high initial vectors receive no gradients in S22; optimizer skips them, including weight decay."
+A24,Other initialization,Not Specified,"Linear/embedding truncated normals at 1/sqrt(width or fan-in), bounds ±2 SD; initial-state SD 1; norm weights 1; biases zero."
+A25,Dropout placement and mask lifetime,Follows,"Masks at listed sites, embeddings and states; state masks share token positions; reuse across all cycles and fixed recurrence steps of held trajectory."
+A26,Arithmetic regularization settings,Follows,Core dropout .025; low/high dropout .010; no convolution; relative noise .005; low gate enabled.
+A27,ACT-step Gaussian noise,Follows,Perturb embeddings and both states each fixed recurrence step with detached per-position norm times .005 times standard Gaussian noise.
+A28,Random stream details,Not Specified,SHA256-keyed seed/trajectory/site draws; noise also keys fixed recurrence step; full-batch draws sliced across micro-batches.
+A29,Supervised objective,Follows,Stablemax cross-entropy at masked operator positions.
+A30,Stablemax map and reduction,Not Specified,"Piecewise s(x)=x+1 for x≥0, 1/(1−x) otherwise; class normalization; valid-token-weighted mean; one global accumulation denominator."
+A31,Optimizer family and betas,Follows,Adam-atan2; beta1 .9 and beta2 .95 as Table 6 specifies.
+A32,Optimizer numerical constants and decay mechanics,Not Specified,"a=1.27, b=1, bias-corrected moments; no additive epsilon; LR-scaled decoupled decay on parameters with gradients."
+A33,"Peak rate, floor, beta2, decay, puzzle rate",Follows,Peak 5e-4; floor .01 of peak; beta2 .95; weight decay 1.0. No puzzle-rate parameter group.
+A34,Warm-up and clipping,Follows,"2,000 effective-update warm-up; global norm clipping at 1 after accumulated backward calls."
+A35,Schedule function and indexing,Not Specified,"Linear warm-up from update one; cosine decay; completed schedules of 196,608, 38,912, or 155,648 updates."
+A36,Physical batch and accumulation,Departs,"Default recursive and sweep settings: physical/effective batch 1,024. Both deeper larger-batch schedules and their shallower counterpart: micro-batch 2,048 × 2, effective batch 4,096."
+A37,Training length,Departs,"Completed runs use 196,608, 38,912, or 155,648 updates; allocation caps and schedules define their endpoints."
+A38,Seed and training-row order,Departs,All completed runs use seed 101; proposed additional seeds were superseded by the conditional sweep. Sampling uses permutations without replacement.
+A39,EMA decay and evaluation weights,Follows,Decay .999; EMA evaluation weights.
+A40,EMA initialization and update clock,Not Specified,Initialize EMA from model parameters; one lerp after each effective optimizer update.
+A41,Full-budget evaluation and stochastic disabling,Departs,EMA reset-state inference at each recorded depth; primary eight or sixteen steps for recursive settings; one pass for controls; dropout/noise disabled.
+A42,Exact metric and evaluation aggregation,Not Specified,Final-step canonical tuple equality; pool correct rows across strata; report selected best and final ID scores separately.
+A43,Evaluation frequency and stopping,Departs,"Every 2,048 updates on reused ID rows; threshold 1,844/2,048; bounded allocation and schedule stops; FLAT diagnostic after continuation."
+A44,Puzzle embeddings,Departs,No puzzle-identity table or sign-SGD group; paper Arithmetic Puzzle LR .005 has no corresponding parameter.
+A45,Forward and loss precision,Not Specified,"Bfloat16 forward; FP32 master parameters, norm/bound/attention reductions; FP64 stablemax loss; CPU train-fit checks FP32."

@@ -1,0 +1,15 @@
+{
+  "checkpoint": {
+    "checkpoint_seconds": 3.007779037579894,
+    "identities": {
+      "config_sha256": "30f629c791063eb3a4aa1cbdc569e84c7dcba5ecf9a1c24374efc0252fc7264f",
+      "inputs_sha256": "770812e2f081c6af5f0f505cf562a422e2916871c8411a3ec9484ae0871ddf06",
+      "manifest_sha256": "caf82514fa7f06cd52af30784a95bcdc57d434a5b629d1ccda450f76ea6761a5",
+      "source_sha256": "dbf7fd25bf506c59491a8b5c5eb7bd0adde54b66f2e5b29ba6adf477166f7e4f"
+    },
+    "path": "checkpoints/u000102400-b55d18fcf7924b35a978da3d97a02efc.pt",
+    "sha256": "f5e76476970a7257633407e60e5e1bc84456b631d0391a4540590586e7bf745f",
+    "update": 102400
+  },
+  "resumed_monotonic": 4287750.630581018
+}

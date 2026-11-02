@@ -1,0 +1,73 @@
+{
+  "GPU_hours": 0,
+  "actual_exit": 0,
+  "argv": [
+    "sources/8dae39403b68956bef7e/run.py",
+    "--suite",
+    "c2_accumulation",
+    "--run-id",
+    "c2_accumulation-install-v7"
+  ],
+  "cpu_seconds_children": 39.622659,
+  "cpu_seconds_self": 5.740372,
+  "ended_utc": "2026-10-19T12:15:46.901521+00:00",
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "",
+    "TORCH_HOME": "sources/3937c4091780af89a93c/torch",
+    "XDG_CACHE_HOME": "sources/a91f9341fec793ae2bd6/xdg",
+    "affinity": [
+      0
+    ],
+    "cuda_initialized": false,
+    "threads": 1,
+    "torch_version": "2.9.1+cu126"
+  },
+  "errors": 0,
+  "failures": 0,
+  "inputs_sha256": "0cb481bd2ff162dd81eb9e90560429e82a64c55f71ae49e9f8ea02195898de5b",
+  "log_sha256": "23be8c9d7d35a7717609ec360834121da431782da2f94e3de37fddf1e8bf2043",
+  "maxrss_children_KiB": 636456,
+  "maxrss_self_KiB": 568600,
+  "python": "sources/5679dedf48847a55bd3e/python",
+  "schema": "experiment",
+  "source_sha256": {
+    "qdriver/__init__.py": "ba790d0de73821e68dc699227653386f56f341c3baf524178f5b4e2829f1694d",
+    "qdriver/__main__.py": "93f5b36bd8295d11cd1f7ae48a0507bd065c6913fbbcb12b28aab8961032f85f",
+    "qdriver/accounting.py": "96d4490b80b4ba50b0a1d8329f59d29bfd0a9562655f5fca92153c91d5815a87",
+    "qdriver/common.py": "4b5ec15778057f521b7ae34780b62617f83afa244b13a58ac689e2ce08257f75",
+    "qdriver/controller.py": "d92a470fddc7f04433208fa1c228d7454e3539dcbdc570cbd84aba446cee37b4",
+    "qdriver/engine.py": "13031b953caa447c3b405236a3cc5fc5e91b9d2384d24f16590a254822c5a9d8",
+    "qdriver/guard.py": "133453631130b1d3b5195a03d4822096171d6e6d78318b0a05391896137ecb43",
+    "qdriver/rules.py": "2452fa3c57a538cd09d7fb69ba53e78f1d557d54b8b03c6852246aefc86a6b3d",
+    "qdriver/storage.py": "94516a4069a95fd52dc89266f73e9b727e10c25e7fd46b3a5b1b244d7518db85",
+    "qdriver/training.py": "6dff0d257d5cd9d4ce8e9fbd4cd2b83fd57b455d199d32df0dbbc178b2c5f347",
+    "qdriver/executor.py": "a0c072c413670338461b51ad63b31e1ef2c13516335dcf06859e16f519245e79",
+    "qdriver/workload.py": "3951380a1f4f1ba855162a9386a38a79089baaaa309e774eb8feb8482494c427"
+  },
+  "started_utc": "2026-10-19T12:15:01.214902+00:00",
+  "status": "PASS",
+  "suite": "c2_accumulation",
+  "test_source_sha256": {
+    "tests/__init__.py": "b1b02c2f89c521f2612aeda6e127756a19b8ddfe61dc4c9348021aeb8227fd13",
+    "tests/c2_helpers.py": "87eca305e574460ba320b20d515234c0c462b8336c23e5e9001c6f504c9670c1",
+    "tests/c2_split_executor.py": "23a34d7b451fdda6b662abde1e553827a026debfaa86215972154a1aa104d81a",
+    "tests/helpers.py": "32b16475d5626b09f45ed01dc365d089587666d4355db80f380a63d32299870d",
+    "tests/run.py": "4f5bab6d47c61fa91e66254c1f365bc15db900ef4603c06ed9d56fa7f4c2a773",
+    "tests/split_executor.py": "162e03dec9aff14e7f229846e0865d0abd2e482e98853ac0ffa2effaa045db2b",
+    "tests/test_accounting.py": "906592ca8d18d346881cefe9d121d7e0117e0e4647beca4a10f0eb0dbca2bc9d",
+    "tests/test_amendment.py": "f3c5ae59715130cd76152f0238707c869f4ba7df5957c2565be7a3c67d621215",
+    "tests/test_amendment_a2.py": "858139477c400c45dd4c8baf9d13cbc9c44a0a2740c4fbcb29a6eb7364e67a9c",
+    "tests/test_amendment_a3.py": "41cb35ee68bceb95fa63bcbac8db14ffbd99793baff83e5e080fa166022c6f78",
+    "tests/test_c2_accumulation.py": "8f59f9bfaaae62f843bd2462b5effc8981b3c10788a69e15da63dc6730f249a8",
+    "tests/test_c2_calibration.py": "72248361d7e58e3f328d95ce22c5c613dfcf867d85047c011f3c133c2c40c207",
+    "tests/test_c2_pipeline.py": "a14fefe45bacf63fa538814809ceac3fb1d73871bd32f6ae00f84f2b05e7bebc",
+    "tests/test_c2m.py": "a37ea2e4ba6b91e9bab87d22691509fbfb1b05f21b2d4bfcf9e7ce6041070620",
+    "tests/test_equivalence.py": "34d695bcd8bc7ec1896a24e4e7caf3a3ffe0220074ca7ca925468553356c617f",
+    "tests/test_guard.py": "dd2b29cf72e2803191f1017458497538d28006453d04f3c2e9d4c14a4004ec68",
+    "tests/test_pipeline.py": "3965b9fc05ce88d2b3a84cb987ef355679965762021b8f0cae7e9af44d399717",
+    "tests/test_rules.py": "27789d75f7f87f2406de99ffa8d594fb44517a9e780eab54c71cc80bf0e871ce",
+    "tests/test_schedule.py": "dd5fb3c29383e91a93fb777ebbb130a3a6391730f391f33fd4e653a3b5843376"
+  },
+  "tests_run": 4,
+  "wall_seconds": 45.686649445444345
+}

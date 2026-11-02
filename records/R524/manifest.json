@@ -1,0 +1,137 @@
+{
+  "calibration": {
+    "path": "sources/77eb35f2a7c286397de8/CALIBRATION.json",
+    "sha256": "a1b9207b6f4ee1e83ac0731e9eaa8861b407950be1ba54e79213e131e3f18da3"
+  },
+  "config": {
+    "arm": "S22",
+    "checkpoint_interval": 2048,
+    "data": {
+      "id_dev": {
+        "count": 2048,
+        "path": "sources/bb6c1491c94271119a72/id_dev.jsonl",
+        "sha256": "af1ef4eec173f637f19ef3db881ce413f7cab557e722d13a73db5ab0e2e6b70b"
+      },
+      "train": {
+        "count": 524288,
+        "path": "sources/77b94a1642bbfd76843b/train.jsonl",
+        "sha256": "04d38aa13ec71c6f7fe6a8fbdba7b7d682bfc956007bdcef520bea050da5e009"
+      }
+    },
+    "data_order_seed": 101,
+    "evaluation_batch": 512,
+    "evaluation_interval": 2048,
+    "fixed_T": true,
+    "model": {
+      "bound_eps": 1e-08,
+      "dropout_core": 0.025,
+      "dropout_state": 0.01,
+      "engineering_fixture": false,
+      "expansion": 4.0,
+      "ff_multiple": 256,
+      "forward_dtype": "bfloat16",
+      "heads": 8,
+      "hidden_size": 512,
+      "layers": 4,
+      "noise_scale": 0.005,
+      "norm_eps": 1e-05,
+      "pad_id": 0,
+      "rope_theta": 10000.0,
+      "seq_len": 19,
+      "update_bound": 0.7,
+      "vocab_size": 13
+    },
+    "schema": "experiment",
+    "seed": 101,
+    "training": {
+      "act_steps": 8,
+      "beta1": 0.9,
+      "beta2": 0.95,
+      "clip_norm": 1.0,
+      "ema_decay": 0.999,
+      "engineering_fixture": false,
+      "min_lr_ratio": 0.01,
+      "peak_lr": 0.0005,
+      "physical_batch": 1024,
+      "seed": 101,
+      "total_updates": 196608,
+      "warmup_updates": 2000,
+      "weight_decay": 1.0
+    },
+    "training_override": true
+  },
+  "disk_projection": {
+    "T": 196608,
+    "additional_peak_bytes": 7330045619,
+    "checkpoint_bytes": 977482071,
+    "checkpoint_copies": 2,
+    "checkpoint_x2_plus_logs_plus_metrics_bytes": 2192516782,
+    "controller_log_allowance_bytes": 67108864,
+    "existing_project_environment_bytes": 11230429494,
+    "interrupted_write_allowance_bytes": 977482071,
+    "logs_bytes": 172524544,
+    "metrics_bytes": 65028096,
+    "projected_aggregate_peak_bytes": 18560475113,
+    "protected_resume_bytes": 977482071,
+    "segment_log_multiplier": 10,
+    "storage_cap_bytes": 20000000000,
+    "temporary_write_bytes": 977482071,
+    "within_storage_cap": true
+  },
+  "environment": {
+    "cuda_build": "12.6",
+    "deterministic_algorithms": true,
+    "interop_threads": 1,
+    "python": "sources/5679dedf48847a55bd3e/python",
+    "python_sha256": "df23391eb5ab66f005be15f792d55766d7ce96198e9e10df2aea72aec8c686ea",
+    "threads": 1,
+    "torch_version": "2.9.1+cu126"
+  },
+  "inputs_sha256": "770812e2f081c6af5f0f505cf562a422e2916871c8411a3ec9484ae0871ddf06",
+  "run_options": {
+    "fixed_T": true,
+    "training_data": {
+      "count": 524288,
+      "path": "sources/77b94a1642bbfd76843b/train.jsonl",
+      "sha256": "04d38aa13ec71c6f7fe6a8fbdba7b7d682bfc956007bdcef520bea050da5e009"
+    }
+  },
+  "schedule": {
+    "T": 196608,
+    "available_main_seconds": 75547.41879153997,
+    "batch": 1024,
+    "calibration_charged_seconds": 52.58120846003294,
+    "cap_seconds": 86400,
+    "fixed_T": true,
+    "memory_threshold_bytes": 44000000000,
+    "next_block_projected_seconds": 72381.25252873357,
+    "planning_seconds": 75600,
+    "preferred_failure": null,
+    "projected_seconds": 71635.18639266398,
+    "projected_total_charged_seconds": 71687.76760112401,
+    "reserve_seconds": 10800,
+    "selection_reason": "R65-original_configuration_and_T_fixed_memory_throughput_storage_checks_only",
+    "steps": 8,
+    "timing_inputs": {
+      "checkpoint_seconds": 6.3690535463392735,
+      "evaluation_seconds": 5.203793469816446,
+      "fixed_overhead_seconds": 12.83732998277992,
+      "seconds_per_update": 0.35863930129562505
+    }
+  },
+  "schema": "experiment",
+  "source_sha256": {
+    "qdriver/__init__.py": "ba790d0de73821e68dc699227653386f56f341c3baf524178f5b4e2829f1694d",
+    "qdriver/__main__.py": "93f5b36bd8295d11cd1f7ae48a0507bd065c6913fbbcb12b28aab8961032f85f",
+    "qdriver/accounting.py": "96d4490b80b4ba50b0a1d8329f59d29bfd0a9562655f5fca92153c91d5815a87",
+    "qdriver/common.py": "7623b73a6b9a89414d893bc1da66e057c9286f0fba1b8874697f14f2d4e26d62",
+    "qdriver/controller.py": "3f9dd0530c2a7b00a8171eb0edee535b2cbdc6a617e11d02d647b10579c52750",
+    "qdriver/engine.py": "8d7a6bf3086c8511da7869f1485f4c68876e82e14cddbaa3ef2273ca5146687d",
+    "qdriver/guard.py": "133453631130b1d3b5195a03d4822096171d6e6d78318b0a05391896137ecb43",
+    "qdriver/rules.py": "c988bfa6d36b887e2c782e320052fb875715af25f4c859be8c2598329d110f65",
+    "qdriver/storage.py": "8f19b03e8f541bfecfc6478836f09d7f31bf42130247f30fa211688131bd90af",
+    "qdriver/training.py": "452be859c23c9cba14807fad3bce75f0f175b36af809e379f22b9641311f8b86",
+    "qdriver/executor.py": "fd1a14d970553a0a80b52276703586ccb03e652882e21ef6966246409793296f",
+    "qdriver/workload.py": "4eee3e342af5ab3b1a7aafdf03fb641f5a780a902629d200e4d4dc8d109dc276"
+  }
+}

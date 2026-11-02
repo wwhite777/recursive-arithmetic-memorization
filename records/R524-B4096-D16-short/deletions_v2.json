@@ -1,0 +1,11 @@
+{
+ "pruned_utc": "2026-10-20T10:46:05.840209+00:00",
+ "reason": "R524-B4096-D16-short terminal; experiment used the final u38912, which is kept",
+ "files": [
+  {
+   "path": "curve/checkpoints/u000036864-32b1d2aa08914c77a860b2fc39f42b23.pt",
+   "bytes": 277261635,
+   "sha256": "dc2a908eadf152804b93e79658bf5f5a8355fc8d371902da1ea16d87bb8206b1"
+  }
+ ]
+}

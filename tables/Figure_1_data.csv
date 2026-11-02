@@ -1,0 +1,12 @@
+model,training_rows,stream,correct,total,percent
+R65-resampled,65536,original_train_seen,251,252,99.60317460317461
+R131,131072,original_train_seen,427,516,82.75193798449612
+R262,262144,original_train_seen,491,1024,47.94921875
+R524,524288,original_train_seen,992,2048,48.4375
+R65-resampled,65536,original_train_unseen,606,1796,33.74164810690423
+R131,131072,original_train_unseen,757,1532,49.41253263707572
+R262,262144,original_train_unseen,472,1024,46.09375
+R65-resampled,65536,recorded_development,701,2048,34.228515625
+R131,131072,recorded_development,1025,2048,50.048828125
+R262,262144,recorded_development,957,2048,46.728515625
+R524,524288,recorded_development,1002,2048,48.92578125

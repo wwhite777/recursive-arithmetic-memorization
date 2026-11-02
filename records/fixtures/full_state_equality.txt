@@ -1,0 +1,2 @@
+EXACT C2 resumed K=2, 64 updates, splits u16/u32, all state and journals
+EXACT C2 resumed K=4, 64 updates, splits u16/u32, all state and journals

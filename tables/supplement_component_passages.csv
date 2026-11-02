@@ -1,0 +1,46 @@
+Component,Source section or table,Short quotation,Scope
+A01,A.5,“We generate expressions in reverse Polish notation containing between three and eight operands.”,Comparison passage
+A02,A.5,“Division is permitted only when it produces an exact integer result.”,Comparison passage
+A03,A.5,Operands and operators are sampled before masking.,Paraphrase of the generation description
+A04,A.5,“The model is trained to reconstruct the hidden operator sequence”,Nearest passage; detail unspecified
+A05,A.5,“We construct train and test sets by splitting over operand multisets.”,Comparison passage
+A06,A.5,“form the out-of-distribution value split.”,Comparison passage
+A07,A.5,“We generate expressions in reverse Polish notation”,Nearest passage; detail unspecified
+A08,A.5,“with the loss applied only at the masked operator positions.”,Comparison passage
+A09,A.5,“the final value of the expression is appended to the input.”,Nearest passage; detail unspecified
+A10,A.5,“The model is trained to reconstruct the hidden operator sequence”,Nearest passage; detail unspecified
+A11,B.1,“The recurrent module consists of four post-norm Transformer layers with hidden size 512 and eight attention heads.”,Comparison passage
+A12,B.1,"“We use rotary position embeddings and RMSNorm, and execute the model in bfloat16.”",Comparison passage
+A13,B.1,“We use rotary position embeddings and RMSNorm”,Nearest passage; detail unspecified
+A14,4.1,"“Within each high-level cycle, the low-level state is updated”",Comparison passage
+A15,B.2,“The scaling coefficient is detached from the computation graph.”,Comparison passage
+A16,B.2,“and setting its bias to zero”,Comparison passage
+A17,4.4,“The model executes the full recurrent trajectory”,Comparison passage
+A18,4.4,“gradients propagate only through the final”,Nearest passage; detail unspecified
+A19,B.3,“maximum budget of 16 ACT steps”,Comparison passage
+A20,B.3,“together with the two halting losses.”,Comparison passage
+A21,B.3,“the resulting states are stored in the carry and detached before the next ACT step.”,Comparison passage
+A22,B.3,“the resulting states are stored in the carry”,Nearest passage; detail unspecified
+A23,B.3,“Recurrent states are initialized from learned vectors.”,Comparison passage
+A24,B.3,“Recurrent states are initialized from learned vectors.”,Nearest passage; detail unspecified
+A25,B.2,“The same masks are reused at every recurrent cycle and every ACT step until that sequence halts.”,Comparison passage
+A26,Table 5,“Arithmetic .025 .010 no .005 yes”,Comparison passage
+A27,B.2,"“At the beginning of each ACT step during training, we perturb the input embeddings and both recurrent states”",Comparison passage
+A28,B.2,“Dropout masks are sampled when an example enters an ACT trajectory and are stored in the recurrent carry.”,Nearest passage; detail unspecified
+A29,B.3,“The training objective is stablemax cross-entropy over the supervised output positions”,Comparison passage
+A30,B.3,“The training objective is stablemax cross-entropy”,Nearest passage; detail unspecified
+A31,B.1; Table 6,“We optimize the model with Adam-atan2.”,Comparison passage
+A32,B.1,“We optimize the model with Adam-atan2.”,Nearest passage; detail unspecified
+A33,Table 6,“Arithmetic 4096 2000 50”,Comparison passage
+A34,B.1; Table 6,“Gradients are clipped to a global norm of 1”,Comparison passage
+A35,B.1,"“Training uses warm-up followed by either cosine or exponential decay, depending on the domain configuration.”",Nearest passage; detail unspecified
+A36,4.4,“use large physical batches rather than equivalent gradient accumulation”,Comparison passage
+A37,D.1,"“They run for 2000 epochs (439,600 optimizer updates) with global batch size 4096, EMA weights, and seed 125.”",Comparison passage
+A38,D.1,"“with global batch size 4096, EMA weights, and seed 125.”",Comparison passage
+A39,B.1,“We maintain an exponential moving average of all trainable parameters”,Comparison passage
+A40,B.1,“We maintain an exponential moving average of all trainable parameters”,Nearest passage; detail unspecified
+A41,4.6,"“Adaptive halting is disabled during the main evaluation, and all examples execute the full ACT budget.”",Comparison passage
+A42,4.6,“We report exact accuracy on all domains”,Nearest passage; detail unspecified
+A43,D.1,“Evaluation is performed every 50 epochs”,Comparison passage
+A44,B.1,“Puzzle embeddings are optimized separately using distributed sign-SGD.”,Comparison passage
+A45,B.1,"“We use rotary position embeddings and RMSNorm, and execute the model in bfloat16.”",Nearest passage; detail unspecified

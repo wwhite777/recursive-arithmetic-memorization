@@ -1,0 +1,72 @@
+{
+  "cap_seconds": 86400,
+  "schema": "experiment",
+  "segments": [
+    {
+      "actual_exit": 0,
+      "cap_excess_seconds": 0,
+      "cap_watchdog": null,
+      "charged_seconds": 50.257795182056725,
+      "close_observed_monotonic": 4323578.731097634,
+      "ended_monotonic": 4323578.731097634,
+      "ended_utc": "2026-10-18T10:11:43.029963+00:00",
+      "gpu_uuid": "GPU-ac3026d5-0332-dbc3-c317-4214c505044e",
+      "manifest_sha256": "b7689a00b402f3ae56e6c70ff8796cec621d6bea695438c4126b699fa07e7a4d",
+      "number": 1,
+      "phase": "calibrate",
+      "signals": [],
+      "started_monotonic": 4323528.473302452,
+      "started_utc": "2026-10-18T10:10:52.772146+00:00",
+      "status": "CALIBRATED",
+      "executor_identity": {
+        "command": "sources/5679dedf48847a55bd3e/python -B -m qdriver.executor calibrate --root sources/ccb4a5b79fcaab65e329/source --segment sources/2f6108210ed5623535ba/segment-01 --parent 2703470 --manifest-sha256 b7689a00b402f3ae56e6c70ff8796cec621d6bea695438c4126b699fa07e7a4d --permit sources/ae1cf5a32ba966d4c27e/ADMITTED.json",
+        "pgrp": 2703558,
+        "pid": 2703558,
+        "ppid": 2703470,
+        "session": 2703558,
+        "start_ticks": 432352847,
+        "start_time": "2026-10-18T10:10:52.470000+00:00",
+        "uid": 1011
+      },
+      "executor_result": {
+        "actual_executor_exit": 0,
+        "calibration": "sources/ed7d7ba51b15ec745229/CALIBRATION.json",
+        "ended_utc": "2026-10-18T10:11:42.465287+00:00",
+        "environment": {
+          "cuda_build": "12.6",
+          "deterministic_algorithms": true,
+          "interop_threads": 1,
+          "python": "sources/5679dedf48847a55bd3e/python",
+          "python_sha256": "df23391eb5ab66f005be15f792d55766d7ce96198e9e10df2aea72aec8c686ea",
+          "threads": 1,
+          "torch_version": "2.9.1+cu126"
+        },
+        "schedule": {
+          "T": 196608,
+          "available_main_seconds": 75600,
+          "batch": 1024,
+          "calibration_charged_seconds": 0,
+          "cap_seconds": 86400,
+          "fixed_T": true,
+          "memory_threshold_bytes": 44000000000,
+          "next_block_projected_seconds": 72861.17066871282,
+          "planning_seconds": 75600,
+          "preferred_failure": null,
+          "projected_seconds": 72110.15207339358,
+          "projected_total_charged_seconds": 72110.15207339358,
+          "reserve_seconds": 10800,
+          "selection_reason": "R65-original_configuration_and_T_fixed_memory_throughput_storage_checks_only",
+          "steps": 8,
+          "timing_inputs": {
+            "checkpoint_seconds": 5.126215721480548,
+            "evaluation_seconds": 5.138340369798243,
+            "fixed_overhead_seconds": 12.366922746412456,
+            "seconds_per_update": 0.36169630821677856
+          }
+        },
+        "started_utc": "2026-10-18T10:10:52.830115+00:00",
+        "status": "CALIBRATED"
+      }
+    }
+  ]
+}

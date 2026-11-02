@@ -1,0 +1,11 @@
+{
+ "pruned_utc": "2026-10-20T11:58:10.779440+00:00",
+ "reason": "R524-B4096-D16-long storage (DECISION_experiment); R524 fully analysed (evaluations, experiment train-fit at this checkpoint); R524-B4096-D16-short final model kept",
+ "files": [
+  {
+   "path": "curve/checkpoints/u000196608-3c4df0b4320d4245a00da679b47ae01b.pt",
+   "bytes": 976798679,
+   "sha256": "5504e95d560afdfeeff7f7776de3807d57bbac2bd90fbd4018f2c93847d6bc09"
+  }
+ ]
+}

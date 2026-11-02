@@ -1,0 +1,16 @@
+{
+ "pruned_utc": "2026-10-23T22:01:51.164112+00:00",
+ "reason": "S65 calibration probes; main-run manifest references no probe files",
+ "files": [
+  {
+   "path": "segment-01/probe-b1024-s8/checkpoints/u000000000-cf938809a80f42faa2e15bbfe21ac4c5.pt",
+   "bytes": 109190846,
+   "sha256": "bd436193b562334460bad2894df93bee311620391568d92047d3ba03925f1349"
+  },
+  {
+   "path": "segment-01/probe-b1024-s8/checkpoints/u000000048-442d7b7fe044424db40235876cf4eeb1.pt",
+   "bytes": 273471923,
+   "sha256": "854d429e9517130920569b4b67f86020454a8bde81be9adc4c01ab9dfa6672a1"
+  }
+ ]
+}

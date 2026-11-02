@@ -1,0 +1,21 @@
+{
+ "pruned_utc": "2026-10-19T12:44:13.736395+00:00",
+ "reason": "R524-B4096-D16-short calibration probes; main-run manifest references no probe files",
+ "files": [
+  {
+   "path": "segment-01/probe-b2048-s16/checkpoints/u000000000-9be32df3b1f84757a195bf65bc46d7ee.pt",
+   "bytes": 109215194,
+   "sha256": "efdd7651c7f0c9ab00083e6115efac8e0f9d1d69a2c319d79e6901633c003e8d"
+  },
+  {
+   "path": "segment-01/probe-b2048-s16/checkpoints/u000000048-8b565a86d02e483281f0683d347adef2.pt",
+   "bytes": 277190403,
+   "sha256": "f51408c40bbbdf1c16268f876687277f104bf43ef7f7e95a6349d0ae5f63d61f"
+  },
+  {
+   "path": "segment-01/probe-b4096-s16/checkpoints/u000000000-bc9c5a70a83641f2832b8225637b4b65.pt",
+   "bytes": 109215194,
+   "sha256": "8f366f206d8cfcbcee1be886471f913e1c212c6b734266012b5048148a0cbf12"
+  }
+ ]
+}

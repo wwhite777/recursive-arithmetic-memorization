@@ -1,0 +1,67 @@
+{
+  "cap_seconds": 86400,
+  "prior_charge": {
+    "accounting_path": "sources/f6908e3f1eba6964c3f5/ACCOUNTING.json",
+    "accounting_sha256": "2824e504b7b25a0d469311dcffa49be3f91216b06ca255a12a7661a6a8ba29cd",
+    "allocation_count": 3,
+    "charged_seconds": 42621.31248654984,
+    "root": "sources/c92a040902c599f76290/source"
+  },
+  "schema": "experiment",
+  "segments": [
+    {
+      "actual_exit": 0,
+      "cap_excess_seconds": 0,
+      "cap_watchdog": null,
+      "charged_seconds": 35708.99224044569,
+      "close_observed_monotonic": 4323447.547114894,
+      "ended_monotonic": 4323447.547114894,
+      "ended_utc": "2026-10-18T10:09:31.845977+00:00",
+      "gpu_uuid": "GPU-ac3026d5-0332-dbc3-c317-4214c505044e",
+      "manifest_sha256": "4a2584a147eb68ad55942e7117663e3ce47545f3919318aef951a04bb0772ca4",
+      "number": 1,
+      "phase": "train",
+      "signals": [],
+      "started_monotonic": 4287738.554874448,
+      "started_utc": "2026-10-18T00:14:22.853720+00:00",
+      "status": "SCHEDULE_END",
+      "executor_identity": {
+        "command": "sources/5679dedf48847a55bd3e/python -B -m qdriver.executor train --root sources/4f71cd6fd15e5e4a7e12/source --segment sources/1aa590fff95f58eb95b5/segment-01 --parent 1808195 --manifest-sha256 4a2584a147eb68ad55942e7117663e3ce47545f3919318aef951a04bb0772ca4 --permit sources/c26f16e696123103f4b8/ADMITTED.json",
+        "pgrp": 1808277,
+        "pid": 1808277,
+        "ppid": 1808195,
+        "session": 1808277,
+        "start_ticks": 428773855,
+        "start_time": "2026-10-18T00:14:22.550000+00:00",
+        "uid": 1011
+      },
+      "executor_result": {
+        "actual_executor_exit": 0,
+        "best_strict_correct": 791,
+        "completed_updates": 196608,
+        "ended_utc": "2026-10-18T10:09:31.244537+00:00",
+        "environment": {
+          "cuda_build": "12.6",
+          "deterministic_algorithms": true,
+          "interop_threads": 1,
+          "python": "sources/5679dedf48847a55bd3e/python",
+          "python_sha256": "df23391eb5ab66f005be15f792d55766d7ce96198e9e10df2aea72aec8c686ea",
+          "threads": 1,
+          "torch_version": "2.9.1+cu126"
+        },
+        "evaluation_count": 96,
+        "final_gain_last_ten_correct": 2,
+        "final_strict_correct": 732,
+        "fired_monotonic": 4323446.867996598,
+        "reached": false,
+        "reason": "not reached within T; no continuation without a new PI decision",
+        "running_max_gain_last_ten_correct": 0,
+        "running_max_gain_last_ten_pp": 0.0,
+        "started_utc": "2026-10-18T00:14:22.915554+00:00",
+        "status": "SCHEDULE_END",
+        "ten_interval_change_available": true,
+        "total": 2048
+      }
+    }
+  ]
+}

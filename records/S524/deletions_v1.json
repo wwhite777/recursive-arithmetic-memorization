@@ -1,0 +1,16 @@
+{
+ "pruned_utc": "2026-10-24T01:01:45.790848+00:00",
+ "reason": "S524 calibration probes",
+ "files": [
+  {
+   "path": "segment-01/probe-b1024-s8/checkpoints/u000000000-2bc10f655f5c404e962c7a891221749a.pt",
+   "bytes": 109190846,
+   "sha256": "c3af1cca273c490304464533b430e12c1ca6980358603bcbb99622ee782b1af9"
+  },
+  {
+   "path": "segment-01/probe-b1024-s8/checkpoints/u000000048-1db7f67b832f4a44bc86c73329621ace.pt",
+   "bytes": 277141939,
+   "sha256": "545572b73c359169606607cdd89f3167c969e5b118bbcfaf3e99e24326040254"
+  }
+ ]
+}

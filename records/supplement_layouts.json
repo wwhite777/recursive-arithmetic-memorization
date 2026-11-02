@@ -1,0 +1,1073 @@
+{
+  "supplement_A02_operand_mixtures": {
+    "fields": [
+      "Operands",
+      "R65-resampled",
+      "R131",
+      "R262",
+      "Full expanded file"
+    ],
+    "rows": [
+      {
+        "Operands": "3",
+        "R65-resampled": "",
+        "R131": "",
+        "R262": "",
+        "Full expanded file": ""
+      },
+      {
+        "Operands": "4",
+        "R65-resampled": "",
+        "R131": "",
+        "R262": "",
+        "Full expanded file": ""
+      },
+      {
+        "Operands": "5",
+        "R65-resampled": "",
+        "R131": "",
+        "R262": "",
+        "Full expanded file": ""
+      },
+      {
+        "Operands": "6",
+        "R65-resampled": "",
+        "R131": "",
+        "R262": "",
+        "Full expanded file": ""
+      },
+      {
+        "Operands": "7",
+        "R65-resampled": "",
+        "R131": "",
+        "R262": "",
+        "Full expanded file": ""
+      },
+      {
+        "Operands": "8",
+        "R65-resampled": "",
+        "R131": "",
+        "R262": "",
+        "Full expanded file": ""
+      }
+    ],
+    "kind": "A02_operand_mixtures"
+  },
+  "supplement_A03_checkpoint_retention": {
+    "fields": [
+      "Setting",
+      "Selection",
+      "Update",
+      "Weights retained",
+      "Recorded SHA256"
+    ],
+    "rows": [
+      {
+        "Setting": "R65-original",
+        "Selection": "final",
+        "Update": "",
+        "Weights retained": "",
+        "Recorded SHA256": ""
+      },
+      {
+        "Setting": "R65-original",
+        "Selection": "best",
+        "Update": "",
+        "Weights retained": "",
+        "Recorded SHA256": ""
+      },
+      {
+        "Setting": "R524",
+        "Selection": "final",
+        "Update": "",
+        "Weights retained": "",
+        "Recorded SHA256": ""
+      },
+      {
+        "Setting": "R524",
+        "Selection": "best",
+        "Update": "",
+        "Weights retained": "",
+        "Recorded SHA256": ""
+      },
+      {
+        "Setting": "R524-B4096-D16-short",
+        "Selection": "final",
+        "Update": "",
+        "Weights retained": "",
+        "Recorded SHA256": ""
+      },
+      {
+        "Setting": "R524-B4096-D16-short",
+        "Selection": "best",
+        "Update": "",
+        "Weights retained": "",
+        "Recorded SHA256": ""
+      },
+      {
+        "Setting": "R524-B4096-D16-long",
+        "Selection": "final",
+        "Update": "",
+        "Weights retained": "",
+        "Recorded SHA256": ""
+      },
+      {
+        "Setting": "R524-B4096-D16-long",
+        "Selection": "best",
+        "Update": "",
+        "Weights retained": "",
+        "Recorded SHA256": ""
+      },
+      {
+        "Setting": "S65",
+        "Selection": "final",
+        "Update": "",
+        "Weights retained": "",
+        "Recorded SHA256": ""
+      },
+      {
+        "Setting": "S65",
+        "Selection": "best",
+        "Update": "",
+        "Weights retained": "",
+        "Recorded SHA256": ""
+      },
+      {
+        "Setting": "S524",
+        "Selection": "final",
+        "Update": "",
+        "Weights retained": "",
+        "Recorded SHA256": ""
+      },
+      {
+        "Setting": "S524",
+        "Selection": "best",
+        "Update": "",
+        "Weights retained": "",
+        "Recorded SHA256": ""
+      },
+      {
+        "Setting": "R524-B4096-D8-short",
+        "Selection": "final",
+        "Update": "",
+        "Weights retained": "",
+        "Recorded SHA256": ""
+      },
+      {
+        "Setting": "R524-B4096-D8-short",
+        "Selection": "best",
+        "Update": "",
+        "Weights retained": "",
+        "Recorded SHA256": ""
+      },
+      {
+        "Setting": "R65-resampled",
+        "Selection": "final",
+        "Update": "",
+        "Weights retained": "",
+        "Recorded SHA256": ""
+      },
+      {
+        "Setting": "R65-resampled",
+        "Selection": "best",
+        "Update": "",
+        "Weights retained": "",
+        "Recorded SHA256": ""
+      },
+      {
+        "Setting": "R131",
+        "Selection": "final",
+        "Update": "",
+        "Weights retained": "",
+        "Recorded SHA256": ""
+      },
+      {
+        "Setting": "R131",
+        "Selection": "best",
+        "Update": "",
+        "Weights retained": "",
+        "Recorded SHA256": ""
+      },
+      {
+        "Setting": "R262",
+        "Selection": "final",
+        "Update": "",
+        "Weights retained": "",
+        "Recorded SHA256": ""
+      },
+      {
+        "Setting": "R262",
+        "Selection": "best",
+        "Update": "",
+        "Weights retained": "",
+        "Recorded SHA256": ""
+      }
+    ],
+    "kind": "A03_checkpoint_retention"
+  },
+  "supplement_A04_charge_exposure": {
+    "fields": [
+      "Setting",
+      "Charged seconds",
+      "Additional refused-root seconds",
+      "Complete-pass equivalents"
+    ],
+    "rows": [
+      {
+        "Setting": "R65-original",
+        "Charged seconds": "",
+        "Additional refused-root seconds": "",
+        "Complete-pass equivalents": ""
+      },
+      {
+        "Setting": "R524",
+        "Charged seconds": "",
+        "Additional refused-root seconds": "",
+        "Complete-pass equivalents": ""
+      },
+      {
+        "Setting": "R524-B4096-D16-short",
+        "Charged seconds": "",
+        "Additional refused-root seconds": "",
+        "Complete-pass equivalents": ""
+      },
+      {
+        "Setting": "R524-B4096-D16-long",
+        "Charged seconds": "",
+        "Additional refused-root seconds": "",
+        "Complete-pass equivalents": ""
+      },
+      {
+        "Setting": "S65",
+        "Charged seconds": "",
+        "Additional refused-root seconds": "",
+        "Complete-pass equivalents": ""
+      },
+      {
+        "Setting": "S524",
+        "Charged seconds": "",
+        "Additional refused-root seconds": "",
+        "Complete-pass equivalents": ""
+      },
+      {
+        "Setting": "R524-B4096-D8-short",
+        "Charged seconds": "",
+        "Additional refused-root seconds": "",
+        "Complete-pass equivalents": ""
+      },
+      {
+        "Setting": "R65-resampled",
+        "Charged seconds": "",
+        "Additional refused-root seconds": "",
+        "Complete-pass equivalents": ""
+      },
+      {
+        "Setting": "R131",
+        "Charged seconds": "",
+        "Additional refused-root seconds": "",
+        "Complete-pass equivalents": ""
+      },
+      {
+        "Setting": "R262",
+        "Charged seconds": "",
+        "Additional refused-root seconds": "",
+        "Complete-pass equivalents": ""
+      }
+    ],
+    "kind": "A04_charge_exposure"
+  },
+  "supplement_A05_semantic_maxima": {
+    "fields": [
+      "Setting",
+      "Depth",
+      "Best semantic count",
+      "Update"
+    ],
+    "rows": [
+      {
+        "Setting": "R65-original",
+        "Depth": "8",
+        "Best semantic count": "",
+        "Update": ""
+      },
+      {
+        "Setting": "R524",
+        "Depth": "8",
+        "Best semantic count": "",
+        "Update": ""
+      },
+      {
+        "Setting": "R524-B4096-D16-short",
+        "Depth": "16",
+        "Best semantic count": "",
+        "Update": ""
+      },
+      {
+        "Setting": "R524-B4096-D16-short",
+        "Depth": "8",
+        "Best semantic count": "",
+        "Update": ""
+      },
+      {
+        "Setting": "R524-B4096-D16-long",
+        "Depth": "16",
+        "Best semantic count": "",
+        "Update": ""
+      },
+      {
+        "Setting": "R524-B4096-D16-long",
+        "Depth": "8",
+        "Best semantic count": "",
+        "Update": ""
+      },
+      {
+        "Setting": "S65",
+        "Depth": "1",
+        "Best semantic count": "",
+        "Update": ""
+      },
+      {
+        "Setting": "S524",
+        "Depth": "1",
+        "Best semantic count": "",
+        "Update": ""
+      },
+      {
+        "Setting": "R524-B4096-D8-short",
+        "Depth": "8",
+        "Best semantic count": "",
+        "Update": ""
+      },
+      {
+        "Setting": "R524-B4096-D8-short",
+        "Depth": "16",
+        "Best semantic count": "",
+        "Update": ""
+      },
+      {
+        "Setting": "R65-resampled",
+        "Depth": "8",
+        "Best semantic count": "",
+        "Update": ""
+      },
+      {
+        "Setting": "R131",
+        "Depth": "8",
+        "Best semantic count": "",
+        "Update": ""
+      },
+      {
+        "Setting": "R262",
+        "Depth": "8",
+        "Best semantic count": "",
+        "Update": ""
+      }
+    ],
+    "kind": "A05_semantic_maxima"
+  },
+  "supplement_A06_operand_fitting_gaps": {
+    "fields": [
+      "Setting",
+      "Sample",
+      "Operands",
+      "Seen",
+      "Unseen",
+      "Gap, pp"
+    ],
+    "rows": [
+      {
+        "Setting": "R65-resampled",
+        "Sample": "Original",
+        "Operands": "3",
+        "Seen": "",
+        "Unseen": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "R65-resampled",
+        "Sample": "Original",
+        "Operands": "4",
+        "Seen": "",
+        "Unseen": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "R65-resampled",
+        "Sample": "Original",
+        "Operands": "5",
+        "Seen": "",
+        "Unseen": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "R65-resampled",
+        "Sample": "Original",
+        "Operands": "6",
+        "Seen": "",
+        "Unseen": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "R65-resampled",
+        "Sample": "Original",
+        "Operands": "7",
+        "Seen": "",
+        "Unseen": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "R65-resampled",
+        "Sample": "Original",
+        "Operands": "8",
+        "Seen": "",
+        "Unseen": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "R131",
+        "Sample": "Original",
+        "Operands": "3",
+        "Seen": "",
+        "Unseen": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "R131",
+        "Sample": "Original",
+        "Operands": "4",
+        "Seen": "",
+        "Unseen": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "R131",
+        "Sample": "Original",
+        "Operands": "5",
+        "Seen": "",
+        "Unseen": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "R131",
+        "Sample": "Original",
+        "Operands": "6",
+        "Seen": "",
+        "Unseen": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "R131",
+        "Sample": "Original",
+        "Operands": "7",
+        "Seen": "",
+        "Unseen": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "R131",
+        "Sample": "Original",
+        "Operands": "8",
+        "Seen": "",
+        "Unseen": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "R262",
+        "Sample": "Original",
+        "Operands": "3",
+        "Seen": "",
+        "Unseen": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "R262",
+        "Sample": "Original",
+        "Operands": "4",
+        "Seen": "",
+        "Unseen": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "R262",
+        "Sample": "Original",
+        "Operands": "5",
+        "Seen": "",
+        "Unseen": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "R262",
+        "Sample": "Original",
+        "Operands": "6",
+        "Seen": "",
+        "Unseen": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "R262",
+        "Sample": "Original",
+        "Operands": "7",
+        "Seen": "",
+        "Unseen": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "R262",
+        "Sample": "Original",
+        "Operands": "8",
+        "Seen": "",
+        "Unseen": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "R65-resampled",
+        "Sample": "Added",
+        "Operands": "3",
+        "Seen": "",
+        "Unseen": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "R65-resampled",
+        "Sample": "Added",
+        "Operands": "4",
+        "Seen": "",
+        "Unseen": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "R65-resampled",
+        "Sample": "Added",
+        "Operands": "5",
+        "Seen": "",
+        "Unseen": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "R65-resampled",
+        "Sample": "Added",
+        "Operands": "6",
+        "Seen": "",
+        "Unseen": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "R65-resampled",
+        "Sample": "Added",
+        "Operands": "7",
+        "Seen": "",
+        "Unseen": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "R65-resampled",
+        "Sample": "Added",
+        "Operands": "8",
+        "Seen": "",
+        "Unseen": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "R131",
+        "Sample": "Added",
+        "Operands": "3",
+        "Seen": "",
+        "Unseen": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "R131",
+        "Sample": "Added",
+        "Operands": "4",
+        "Seen": "",
+        "Unseen": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "R131",
+        "Sample": "Added",
+        "Operands": "5",
+        "Seen": "",
+        "Unseen": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "R131",
+        "Sample": "Added",
+        "Operands": "6",
+        "Seen": "",
+        "Unseen": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "R131",
+        "Sample": "Added",
+        "Operands": "7",
+        "Seen": "",
+        "Unseen": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "R131",
+        "Sample": "Added",
+        "Operands": "8",
+        "Seen": "",
+        "Unseen": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "R262",
+        "Sample": "Added",
+        "Operands": "3",
+        "Seen": "",
+        "Unseen": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "R262",
+        "Sample": "Added",
+        "Operands": "4",
+        "Seen": "",
+        "Unseen": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "R262",
+        "Sample": "Added",
+        "Operands": "5",
+        "Seen": "",
+        "Unseen": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "R262",
+        "Sample": "Added",
+        "Operands": "6",
+        "Seen": "",
+        "Unseen": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "R262",
+        "Sample": "Added",
+        "Operands": "7",
+        "Seen": "",
+        "Unseen": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "R262",
+        "Sample": "Added",
+        "Operands": "8",
+        "Seen": "",
+        "Unseen": "",
+        "Gap, pp": ""
+      }
+    ],
+    "kind": "A06_operand_fitting_gaps"
+  },
+  "supplement_A07_selection_fitting_gaps": {
+    "fields": [
+      "Setting",
+      "Selection",
+      "Update",
+      "Seen",
+      "Unseen",
+      "Gap, pp"
+    ],
+    "rows": [
+      {
+        "Setting": "R65-resampled",
+        "Selection": "Development-selected best",
+        "Update": "",
+        "Seen": "",
+        "Unseen": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "R65-resampled",
+        "Selection": "Final",
+        "Update": "",
+        "Seen": "",
+        "Unseen": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "R131",
+        "Selection": "Development-selected best",
+        "Update": "",
+        "Seen": "",
+        "Unseen": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "R131",
+        "Selection": "Final",
+        "Update": "",
+        "Seen": "",
+        "Unseen": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "R262",
+        "Selection": "Development-selected best",
+        "Update": "",
+        "Seen": "",
+        "Unseen": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "R262",
+        "Selection": "Final",
+        "Update": "",
+        "Seen": "",
+        "Unseen": "",
+        "Gap, pp": ""
+      }
+    ],
+    "kind": "A07_selection_fitting_gaps"
+  },
+  "supplement_A08_standardized_fresh": {
+    "fields": [
+      "Setting",
+      "Depth",
+      "Development, %",
+      "Fresh, %",
+      "Raw deficit, pp",
+      "Standardized fresh, %",
+      "Standardized deficit, pp"
+    ],
+    "rows": [
+      {
+        "Setting": "R524-B4096-D16-short",
+        "Depth": "16",
+        "Development, %": "",
+        "Fresh, %": "",
+        "Raw deficit, pp": "",
+        "Standardized fresh, %": "",
+        "Standardized deficit, pp": ""
+      },
+      {
+        "Setting": "R524-B4096-D16-long",
+        "Depth": "16",
+        "Development, %": "",
+        "Fresh, %": "",
+        "Raw deficit, pp": "",
+        "Standardized fresh, %": "",
+        "Standardized deficit, pp": ""
+      },
+      {
+        "Setting": "S65",
+        "Depth": "1",
+        "Development, %": "",
+        "Fresh, %": "",
+        "Raw deficit, pp": "",
+        "Standardized fresh, %": "",
+        "Standardized deficit, pp": ""
+      },
+      {
+        "Setting": "S524",
+        "Depth": "1",
+        "Development, %": "",
+        "Fresh, %": "",
+        "Raw deficit, pp": "",
+        "Standardized fresh, %": "",
+        "Standardized deficit, pp": ""
+      },
+      {
+        "Setting": "R524-B4096-D8-short",
+        "Depth": "8",
+        "Development, %": "",
+        "Fresh, %": "",
+        "Raw deficit, pp": "",
+        "Standardized fresh, %": "",
+        "Standardized deficit, pp": ""
+      },
+      {
+        "Setting": "R65-resampled",
+        "Depth": "8",
+        "Development, %": "",
+        "Fresh, %": "",
+        "Raw deficit, pp": "",
+        "Standardized fresh, %": "",
+        "Standardized deficit, pp": ""
+      },
+      {
+        "Setting": "R131",
+        "Depth": "8",
+        "Development, %": "",
+        "Fresh, %": "",
+        "Raw deficit, pp": "",
+        "Standardized fresh, %": "",
+        "Standardized deficit, pp": ""
+      },
+      {
+        "Setting": "R262",
+        "Depth": "8",
+        "Development, %": "",
+        "Fresh, %": "",
+        "Raw deficit, pp": "",
+        "Standardized fresh, %": "",
+        "Standardized deficit, pp": ""
+      }
+    ],
+    "kind": "A08_standardized_fresh"
+  },
+  "supplement_development_label_ambiguity": {
+    "fields": [
+      "operand_count",
+      "total",
+      "ambiguous_rows",
+      "ambiguity_percent"
+    ],
+    "rows": [
+      {
+        "operand_count": "3",
+        "total": "",
+        "ambiguous_rows": "",
+        "ambiguity_percent": ""
+      },
+      {
+        "operand_count": "4",
+        "total": "",
+        "ambiguous_rows": "",
+        "ambiguity_percent": ""
+      },
+      {
+        "operand_count": "5",
+        "total": "",
+        "ambiguous_rows": "",
+        "ambiguity_percent": ""
+      },
+      {
+        "operand_count": "6",
+        "total": "",
+        "ambiguous_rows": "",
+        "ambiguity_percent": ""
+      },
+      {
+        "operand_count": "7",
+        "total": "",
+        "ambiguous_rows": "",
+        "ambiguity_percent": ""
+      },
+      {
+        "operand_count": "8",
+        "total": "",
+        "ambiguous_rows": "",
+        "ambiguity_percent": ""
+      }
+    ],
+    "kind": "development_label_ambiguity"
+  },
+  "supplement_A09_fixtures": {
+    "fields": [
+      "Check",
+      "Precision",
+      "Tolerance",
+      "Observed maximum discrepancy",
+      "Planted violation",
+      "Report SHA256"
+    ],
+    "rows": [
+      {
+        "Check": "Derivative suffix",
+        "Precision": "FP64 intended",
+        "Tolerance": "Not substantiated",
+        "Observed maximum discrepancy": "Not substantiated",
+        "Planted violation": "Result report not located",
+        "Report SHA256": "Unavailable"
+      },
+      {
+        "Check": "Accumulation: parameters and EMA",
+        "Precision": "FP64",
+        "Tolerance": "atol = rtol = 1e-10",
+        "Observed maximum discrepancy": "2.017011557775561e-11",
+        "Planted violation": "Per-micro-batch clipping rejected",
+        "Report SHA256": "bb9118b5a73d238a1c00fa64ce0e585503e9735fed9435dba43b66325186bba3"
+      },
+      {
+        "Check": "Accumulation: optimizer and loss",
+        "Precision": "FP64",
+        "Tolerance": "atol = rtol = 1e-8",
+        "Observed maximum discrepancy": "2.373826912815957e-09",
+        "Planted violation": "Per-micro-batch clipping rejected",
+        "Report SHA256": "bb9118b5a73d238a1c00fa64ce0e585503e9735fed9435dba43b66325186bba3"
+      },
+      {
+        "Check": "Accumulation: carry",
+        "Precision": "FP64",
+        "Tolerance": "atol = rtol = 1e-6",
+        "Observed maximum discrepancy": "4.487766995242559e-07",
+        "Planted violation": "Per-micro-batch clipping rejected",
+        "Report SHA256": "bb9118b5a73d238a1c00fa64ce0e585503e9735fed9435dba43b66325186bba3"
+      },
+      {
+        "Check": "Accumulation: synchronized gradients",
+        "Precision": "FP64",
+        "Tolerance": "atol = 2e-11; rtol = 2e-10",
+        "Observed maximum discrepancy": "9.71445146547012e-17",
+        "Planted violation": "Per-micro-batch clipping rejected",
+        "Report SHA256": "bb9118b5a73d238a1c00fa64ce0e585503e9735fed9435dba43b66325186bba3"
+      },
+      {
+        "Check": "Cross-run resume",
+        "Precision": "FP64",
+        "Tolerance": "atol = rtol = 0",
+        "Observed maximum discrepancy": "0 (reported bitwise equality)",
+        "Planted violation": "Reset learning-rate position rejected",
+        "Report SHA256": "2de36861147f34387fce2ec7cbafa78178f4ea84271dbb575a76052912b41372"
+      },
+      {
+        "Check": "Boundary next draws",
+        "Precision": "FP64",
+        "Tolerance": "atol = rtol = 0",
+        "Observed maximum discrepancy": "0 (reported bitwise equality)",
+        "Planted violation": "Missing random state and off-boundary save rejected",
+        "Report SHA256": "12363a41a69327cc19a56d19a9aa2a65eb03ca97a19f27fec079e0f657c3257d"
+      },
+      {
+        "Check": "Boundary full-state resume",
+        "Precision": "FP64",
+        "Tolerance": "atol = rtol = 0",
+        "Observed maximum discrepancy": "0 (reported bitwise equality)",
+        "Planted violation": "Missing random state and off-boundary save rejected by companion checks",
+        "Report SHA256": "8b310e8ae714dfbaed221a3e31b151f45670b52e2a45970ad717e850aa703252"
+      }
+    ],
+    "kind": "A09_fixtures"
+  },
+  "supplement_A10_live_development": {
+    "fields": [
+      "Setting",
+      "Window, updates",
+      "Live correct / row participations",
+      "Live, %",
+      "Development, %",
+      "Live minus development, pp"
+    ],
+    "rows": [
+      {
+        "Setting": "R65-original",
+        "Window, updates": "",
+        "Live correct / row participations": "",
+        "Live, %": "",
+        "Development, %": "",
+        "Live minus development, pp": ""
+      },
+      {
+        "Setting": "R524",
+        "Window, updates": "",
+        "Live correct / row participations": "",
+        "Live, %": "",
+        "Development, %": "",
+        "Live minus development, pp": ""
+      },
+      {
+        "Setting": "R524-B4096-D16-short",
+        "Window, updates": "",
+        "Live correct / row participations": "",
+        "Live, %": "",
+        "Development, %": "",
+        "Live minus development, pp": ""
+      },
+      {
+        "Setting": "R524-B4096-D16-long",
+        "Window, updates": "",
+        "Live correct / row participations": "",
+        "Live, %": "",
+        "Development, %": "",
+        "Live minus development, pp": ""
+      },
+      {
+        "Setting": "S65",
+        "Window, updates": "",
+        "Live correct / row participations": "",
+        "Live, %": "",
+        "Development, %": "",
+        "Live minus development, pp": ""
+      },
+      {
+        "Setting": "S524",
+        "Window, updates": "",
+        "Live correct / row participations": "",
+        "Live, %": "",
+        "Development, %": "",
+        "Live minus development, pp": ""
+      },
+      {
+        "Setting": "R524-B4096-D8-short",
+        "Window, updates": "",
+        "Live correct / row participations": "",
+        "Live, %": "",
+        "Development, %": "",
+        "Live minus development, pp": ""
+      },
+      {
+        "Setting": "R65-resampled",
+        "Window, updates": "",
+        "Live correct / row participations": "",
+        "Live, %": "",
+        "Development, %": "",
+        "Live minus development, pp": ""
+      },
+      {
+        "Setting": "R131",
+        "Window, updates": "",
+        "Live correct / row participations": "",
+        "Live, %": "",
+        "Development, %": "",
+        "Live minus development, pp": ""
+      },
+      {
+        "Setting": "R262",
+        "Window, updates": "",
+        "Live correct / row participations": "",
+        "Live, %": "",
+        "Development, %": "",
+        "Live minus development, pp": ""
+      }
+    ],
+    "kind": "A10_live_development"
+  },
+  "supplement_A11_historical_scores": {
+    "fields": [
+      "Setting and checkpoint",
+      "Population",
+      "Depth",
+      "Strict / semantic",
+      "Rows"
+    ],
+    "rows": [
+      {
+        "Setting and checkpoint": "R65-original_u102400",
+        "Population": "id_dev",
+        "Depth": "8",
+        "Strict / semantic": "",
+        "Rows": ""
+      },
+      {
+        "Setting and checkpoint": "R65-original_u102400",
+        "Population": "original_train",
+        "Depth": "8",
+        "Strict / semantic": "",
+        "Rows": ""
+      },
+      {
+        "Setting and checkpoint": "R524-B4096-D16-short_final",
+        "Population": "original_train",
+        "Depth": "8",
+        "Strict / semantic": "",
+        "Rows": ""
+      },
+      {
+        "Setting and checkpoint": "R524-B4096-D16-short_final",
+        "Population": "new_train",
+        "Depth": "8",
+        "Strict / semantic": "",
+        "Rows": ""
+      }
+    ],
+    "kind": "A11_historical_scores"
+  }
+}

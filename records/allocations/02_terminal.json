@@ -1,0 +1,20 @@
+{
+  "cap_seconds": 86400,
+  "charged_seconds": 3251.5820460421965,
+  "gpu_hours": 0.9032172350117212,
+  "prior_charge": {
+    "accounting_path": "sources/e65d5885f4b2b4146874/ACCOUNTING.json",
+    "accounting_sha256": "785f493a770697523ae675def940c78ee11a7a596d8c86a3290a0c5456095272",
+    "allocation_count": 1,
+    "charged_seconds": 46.12347084842622,
+    "root": "sources/ddac5d8d901efdc4ada5/source"
+  },
+  "result": {
+    "status": "ERROR"
+  },
+  "schema": "experiment",
+  "scope": "One S22 seed101 engineering qualification; no policy efficacy/audit verdict",
+  "segment_count": 3,
+  "status": "ERROR",
+  "updated_utc": "2026-10-17T10:43:29.645210+00:00"
+}

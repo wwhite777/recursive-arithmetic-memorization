@@ -1,0 +1,49 @@
+Record label,Record class
+D1,Differenced inherited failed-allocation charge
+D2,Differenced inherited failed-allocation charge
+D3,Differenced inherited failed-allocation charge
+F01,Historical double-precision check report
+F02,Historical double-precision check report
+F03,Historical double-precision check report
+F04,Historical double-precision check report
+L01,Live-training update journal
+L02,Live-training update journal
+L03,Live-training update journal
+L04,Live-training update journal
+L05,Live-training update journal
+L06,Live-training update journal
+L07,Live-training update journal
+L08,Live-training update journal
+L09,Live-training update journal
+L10,Live-training update journal
+R010,Historical CPU readout
+R014,Historical CPU readout
+R018,Saved CPU score record
+R019,Saved CPU operand and result-width strata
+R021,Saved CPU score record
+R022,Saved CPU operand and result-width strata
+R024,Saved CPU score record
+R025,Saved CPU operand and result-width strata
+R027,Saved CPU score record
+R028,Saved CPU operand and result-width strata
+R033,Retained numerical record
+R043,Checkpoint identity and retention index
+R044,Recorded development trajectory
+R049,Checkpoint identity and retention index
+R050,Recorded development trajectory
+R055,Checkpoint identity and retention index
+R056,Recorded development trajectory
+R061,Checkpoint identity and retention index
+R062,Recorded development trajectory
+R067,Checkpoint identity and retention index
+R068,Recorded development trajectory
+R073,Checkpoint identity and retention index
+R074,Recorded development trajectory
+R079,Checkpoint identity and retention index
+R080,Recorded development trajectory
+R087,Checkpoint identity and retention index
+R088,Recorded development trajectory
+R094,Checkpoint identity and retention index
+R095,Recorded development trajectory
+R100,Checkpoint identity and retention index
+R101,Recorded development trajectory

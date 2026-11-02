@@ -1,0 +1,9 @@
+check,precision,tolerance,maximum_discrepancy,planted_violation,report_sha256
+Derivative suffix,FP64 intended,Not substantiated,Not substantiated,Result report not located,Unavailable
+Accumulation: parameters and EMA,FP64,atol = rtol = 1e-10,2.017011557775561e-11,Per-micro-batch clipping rejected,bb9118b5a73d238a1c00fa64ce0e585503e9735fed9435dba43b66325186bba3
+Accumulation: optimizer and loss,FP64,atol = rtol = 1e-8,2.373826912815957e-09,Per-micro-batch clipping rejected,bb9118b5a73d238a1c00fa64ce0e585503e9735fed9435dba43b66325186bba3
+Accumulation: carry,FP64,atol = rtol = 1e-6,4.487766995242559e-07,Per-micro-batch clipping rejected,bb9118b5a73d238a1c00fa64ce0e585503e9735fed9435dba43b66325186bba3
+Accumulation: synchronized gradients,FP64,atol = 2e-11; rtol = 2e-10,9.71445146547012e-17,Per-micro-batch clipping rejected,bb9118b5a73d238a1c00fa64ce0e585503e9735fed9435dba43b66325186bba3
+Cross-run resume,FP64,atol = rtol = 0,0 (reported bitwise equality),Reset learning-rate position rejected,2de36861147f34387fce2ec7cbafa78178f4ea84271dbb575a76052912b41372
+Boundary next draws,FP64,atol = rtol = 0,0 (reported bitwise equality),Missing random state and off-boundary save rejected,12363a41a69327cc19a56d19a9aa2a65eb03ca97a19f27fec079e0f657c3257d
+Boundary full-state resume,FP64,atol = rtol = 0,0 (reported bitwise equality),Missing random state and off-boundary save rejected by companion checks,8b310e8ae714dfbaed221a3e31b151f45670b52e2a45970ad717e850aa703252

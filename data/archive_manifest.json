@@ -1,0 +1,90 @@
+[
+  {
+    "file": "dataset-original_train.jsonl.gz",
+    "kind": "dataset",
+    "target": "data/original_train.jsonl",
+    "sha256": "81c7c4afb077b9ae5e4ad1285eddbaa0454145124303c951634e4b14bf5902eb",
+    "bytes": 5116740,
+    "uncompressed_sha256": "f18a58445a9d0159cd407cbfaf5de8e108df36b66ce1a4fd754ebaf8f854e942",
+    "parts": [
+      {
+        "file": "dataset-original_train.jsonl.gz.part001",
+        "bytes": 5116740,
+        "sha256": "81c7c4afb077b9ae5e4ad1285eddbaa0454145124303c951634e4b14bf5902eb"
+      }
+    ]
+  },
+  {
+    "file": "dataset-new_train.jsonl.gz",
+    "kind": "dataset",
+    "target": "data/new_train.jsonl",
+    "sha256": "463fa0229e0e259c3ca6ac665b643a5d446d133f91e854dd23b8462129e7aa03",
+    "bytes": 41453260,
+    "uncompressed_sha256": "04d38aa13ec71c6f7fe6a8fbdba7b7d682bfc956007bdcef520bea050da5e009",
+    "parts": [
+      {
+        "file": "dataset-new_train.jsonl.gz.part001",
+        "bytes": 41453260,
+        "sha256": "463fa0229e0e259c3ca6ac665b643a5d446d133f91e854dd23b8462129e7aa03"
+      }
+    ]
+  },
+  {
+    "file": "dataset-training_65536.jsonl.gz",
+    "kind": "dataset",
+    "target": "data/training_65536.jsonl",
+    "sha256": "b838e5c91312fea620afe9030b8da1e201335a5279837f60476995399b159d3c",
+    "bytes": 5184856,
+    "uncompressed_sha256": "e0f21967f31080c8f5b5f97859d1c442644402c8825117f2f2e6c514a48c30cf",
+    "parts": [
+      {
+        "file": "dataset-training_65536.jsonl.gz.part001",
+        "bytes": 5184856,
+        "sha256": "b838e5c91312fea620afe9030b8da1e201335a5279837f60476995399b159d3c"
+      }
+    ]
+  },
+  {
+    "file": "dataset-training_131072.jsonl.gz",
+    "kind": "dataset",
+    "target": "data/training_131072.jsonl",
+    "sha256": "a483be48399f9c5c60d58e4a8d8f2093379ff8b2fdcd706c55d189723834dc25",
+    "bytes": 10370214,
+    "uncompressed_sha256": "4dbed221ccba896d36de5c43920336428a1cefb332be4e1899f3325c3c4de71d",
+    "parts": [
+      {
+        "file": "dataset-training_131072.jsonl.gz.part001",
+        "bytes": 10370214,
+        "sha256": "a483be48399f9c5c60d58e4a8d8f2093379ff8b2fdcd706c55d189723834dc25"
+      }
+    ]
+  },
+  {
+    "file": "dataset-training_262144.jsonl.gz",
+    "kind": "dataset",
+    "target": "data/training_262144.jsonl",
+    "sha256": "2eed796f930f8cbf211f71d376b27301b99371cb5e72afeace78f1eef052f625",
+    "bytes": 20740255,
+    "uncompressed_sha256": "5959bb6a53afc07d4daaeffb8cac9bbd6cd74b661c537cada8387a05866b9dc3",
+    "parts": [
+      {
+        "file": "dataset-training_262144.jsonl.gz.part001",
+        "bytes": 20740255,
+        "sha256": "2eed796f930f8cbf211f71d376b27301b99371cb5e72afeace78f1eef052f625"
+      }
+    ]
+  },
+  {
+    "file": "predictions.zip",
+    "kind": "predictions",
+    "sha256": "3d4aec6b03879768b61e4f8098b7b27505d6db1494c2a6a1b68bd792ee666614",
+    "bytes": 22384044,
+    "parts": [
+      {
+        "file": "predictions.zip.part001",
+        "bytes": 22384044,
+        "sha256": "3d4aec6b03879768b61e4f8098b7b27505d6db1494c2a6a1b68bd792ee666614"
+      }
+    ]
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "model": "R65-original",
+    "kind": "final",
+    "retained": "False"
+  },
+  {
+    "model": "R65-original",
+    "kind": "best",
+    "retained": "False"
+  },
+  {
+    "model": "R524",
+    "kind": "final",
+    "retained": "False"
+  },
+  {
+    "model": "R524",
+    "kind": "best",
+    "retained": "False"
+  },
+  {
+    "model": "R524-B4096-D16-short",
+    "kind": "final",
+    "retained": "True"
+  },
+  {
+    "model": "R524-B4096-D16-short",
+    "kind": "best",
+    "retained": "True"
+  },
+  {
+    "model": "R524-B4096-D16-long",
+    "kind": "final",
+    "retained": "True"
+  },
+  {
+    "model": "R524-B4096-D16-long",
+    "kind": "best",
+    "retained": "False"
+  },
+  {
+    "model": "S65",
+    "kind": "final",
+    "retained": "True"
+  },
+  {
+    "model": "S65",
+    "kind": "best",
+    "retained": "True"
+  },
+  {
+    "model": "S524",
+    "kind": "final",
+    "retained": "True"
+  },
+  {
+    "model": "S524",
+    "kind": "best",
+    "retained": "True"
+  },
+  {
+    "model": "R524-B4096-D8-short",
+    "kind": "final",
+    "retained": "True"
+  },
+  {
+    "model": "R524-B4096-D8-short",
+    "kind": "best",
+    "retained": "True"
+  },
+  {
+    "model": "R65-resampled",
+    "kind": "final",
+    "retained": "True"
+  },
+  {
+    "model": "R65-resampled",
+    "kind": "best",
+    "retained": "True"
+  },
+  {
+    "model": "R131",
+    "kind": "final",
+    "retained": "True"
+  },
+  {
+    "model": "R131",
+    "kind": "best",
+    "retained": "True"
+  },
+  {
+    "model": "R262",
+    "kind": "final",
+    "retained": "True"
+  },
+  {
+    "model": "R262",
+    "kind": "best",
+    "retained": "True"
+  }
+]

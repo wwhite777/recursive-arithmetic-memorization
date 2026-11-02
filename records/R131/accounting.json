@@ -1,0 +1,136 @@
+{
+  "cap_seconds": 86400.0,
+  "max_allocations": 10,
+  "schema": "experiment",
+  "segments": [
+    {
+      "actual_exit": 0,
+      "cap_excess_seconds": 0,
+      "cap_watchdog": null,
+      "charged_seconds": 39.977972727268934,
+      "close_observed_monotonic": 4965839.243349077,
+      "ended_monotonic": 4965839.243349077,
+      "ended_utc": "2026-10-25T20:36:03.542213+00:00",
+      "gpu_uuid": "GPU-8fa90a6e-aacc-d125-bd24-88549c38e1ea",
+      "manifest_sha256": "b4003a967794ec2b86c09791ab8ce66871ee3932e98c9c7b255c5937f5a14d6a",
+      "number": 1,
+      "phase": "calibrate",
+      "signals": [],
+      "started_monotonic": 4965799.26537635,
+      "started_utc": "2026-10-25T20:35:23.564217+00:00",
+      "status": "CALIBRATED",
+      "executor_identity": {
+        "command": "sources/5679dedf48847a55bd3e/python -B -m qdriver.executor calibrate --root sources/4d7394933b4f1c139482/source --segment sources/56e6a41f3d0cc612c740/segment-01 --parent 154947 --manifest-sha256 b4003a967794ec2b86c09791ab8ce66871ee3932e98c9c7b255c5937f5a14d6a --permit sources/cc7d53120bb5f5a5fbf3/ADMITTED.json",
+        "pgrp": 154966,
+        "pid": 154966,
+        "ppid": 154947,
+        "session": 154966,
+        "start_ticks": 496579926,
+        "start_time": "2026-10-25T20:35:23.260000+00:00",
+        "uid": 1011
+      },
+      "executor_result": {
+        "actual_executor_exit": 0,
+        "calibration": "sources/f752a4efec2ee9fd1bfa/CALIBRATION.json",
+        "ended_utc": "2026-10-25T20:36:03.001934+00:00",
+        "environment": {
+          "cuda_build": "12.6",
+          "deterministic_algorithms": true,
+          "interop_threads": 1,
+          "python": "sources/5679dedf48847a55bd3e/python",
+          "python_sha256": "df23391eb5ab66f005be15f792d55766d7ce96198e9e10df2aea72aec8c686ea",
+          "threads": 1,
+          "torch_version": "2.9.1+cu126"
+        },
+        "schedule": {
+          "T": 196608,
+          "available_main_seconds": 75600.0,
+          "batch": 1024,
+          "calibration_charged_seconds": 0,
+          "cap_seconds": 86400.0,
+          "fixed_T": 196608,
+          "memory_threshold_bytes": 44000000000,
+          "next_block_projected_seconds": 72451.71102818009,
+          "planning_seconds": 75600.0,
+          "preferred_failure": null,
+          "projected_seconds": 71704.83377922233,
+          "projected_total_charged_seconds": 71704.83377922233,
+          "reserve_seconds": 10800.0,
+          "selection_reason": "R65-original_configuration_and_T_fixed_memory_throughput_storage_checks_only",
+          "steps": 8,
+          "timing_inputs": {
+            "checkpoint_seconds": 1.849286898970604,
+            "evaluation_seconds": 5.15403351187706,
+            "fixed_overhead_seconds": 4.617879278026521,
+            "seconds_per_update": 0.3612665666732937
+          }
+        },
+        "started_utc": "2026-10-25T20:35:23.633851+00:00",
+        "status": "CALIBRATED"
+      }
+    },
+    {
+      "actual_exit": 0,
+      "cap_excess_seconds": 0,
+      "cap_watchdog": null,
+      "charged_seconds": 72295.78530755639,
+      "close_observed_monotonic": 5038139.136698077,
+      "ended_monotonic": 5038139.136698077,
+      "ended_utc": "2026-10-26T16:41:03.435559+00:00",
+      "gpu_uuid": "GPU-8fa90a6e-aacc-d125-bd24-88549c38e1ea",
+      "manifest_sha256": "734d37046cfd703589e18e2367cf2ca8c179f50ebe8362bca88f7b1333ac061e",
+      "number": 2,
+      "phase": "train",
+      "signals": [],
+      "started_monotonic": 4965843.351390521,
+      "started_utc": "2026-10-25T20:36:07.650232+00:00",
+      "status": "SCHEDULE_END",
+      "executor_identity": {
+        "command": "sources/5679dedf48847a55bd3e/python -B -m qdriver.executor train --root sources/4d7394933b4f1c139482/source --segment sources/98948eb070440765cc2d/segment-02 --parent 156078 --manifest-sha256 734d37046cfd703589e18e2367cf2ca8c179f50ebe8362bca88f7b1333ac061e --permit sources/befaf1d9d490e2f6ec13/ADMITTED.json",
+        "pgrp": 156108,
+        "pid": 156108,
+        "ppid": 156078,
+        "session": 156108,
+        "start_ticks": 496584335,
+        "start_time": "2026-10-25T20:36:07.350000+00:00",
+        "uid": 1011
+      },
+      "executor_result": {
+        "actual_executor_exit": 0,
+        "best_strict_correct": 1053,
+        "completed_updates": 196608,
+        "ended_utc": "2026-10-26T16:41:02.922251+00:00",
+        "environment": {
+          "cuda_build": "12.6",
+          "deterministic_algorithms": true,
+          "interop_threads": 1,
+          "python": "sources/5679dedf48847a55bd3e/python",
+          "python_sha256": "df23391eb5ab66f005be15f792d55766d7ce96198e9e10df2aea72aec8c686ea",
+          "threads": 1,
+          "torch_version": "2.9.1+cu126"
+        },
+        "evaluation_count": 96,
+        "final_gain_last_ten_correct": 8,
+        "final_strict_correct": 1025,
+        "fired_monotonic": 5038138.477304308,
+        "flat_record": {
+          "plateau_strict_correct": 1053,
+          "running_max_gain_correct": 0,
+          "status": "FLAT",
+          "total": 2048,
+          "window_end_update": 196608,
+          "window_start_update": 176128
+        },
+        "flat_stops": false,
+        "reached": false,
+        "reason": "not reached within T; no continuation without a new PI decision",
+        "running_max_gain_last_ten_correct": 0,
+        "running_max_gain_last_ten_pp": 0.0,
+        "started_utc": "2026-10-25T20:36:07.717255+00:00",
+        "status": "SCHEDULE_END",
+        "ten_interval_change_available": true,
+        "total": 2048
+      }
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "calibration": {
+    "path": "sources/e79cc1fe9d8dd951bf72/CALIBRATION.json",
+    "sha256": "86f2a2541ed21ed056f1e626390b48e06f3a10f3b226d0d8268625c6d63609cc"
+  },
+  "config": {
+    "arm": "S22",
+    "checkpoint_interval": 2048,
+    "data": {
+      "id_dev": {
+        "count": 2048,
+        "path": "sources/bb6c1491c94271119a72/id_dev.jsonl",
+        "sha256": "af1ef4eec173f637f19ef3db881ce413f7cab557e722d13a73db5ab0e2e6b70b"
+      },
+      "train": {
+        "count": 524288,
+        "path": "sources/77b94a1642bbfd76843b/train.jsonl",
+        "sha256": "04d38aa13ec71c6f7fe6a8fbdba7b7d682bfc956007bdcef520bea050da5e009"
+      }
+    },
+    "data_order_seed": 101,
+    "evaluation_batch": 512,
+    "evaluation_interval": 2048,
+    "model": {
+      "bound_eps": 1e-08,
+      "dropout_core": 0.025,
+      "dropout_state": 0.01,
+      "engineering_fixture": false,
+      "expansion": 4.0,
+      "ff_multiple": 256,
+      "forward_dtype": "bfloat16",
+      "heads": 8,
+      "hidden_size": 512,
+      "layers": 4,
+      "noise_scale": 0.005,
+      "norm_eps": 1e-05,
+      "pad_id": 0,
+      "rope_theta": 10000.0,
+      "seq_len": 19,
+      "update_bound": 0.7,
+      "vocab_size": 13
+    },
+    "schema": "experiment",
+    "seed": 101,
+    "training": {
+      "act_steps": 8,
+      "beta1": 0.9,
+      "beta2": 0.95,
+      "clip_norm": 1.0,
+      "effective_batch": 4096,
+      "ema_decay": 0.999,
+      "engineering_fixture": false,
+      "min_lr_ratio": 0.01,
+      "peak_lr": 0.0005,
+      "physical_batch": 2048,
+      "seed": 101,
+      "total_updates": 38912,
+      "warmup_updates": 2000,
+      "weight_decay": 1.0
+    },
+    "training_override": true
+  },
+  "disk_projection": {
+    "T": 38912,
+    "additional_peak_bytes": 3220438712,
+    "best_ema_checkpoint_bytes": 277718413,
+    "checkpoint_bytes": 277718413,
+    "checkpoint_copies": 3,
+    "checkpoint_x2_plus_logs_plus_metrics_bytes": 704138763,
+    "checkpoint_x3_plus_logs_plus_metrics_bytes": 981857176,
+    "controller_log_allowance_bytes": 67108864,
+    "existing_project_environment_bytes": 15080320455,
+    "interrupted_write_allowance_bytes": 277718413,
+    "logs_bytes": 135798555,
+    "metrics_bytes": 12903382,
+    "projected_aggregate_peak_bytes": 18300759167,
+    "protected_resume_bytes": 277718413,
+    "segment_log_multiplier": 10,
+    "storage_cap_bytes": 20000000000,
+    "temporary_write_bytes": 277718413,
+    "within_storage_cap": true
+  },
+  "environment": {
+    "cuda_build": "12.6",
+    "deterministic_algorithms": true,
+    "interop_threads": 1,
+    "python": "sources/5679dedf48847a55bd3e/python",
+    "python_sha256": "df23391eb5ab66f005be15f792d55766d7ce96198e9e10df2aea72aec8c686ea",
+    "threads": 1,
+    "torch_version": "2.9.1+cu126"
+  },
+  "inputs_sha256": "0cb481bd2ff162dd81eb9e90560429e82a64c55f71ae49e9f8ea02195898de5b",
+  "run_options": {
+    "act_steps": 8,
+    "execution": {
+      "cap_seconds": 86400.0,
+      "fixed_T": 38912,
+      "max_allocations": 10,
+      "reserve_seconds": 10800.0
+    },
+    "training_data": {
+      "count": 524288,
+      "path": "sources/77b94a1642bbfd76843b/train.jsonl",
+      "sha256": "04d38aa13ec71c6f7fe6a8fbdba7b7d682bfc956007bdcef520bea050da5e009"
+    }
+  },
+  "schedule": {
+    "T": 38912,
+    "accumulation_steps": 2,
+    "available_main_seconds": 75457.56922828034,
+    "batch": 2048,
+    "calibration_charged_seconds": 142.43077171966434,
+    "cap_seconds": 86400.0,
+    "effective_batch": 4096,
+    "fixed_T": 38912,
+    "memory_threshold_bytes": 44000000000,
+    "next_block_projected_seconds": 77414.9413215369,
+    "planning_seconds": 75600.0,
+    "projected_seconds": 73544.7421079604,
+    "projected_total_charged_seconds": 73687.17287968006,
+    "reserve_seconds": 10800.0,
+    "selection_reason": "first_complete_ACT8_microbatch_within_44GB",
+    "steps": 8,
+    "timing_inputs": {
+      "checkpoint_seconds": 1.6271265745162964,
+      "evaluation_seconds": 15.403617751784623,
+      "fixed_overhead_seconds": 10.957050006836653,
+      "seconds_per_update": 1.8814299166260753
+    }
+  },
+  "schema": "experiment",
+  "source_sha256": {
+    "qdriver/__init__.py": "ba790d0de73821e68dc699227653386f56f341c3baf524178f5b4e2829f1694d",
+    "qdriver/__main__.py": "93f5b36bd8295d11cd1f7ae48a0507bd065c6913fbbcb12b28aab8961032f85f",
+    "qdriver/accounting.py": "fb580f034c56e0748494530654939ba17c0e94b0383b61a699e529d2606ac580",
+    "qdriver/common.py": "4b5ec15778057f521b7ae34780b62617f83afa244b13a58ac689e2ce08257f75",
+    "qdriver/controller.py": "6568a8e3313883b6253f39cacd0b6e3c984ffb6608df99af3e464d35b3118784",
+    "qdriver/engine.py": "316a6d46501e7466ff655ca3d07fd6cd10828eab309509e1b493ff2295c9f016",
+    "qdriver/guard.py": "133453631130b1d3b5195a03d4822096171d6e6d78318b0a05391896137ecb43",
+    "qdriver/rules.py": "1f7a57deba158a65d1709ac2ecfc07c2d24c97f890b446db71ca286953f87eb8",
+    "qdriver/storage.py": "846f355a72e52d4dd5c907127ce5eb8ea4e8b80ee26a9426834f4fa979bbe7bd",
+    "qdriver/training.py": "9499efe473f046760a1486e39de7695411b6fd9cf2f8bff56abf30f5536c8e0e",
+    "qdriver/executor.py": "16a4b1696eb9b0f1e378447823a8a0fcd062ae2c65fdbffb7ba0254879f067af",
+    "qdriver/workload.py": "c77df8ca540ae043df553ae05e079ac92c78b98a5352569a7770edcfa4414914"
+  }
+}

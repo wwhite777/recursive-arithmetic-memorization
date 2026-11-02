@@ -1,0 +1,16 @@
+{
+ "pruned_utc": "2026-10-26T16:45:46.643780+00:00",
+ "reason": "sw262b calibration probes",
+ "files": [
+  {
+   "path": "segment-01/probe-b1024-s8/checkpoints/u000000000-64025992514647d491793ebecc4e82ad.pt",
+   "bytes": 109215194,
+   "sha256": "58b65643a38a0f812876c75b344592ce49bc5cfb27614220c2736605f768ba04"
+  },
+  {
+   "path": "segment-01/probe-b1024-s8/checkpoints/u000000048-5a668ac4aa654b0582aa544de1727b45.pt",
+   "bytes": 275091011,
+   "sha256": "ce55674f80d1f0d1da95de623af9eff6216d867d5b3cc4e8c670eb78a9e8f039"
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+{
+  "GPU_hours": 0,
+  "comparisons": [
+    "next batch",
+    "dropout masks",
+    "3 keyed full-shape noise draws",
+    "metric",
+    "trainer",
+    "sampler"
+  ],
+  "status": "EXACT",
+  "update": 17
+}

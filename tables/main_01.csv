@@ -1,0 +1,11 @@
+Component,Published detail,Implemented choice,Status / reason
+Data generation,Sample operands and operators,Sample attainable targets; canonical labels,Departs / deterministic labels
+Multiset split,Common held-out pool,Separate ID and OOD buckets,Departs / study design
+Dataset cardinality,Unspecified,Finite training files and fixed development rows,Unspecified / bounded comparison
+Backbone,Shared post-normalization Transformer,Shared stack and operator head,Follows / head details unspecified
+Halting,Learned halting with auxiliary losses,Fixed recurrence counts; supervised loss,Departs / explicit computation
+Initial states,Learned vectors,Parameterized vectors; derivative truncation prevents their learning,Departs / truncation interaction
+Batch,Physical batch,Physical batch or exact gradient accumulation,Departs / memory bound
+Carry and clocks,Detached carry; incomplete clock details,Held batches; update-based schedule and averaging,Unspecified / explicit conventions
+Puzzle embeddings,Vectors indexed by puzzle identity,No puzzle-identity parameter table,Departs / unspecified arithmetic interface
+Evaluation,Full recurrence budget; exact accuracy,Final-step strict and semantic scores,Departs / fixed evaluation convention

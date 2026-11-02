@@ -1,0 +1,19 @@
+{
+  "checkpoint": {
+    "checkpoint_seconds": 1.0304492907598615,
+    "identities": {
+      "config_sha256": "9b96b2353d13e2bca9fecdd1cd580add2d27d9174eb99d40fdc4b4811ad82fe0",
+      "inputs_sha256": "0cb481bd2ff162dd81eb9e90560429e82a64c55f71ae49e9f8ea02195898de5b",
+      "manifest_sha256": "e593bdf45c87e32a05859ff7c587ec2402cfcb5c67f9e668597b3ac6339fe55a",
+      "source_sha256": "98ce43fee58ef73a7834b241af5eeb4853473823d0220465bb9651ba22c2c5bb"
+    },
+    "path": "checkpoints/u000038912-2ebbb77d19ce4582bcb249777b95b086.pt",
+    "sha256": "24d130955292442173df16c320a2b54e47428e3c0f4726f2a29b9c8c3f70e8aa",
+    "update": 38912
+  },
+  "primary_steps": 8,
+  "selection": "earliest checkpoint at maximum primary EMA-ID strict_correct",
+  "strict_correct": 1361,
+  "total": 2048,
+  "update": 38912
+}

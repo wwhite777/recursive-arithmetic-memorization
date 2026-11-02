@@ -1,0 +1,148 @@
+{
+  "cap_seconds": 86400,
+  "prior_charge": {
+    "accounting_path": "sources/e65d5885f4b2b4146874/ACCOUNTING.json",
+    "accounting_sha256": "785f493a770697523ae675def940c78ee11a7a596d8c86a3290a0c5456095272",
+    "allocation_count": 1,
+    "charged_seconds": 46.12347084842622,
+    "root": "sources/ddac5d8d901efdc4ada5/source"
+  },
+  "schema": "experiment",
+  "segments": [
+    {
+      "actual_exit": 0,
+      "cap_excess_seconds": 0,
+      "cap_watchdog": null,
+      "charged_seconds": 45.88872317131609,
+      "close_observed_monotonic": 4235835.694180665,
+      "ended_monotonic": 4235835.694180665,
+      "ended_utc": "2026-10-17T09:49:19.993038+00:00",
+      "gpu_uuid": "GPU-ac3026d5-0332-dbc3-c317-4214c505044e",
+      "manifest_sha256": "369c88c86d3331bc9f2bf0cdb8f5dc4903a8534fb5379022834de7e689852d6b",
+      "number": 1,
+      "phase": "calibrate",
+      "signals": [],
+      "started_monotonic": 4235789.805457493,
+      "started_utc": "2026-10-17T09:48:34.104299+00:00",
+      "status": "CALIBRATED",
+      "executor_identity": {
+        "command": "sources/5679dedf48847a55bd3e/python -B -m qdriver.executor calibrate --root sources/66cfd86fbc185a5c33cd/source --segment sources/53d05608cc68a363e49c/segment-01 --parent 504173 --manifest-sha256 369c88c86d3331bc9f2bf0cdb8f5dc4903a8534fb5379022834de7e689852d6b --permit sources/d1c8909cff26f10fbb0a/ADMITTED.json",
+        "pgrp": 504202,
+        "pid": 504202,
+        "ppid": 504173,
+        "session": 504202,
+        "start_ticks": 423578980,
+        "start_time": "2026-10-17T09:48:33.800000+00:00",
+        "uid": 1011
+      },
+      "executor_result": {
+        "actual_executor_exit": 0,
+        "calibration": "sources/a7c538eb667e17d7e766/CALIBRATION.json",
+        "ended_utc": "2026-10-17T09:49:19.446811+00:00",
+        "environment": {
+          "cuda_build": "12.6",
+          "deterministic_algorithms": true,
+          "interop_threads": 1,
+          "python": "sources/5679dedf48847a55bd3e/python",
+          "python_sha256": "df23391eb5ab66f005be15f792d55766d7ce96198e9e10df2aea72aec8c686ea",
+          "threads": 1,
+          "torch_version": "2.9.1+cu126"
+        },
+        "schedule": {
+          "T": 206848,
+          "available_main_seconds": 75600,
+          "batch": 1024,
+          "calibration_charged_seconds": 0,
+          "cap_seconds": 86400,
+          "memory_threshold_bytes": 44000000000,
+          "next_block_projected_seconds": 75909.65726017486,
+          "planning_seconds": 75600,
+          "preferred_failure": "selected calibration did not complete",
+          "projected_seconds": 75165.46552209649,
+          "projected_total_charged_seconds": 75165.46552209649,
+          "reserve_seconds": 10800,
+          "selection_reason": "preferred_calibration_failed",
+          "steps": 8,
+          "timing_inputs": {
+            "checkpoint_seconds": 6.283730844035745,
+            "evaluation_seconds": 5.205816894769669,
+            "fixed_overhead_seconds": 2.099976181052625,
+            "seconds_per_update": 0.35776474137674086
+          }
+        },
+        "started_utc": "2026-10-17T09:48:34.167606+00:00",
+        "status": "CALIBRATED"
+      }
+    },
+    {
+      "actual_exit": -9,
+      "cap_excess_seconds": 0,
+      "cap_watchdog": null,
+      "charged_seconds": 2054.8564633615315,
+      "close_observed_monotonic": 4237979.658720008,
+      "ended_monotonic": 4237979.658720008,
+      "ended_utc": "2026-10-17T10:25:03.957577+00:00",
+      "gpu_uuid": "GPU-ac3026d5-0332-dbc3-c317-4214c505044e",
+      "manifest_sha256": "5d03321422b0d42c3a5dc1aca9b2900b310509a700451243d587c671e67bdc1a",
+      "number": 2,
+      "phase": "train",
+      "signals": [
+        {
+          "identity": {
+            "command": "sources/5679dedf48847a55bd3e/python -B -m qdriver.executor train --root sources/66cfd86fbc185a5c33cd/source --segment sources/4c072fa2cb54921dc9ad/segment-02 --parent 506958 --manifest-sha256 5d03321422b0d42c3a5dc1aca9b2900b310509a700451243d587c671e67bdc1a --permit sources/e176f0e2b06d992322a2/ADMITTED.json",
+            "pgrp": 506997,
+            "pid": 506997,
+            "ppid": 506958,
+            "session": 506997,
+            "start_ticks": 423592480,
+            "start_time": "2026-10-17T09:50:48.800000+00:00",
+            "uid": 1011
+          },
+          "signal": 9
+        }
+      ],
+      "started_monotonic": 4235924.802256647,
+      "started_utc": "2026-10-17T09:50:49.101100+00:00",
+      "status": "DEVICE_CHECK",
+      "executor_identity": {
+        "command": "sources/5679dedf48847a55bd3e/python -B -m qdriver.executor train --root sources/66cfd86fbc185a5c33cd/source --segment sources/4c072fa2cb54921dc9ad/segment-02 --parent 506958 --manifest-sha256 5d03321422b0d42c3a5dc1aca9b2900b310509a700451243d587c671e67bdc1a --permit sources/e176f0e2b06d992322a2/ADMITTED.json",
+        "pgrp": 506997,
+        "pid": 506997,
+        "ppid": 506958,
+        "session": 506997,
+        "start_ticks": 423592480,
+        "start_time": "2026-10-17T09:50:48.800000+00:00",
+        "uid": 1011
+      },
+      "executor_result": null
+    },
+    {
+      "actual_exit": -15,
+      "cap_excess_seconds": 0,
+      "cap_watchdog": null,
+      "charged_seconds": 1104.7133886609226,
+      "close_observed_monotonic": 4239085.340936595,
+      "ended_monotonic": 4239085.340936595,
+      "ended_utc": "2026-10-17T10:43:29.639798+00:00",
+      "gpu_uuid": "GPU-ac3026d5-0332-dbc3-c317-4214c505044e",
+      "manifest_sha256": "5d03321422b0d42c3a5dc1aca9b2900b310509a700451243d587c671e67bdc1a",
+      "number": 3,
+      "phase": "train",
+      "signals": [],
+      "started_monotonic": 4237980.627547934,
+      "started_utc": "2026-10-17T10:25:04.926389+00:00",
+      "status": "ERROR",
+      "executor_identity": {
+        "command": "sources/5679dedf48847a55bd3e/python -B -m qdriver.executor train --root sources/66cfd86fbc185a5c33cd/source --segment sources/e15fe24292245dc1413a/segment-03 --parent 506958 --manifest-sha256 5d03321422b0d42c3a5dc1aca9b2900b310509a700451243d587c671e67bdc1a --permit sources/70d8210c85dd6943f67d/ADMITTED.json",
+        "pgrp": 566669,
+        "pid": 566669,
+        "ppid": 506958,
+        "session": 566669,
+        "start_ticks": 423798063,
+        "start_time": "2026-10-17T10:25:04.630000+00:00",
+        "uid": 1011
+      },
+      "executor_result": null
+    }
+  ]
+}

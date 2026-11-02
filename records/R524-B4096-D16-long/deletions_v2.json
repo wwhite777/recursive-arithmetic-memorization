@@ -1,0 +1,11 @@
+{
+ "pruned_utc": "2026-10-25T00:30:44.877436+00:00",
+ "reason": "storage headroom for the sweep (DECISION_experiment: final and best-EMA checkpoints kept; this one is neither)",
+ "files": [
+  {
+   "path": "curve/checkpoints/u000153600-a689e091280e42f59121ffaeaf6ab853.pt",
+   "bytes": 277501059,
+   "sha256": "ea30ff029e3f46504551bff44021989aecbfa9c0f2f0d4f69f5b712705059299"
+  }
+ ]
+}

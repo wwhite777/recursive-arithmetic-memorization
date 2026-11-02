@@ -1,0 +1,40 @@
+{
+  "cap_seconds": 86400,
+  "charged_seconds": 3297.896377939731,
+  "gpu_hours": 0.9160823272054808,
+  "prior_charge": {
+    "allocation_count": 4,
+    "charged_seconds": 3251.5820460421965,
+    "schema": "experiment",
+    "sources": [
+      {
+        "accounting_path": "sources/e65d5885f4b2b4146874/ACCOUNTING.json",
+        "accounting_sha256": "785f493a770697523ae675def940c78ee11a7a596d8c86a3290a0c5456095272",
+        "allocation_count": 1,
+        "charged_seconds": 46.12347084842622,
+        "inherited_charged_seconds": 0,
+        "own_charged_seconds": 46.12347084842622,
+        "root": "sources/ddac5d8d901efdc4ada5/source"
+      },
+      {
+        "accounting_path": "sources/400605cc7040536cb05a/ACCOUNTING.json",
+        "accounting_sha256": "a33cd03b054203bc3ee5245c27c1d1e277053bf3b2296cb8b403245549cee3a9",
+        "allocation_count": 3,
+        "charged_seconds": 3251.5820460421965,
+        "inherited_charged_seconds": 46.12347084842622,
+        "own_charged_seconds": 3205.4585751937702,
+        "root": "sources/66cfd86fbc185a5c33cd/source"
+      }
+    ]
+  },
+  "result": {
+    "error": "projected aggregate peak exceeds 20 GB storage cap",
+    "status": "ERROR",
+    "traceback": "Traceback (most recent call last):\n  File \"sources/746336372819f87318ce/controller.py\", line 216, in run\n    return self._run(mode)\n  File \"sources/746336372819f87318ce/controller.py\", line 256, in _run\n    require(projection['within_storage_cap'], 'projected aggregate peak exceeds 20 GB storage cap')\n  File \"sources/a56311b2a313a4e0afd6/common.py\", line 26, in require\n    raise ValueError(message)\nValueError: projected aggregate peak exceeds 20 GB storage cap\n"
+  },
+  "schema": "experiment",
+  "scope": "One S22 seed101 engineering qualification; no policy efficacy/audit verdict",
+  "segment_count": 1,
+  "status": "ERROR",
+  "updated_utc": "2026-10-17T10:44:46.714336+00:00"
+}

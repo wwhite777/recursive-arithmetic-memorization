@@ -1,0 +1,5 @@
+Setting and checkpoint,Population,Depth,Strict / semantic,Rows
+R65-original_u102400,id_dev,8,776 / 819,"2,048"
+R65-original_u102400,original_train,8,922 / 954,"2,048"
+R524-B4096-D16-short_final,original_train,8,"1,139 / 1,186","2,048"
+R524-B4096-D16-short_final,new_train,8,"1,045 / 1,098","2,048"

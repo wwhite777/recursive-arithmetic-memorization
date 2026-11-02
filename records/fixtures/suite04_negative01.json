@@ -1,0 +1,26 @@
+{
+  "GPU_hours": 0,
+  "errors": 0,
+  "failures": 1,
+  "interpretation": "The equality assertion fails; the enclosing suite requires this failure and exits0.",
+  "log_sha256": "3f66c2209bec82410c2c86a76200851ebc47b96aee4f1fb40ac5eda56aa81a6b",
+  "mutation": "clip norm0.001 after each micro-batch backward",
+  "schema": "experiment",
+  "source_sha256": {
+    "qdriver/__init__.py": "ba790d0de73821e68dc699227653386f56f341c3baf524178f5b4e2829f1694d",
+    "qdriver/__main__.py": "93f5b36bd8295d11cd1f7ae48a0507bd065c6913fbbcb12b28aab8961032f85f",
+    "qdriver/accounting.py": "96d4490b80b4ba50b0a1d8329f59d29bfd0a9562655f5fca92153c91d5815a87",
+    "qdriver/common.py": "4b5ec15778057f521b7ae34780b62617f83afa244b13a58ac689e2ce08257f75",
+    "qdriver/controller.py": "d92a470fddc7f04433208fa1c228d7454e3539dcbdc570cbd84aba446cee37b4",
+    "qdriver/engine.py": "307fe471a3b78d392298c73a37d7581a8bbf4b81ca11ad4b5a940a282709fc37",
+    "qdriver/guard.py": "133453631130b1d3b5195a03d4822096171d6e6d78318b0a05391896137ecb43",
+    "qdriver/rules.py": "2452fa3c57a538cd09d7fb69ba53e78f1d557d54b8b03c6852246aefc86a6b3d",
+    "qdriver/storage.py": "94516a4069a95fd52dc89266f73e9b727e10c25e7fd46b3a5b1b244d7518db85",
+    "qdriver/training.py": "6dff0d257d5cd9d4ce8e9fbd4cd2b83fd57b455d199d32df0dbbc178b2c5f347",
+    "qdriver/executor.py": "a0c072c413670338461b51ad63b31e1ef2c13516335dcf06859e16f519245e79",
+    "qdriver/workload.py": "3951380a1f4f1ba855162a9386a38a79089baaaa309e774eb8feb8482494c427"
+  },
+  "status": "EXPECTED_FAIL",
+  "tests_run": 1,
+  "unittest_success": false
+}

@@ -1,0 +1,16 @@
+{
+ "pruned_utc": "2026-10-25T00:30:11.372264+00:00",
+ "reason": "R65-resampled calibration probes",
+ "files": [
+  {
+   "path": "segment-01/probe-b1024-s8/checkpoints/u000000000-cea867ebaac1478c8cbd85445c1a19b4.pt",
+   "bytes": 109215194,
+   "sha256": "5245c96fee7b08d8d6af1904a5f800131766acaec34210ec89958ed55ce25081"
+  },
+  {
+   "path": "segment-01/probe-b1024-s8/checkpoints/u000000048-14ca3695a96044a79053a46f5e3e0731.pt",
+   "bytes": 273518147,
+   "sha256": "02ee2fc2b487836a25336b0ef2f3adf82d90857eb201368d5f872e658fd4e623"
+  }
+ ]
+}

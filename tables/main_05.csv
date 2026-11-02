@@ -1,0 +1,7 @@
+Setting,Source sample,Seen strict / semantic,Unseen strict / semantic,"Strict gap, pp"
+R65-resampled,Original,251 / 251 of 252,"606 / 641 of 1,796",65.86
+R65-resampled,Added,249 / 249 of 250,"474 / 501 of 1,798",73.24
+R131,Original,427 / 427 of 516,"757 / 798 of 1,532",33.34
+R131,Added,414 / 417 of 522,"636 / 690 of 1,526",37.63
+R262,Original,"491 / 514 of 1,024","472 / 487 of 1,024",1.86
+R262,Added,"441 / 456 of 1,069",372 / 396 of 979,3.26

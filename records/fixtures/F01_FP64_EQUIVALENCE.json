@@ -1,0 +1,126 @@
+{
+  "ACT_steps": 16,
+  "K": [
+    1,
+    2,
+    4
+  ],
+  "checks": [
+    "parameters",
+    "optimizer moments and clocks",
+    "EMA",
+    "loss",
+    "carry",
+    "masks",
+    "global RNG",
+    "trace",
+    "strict counts"
+  ],
+  "effective_batch": 8,
+  "max_abs_error": {
+    "1": {
+      "carry": 0.0,
+      "ema": 0.0,
+      "loss": 0.0,
+      "optimizer": 0.0,
+      "parameters": 0.0
+    },
+    "2": {
+      "carry": 1.6320238438449763e-08,
+      "ema": 6.8833827526759706e-15,
+      "loss": 1.5689893828607637e-10,
+      "optimizer": 6.342298214390141e-11,
+      "parameters": 7.43766159772008e-13
+    },
+    "4": {
+      "carry": 4.487766995242559e-07,
+      "ema": 1.919020498064583e-13,
+      "loss": 2.3738269128159573e-09,
+      "optimizer": 1.7966646365108474e-09,
+      "parameters": 2.017011557775561e-11
+    }
+  },
+  "oracle": "unmodified ACT16 full-physical-batch Trainer.step using original ArithmeticModel.prepare",
+  "stochastic": "nonzero experiment dropout/noise; full-shape draws, exact masks; variable target counts",
+  "synchronized_checks": [
+    {
+      "K": 1,
+      "gradient_max_abs_error": 0.0,
+      "update": 1
+    },
+    {
+      "K": 2,
+      "gradient_max_abs_error": 8.326672684688674e-17,
+      "update": 1
+    },
+    {
+      "K": 4,
+      "gradient_max_abs_error": 8.326672684688674e-17,
+      "update": 1
+    },
+    {
+      "K": 1,
+      "gradient_max_abs_error": 0.0,
+      "update": 16
+    },
+    {
+      "K": 2,
+      "gradient_max_abs_error": 9.71445146547012e-17,
+      "update": 16
+    },
+    {
+      "K": 4,
+      "gradient_max_abs_error": 8.326672684688674e-17,
+      "update": 16
+    },
+    {
+      "K": 1,
+      "gradient_max_abs_error": 0.0,
+      "update": 17
+    },
+    {
+      "K": 2,
+      "gradient_max_abs_error": 5.551115123125783e-17,
+      "update": 17
+    },
+    {
+      "K": 4,
+      "gradient_max_abs_error": 6.938893903907228e-17,
+      "update": 17
+    },
+    {
+      "K": 1,
+      "gradient_max_abs_error": 0.0,
+      "update": 40
+    },
+    {
+      "K": 2,
+      "gradient_max_abs_error": 9.71445146547012e-17,
+      "update": 40
+    },
+    {
+      "K": 4,
+      "gradient_max_abs_error": 9.71445146547012e-17,
+      "update": 40
+    }
+  ],
+  "tolerances": {
+    "40_update_carry": {
+      "atol": 1e-06,
+      "rtol": 1e-06
+    },
+    "40_update_optimizer_and_metrics_including_loss": {
+      "atol": 1e-08,
+      "rtol": 1e-08
+    },
+    "40_update_parameters_EMA_and_other_state": {
+      "atol": 1e-10,
+      "rtol": 1e-10
+    },
+    "synchronized_single_update_all_state_gradient_and_metrics": {
+      "atol": 2e-11,
+      "rtol": 2e-10
+    }
+  },
+  "updates": 40
+}

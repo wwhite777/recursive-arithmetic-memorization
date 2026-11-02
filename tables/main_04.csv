@@ -1,0 +1,9 @@
+Setting,Evaluation depth,Original training sample,Added training sample,CPU development
+R65-original,8 (primary),"2,044 / 2,044",Not scored,733 / 775
+S65,1 (primary),"2,045 / 2,045",362 / 380,578 / 597
+R524,8 (primary),"992 / 1,034",863 / 906,"1,001 / 1,038"
+S524,1 (primary),737 / 755,549 / 574,740 / 758
+R524-B4096-D16-short,16 (primary),"1,136 / 1,182","1,049 / 1,103","1,137 / 1,180"
+R524-B4096-D16-short,8 (secondary),"1,139 / 1,186","1,045 / 1,098","1,139 / 1,187"
+R524-B4096-D16-long,16 (primary),"1,375 / 1,404","1,327 / 1,369","1,285 / 1,329"
+R524-B4096-D8-short,8 (primary),"1,421 / 1,458","1,366 / 1,418","1,362 / 1,440"

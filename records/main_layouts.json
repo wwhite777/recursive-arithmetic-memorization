@@ -1,0 +1,528 @@
+{
+  "main_02": {
+    "fields": [
+      "Setting",
+      "Training rows",
+      "Batch",
+      "Depth",
+      "Updates",
+      "Fresh presentations",
+      "Participations",
+      "GPU-h"
+    ],
+    "rows": [
+      {
+        "Setting": "R65-original",
+        "Training rows": "",
+        "Batch": "",
+        "Depth": "",
+        "Updates": "",
+        "Fresh presentations": "",
+        "Participations": "",
+        "GPU-h": ""
+      },
+      {
+        "Setting": "R524",
+        "Training rows": "",
+        "Batch": "",
+        "Depth": "",
+        "Updates": "",
+        "Fresh presentations": "",
+        "Participations": "",
+        "GPU-h": ""
+      },
+      {
+        "Setting": "R524-B4096-D16-short",
+        "Training rows": "",
+        "Batch": "",
+        "Depth": "",
+        "Updates": "",
+        "Fresh presentations": "",
+        "Participations": "",
+        "GPU-h": ""
+      },
+      {
+        "Setting": "R524-B4096-D16-long",
+        "Training rows": "",
+        "Batch": "",
+        "Depth": "",
+        "Updates": "",
+        "Fresh presentations": "",
+        "Participations": "",
+        "GPU-h": ""
+      },
+      {
+        "Setting": "S65",
+        "Training rows": "",
+        "Batch": "",
+        "Depth": "",
+        "Updates": "",
+        "Fresh presentations": "",
+        "Participations": "",
+        "GPU-h": ""
+      },
+      {
+        "Setting": "S524",
+        "Training rows": "",
+        "Batch": "",
+        "Depth": "",
+        "Updates": "",
+        "Fresh presentations": "",
+        "Participations": "",
+        "GPU-h": ""
+      },
+      {
+        "Setting": "R524-B4096-D8-short",
+        "Training rows": "",
+        "Batch": "",
+        "Depth": "",
+        "Updates": "",
+        "Fresh presentations": "",
+        "Participations": "",
+        "GPU-h": ""
+      },
+      {
+        "Setting": "R65-resampled",
+        "Training rows": "",
+        "Batch": "",
+        "Depth": "",
+        "Updates": "",
+        "Fresh presentations": "",
+        "Participations": "",
+        "GPU-h": ""
+      },
+      {
+        "Setting": "R131",
+        "Training rows": "",
+        "Batch": "",
+        "Depth": "",
+        "Updates": "",
+        "Fresh presentations": "",
+        "Participations": "",
+        "GPU-h": ""
+      },
+      {
+        "Setting": "R262",
+        "Training rows": "",
+        "Batch": "",
+        "Depth": "",
+        "Updates": "",
+        "Fresh presentations": "",
+        "Participations": "",
+        "GPU-h": ""
+      }
+    ]
+  },
+  "main_03": {
+    "fields": [
+      "Setting",
+      "Evaluation depth",
+      "Final strict / semantic",
+      "Best strict / semantic",
+      "Best update",
+      "Evaluations"
+    ],
+    "rows": [
+      {
+        "Setting": "R65-original",
+        "Evaluation depth": "8 (primary)",
+        "Final strict / semantic": "",
+        "Best strict / semantic": "",
+        "Best update": "",
+        "Evaluations": ""
+      },
+      {
+        "Setting": "R524",
+        "Evaluation depth": "8 (primary)",
+        "Final strict / semantic": "",
+        "Best strict / semantic": "",
+        "Best update": "",
+        "Evaluations": ""
+      },
+      {
+        "Setting": "R524-B4096-D16-short",
+        "Evaluation depth": "16 (primary)",
+        "Final strict / semantic": "",
+        "Best strict / semantic": "",
+        "Best update": "",
+        "Evaluations": ""
+      },
+      {
+        "Setting": "R524-B4096-D16-short",
+        "Evaluation depth": "8 (secondary)",
+        "Final strict / semantic": "",
+        "Best strict / semantic": "",
+        "Best update": "",
+        "Evaluations": ""
+      },
+      {
+        "Setting": "R524-B4096-D16-long",
+        "Evaluation depth": "16 (primary)",
+        "Final strict / semantic": "",
+        "Best strict / semantic": "",
+        "Best update": "",
+        "Evaluations": ""
+      },
+      {
+        "Setting": "R524-B4096-D16-long",
+        "Evaluation depth": "8 (secondary)",
+        "Final strict / semantic": "",
+        "Best strict / semantic": "",
+        "Best update": "",
+        "Evaluations": ""
+      },
+      {
+        "Setting": "S65",
+        "Evaluation depth": "1 (primary)",
+        "Final strict / semantic": "",
+        "Best strict / semantic": "",
+        "Best update": "",
+        "Evaluations": ""
+      },
+      {
+        "Setting": "S524",
+        "Evaluation depth": "1 (primary)",
+        "Final strict / semantic": "",
+        "Best strict / semantic": "",
+        "Best update": "",
+        "Evaluations": ""
+      },
+      {
+        "Setting": "R524-B4096-D8-short",
+        "Evaluation depth": "8 (primary)",
+        "Final strict / semantic": "",
+        "Best strict / semantic": "",
+        "Best update": "",
+        "Evaluations": ""
+      },
+      {
+        "Setting": "R524-B4096-D8-short",
+        "Evaluation depth": "16 (secondary)",
+        "Final strict / semantic": "",
+        "Best strict / semantic": "",
+        "Best update": "",
+        "Evaluations": ""
+      },
+      {
+        "Setting": "R65-resampled",
+        "Evaluation depth": "8 (primary)",
+        "Final strict / semantic": "",
+        "Best strict / semantic": "",
+        "Best update": "",
+        "Evaluations": ""
+      },
+      {
+        "Setting": "R131",
+        "Evaluation depth": "8 (primary)",
+        "Final strict / semantic": "",
+        "Best strict / semantic": "",
+        "Best update": "",
+        "Evaluations": ""
+      },
+      {
+        "Setting": "R262",
+        "Evaluation depth": "8 (primary)",
+        "Final strict / semantic": "",
+        "Best strict / semantic": "",
+        "Best update": "",
+        "Evaluations": ""
+      }
+    ]
+  },
+  "main_04": {
+    "fields": [
+      "Setting",
+      "Evaluation depth",
+      "Original training sample",
+      "Added training sample",
+      "CPU development"
+    ],
+    "rows": [
+      {
+        "Setting": "R65-original",
+        "Evaluation depth": "8 (primary)",
+        "Original training sample": "",
+        "Added training sample": "Not scored",
+        "CPU development": ""
+      },
+      {
+        "Setting": "S65",
+        "Evaluation depth": "1 (primary)",
+        "Original training sample": "",
+        "Added training sample": "",
+        "CPU development": ""
+      },
+      {
+        "Setting": "R524",
+        "Evaluation depth": "8 (primary)",
+        "Original training sample": "",
+        "Added training sample": "",
+        "CPU development": ""
+      },
+      {
+        "Setting": "S524",
+        "Evaluation depth": "1 (primary)",
+        "Original training sample": "",
+        "Added training sample": "",
+        "CPU development": ""
+      },
+      {
+        "Setting": "R524-B4096-D16-short",
+        "Evaluation depth": "16 (primary)",
+        "Original training sample": "",
+        "Added training sample": "",
+        "CPU development": ""
+      },
+      {
+        "Setting": "R524-B4096-D16-short",
+        "Evaluation depth": "8 (secondary)",
+        "Original training sample": "",
+        "Added training sample": "",
+        "CPU development": ""
+      },
+      {
+        "Setting": "R524-B4096-D16-long",
+        "Evaluation depth": "16 (primary)",
+        "Original training sample": "",
+        "Added training sample": "",
+        "CPU development": ""
+      },
+      {
+        "Setting": "R524-B4096-D8-short",
+        "Evaluation depth": "8 (primary)",
+        "Original training sample": "",
+        "Added training sample": "",
+        "CPU development": ""
+      }
+    ]
+  },
+  "main_05": {
+    "fields": [
+      "Setting",
+      "Source sample",
+      "Seen strict / semantic",
+      "Unseen strict / semantic",
+      "Strict gap, pp"
+    ],
+    "rows": [
+      {
+        "Setting": "R65-resampled",
+        "Source sample": "Original",
+        "Seen strict / semantic": "",
+        "Unseen strict / semantic": "",
+        "Strict gap, pp": ""
+      },
+      {
+        "Setting": "R65-resampled",
+        "Source sample": "Added",
+        "Seen strict / semantic": "",
+        "Unseen strict / semantic": "",
+        "Strict gap, pp": ""
+      },
+      {
+        "Setting": "R131",
+        "Source sample": "Original",
+        "Seen strict / semantic": "",
+        "Unseen strict / semantic": "",
+        "Strict gap, pp": ""
+      },
+      {
+        "Setting": "R131",
+        "Source sample": "Added",
+        "Seen strict / semantic": "",
+        "Unseen strict / semantic": "",
+        "Strict gap, pp": ""
+      },
+      {
+        "Setting": "R262",
+        "Source sample": "Original",
+        "Seen strict / semantic": "",
+        "Unseen strict / semantic": "",
+        "Strict gap, pp": ""
+      },
+      {
+        "Setting": "R262",
+        "Source sample": "Added",
+        "Seen strict / semantic": "",
+        "Unseen strict / semantic": "",
+        "Strict gap, pp": ""
+      }
+    ]
+  },
+  "main_06": {
+    "fields": [
+      "Setting",
+      "Evaluation depth",
+      "CPU development",
+      "Fresh ID",
+      "Fresh OOD",
+      "Gap, pp"
+    ],
+    "rows": [
+      {
+        "Setting": "R524-B4096-D16-short",
+        "Evaluation depth": "16 (primary)",
+        "CPU development": "",
+        "Fresh ID": "",
+        "Fresh OOD": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "R524-B4096-D16-short",
+        "Evaluation depth": "8 (secondary)",
+        "CPU development": "",
+        "Fresh ID": "",
+        "Fresh OOD": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "R524-B4096-D16-long",
+        "Evaluation depth": "16 (primary)",
+        "CPU development": "",
+        "Fresh ID": "",
+        "Fresh OOD": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "R524-B4096-D16-long",
+        "Evaluation depth": "8 (secondary)",
+        "CPU development": "",
+        "Fresh ID": "",
+        "Fresh OOD": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "S65",
+        "Evaluation depth": "1 (primary)",
+        "CPU development": "",
+        "Fresh ID": "",
+        "Fresh OOD": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "S524",
+        "Evaluation depth": "1 (primary)",
+        "CPU development": "",
+        "Fresh ID": "",
+        "Fresh OOD": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "R524-B4096-D8-short",
+        "Evaluation depth": "8 (primary)",
+        "CPU development": "",
+        "Fresh ID": "",
+        "Fresh OOD": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "R524-B4096-D8-short",
+        "Evaluation depth": "16 (secondary)",
+        "CPU development": "",
+        "Fresh ID": "",
+        "Fresh OOD": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "R65-resampled",
+        "Evaluation depth": "8 (primary)",
+        "CPU development": "",
+        "Fresh ID": "",
+        "Fresh OOD": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "R131",
+        "Evaluation depth": "8 (primary)",
+        "CPU development": "",
+        "Fresh ID": "",
+        "Fresh OOD": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "R262",
+        "Evaluation depth": "8 (primary)",
+        "CPU development": "",
+        "Fresh ID": "",
+        "Fresh OOD": "",
+        "Gap, pp": ""
+      }
+    ]
+  },
+  "main_07": {
+    "fields": [
+      "Setting",
+      "Evaluation depth",
+      "Five operands, n = 39",
+      "Six operands, n = 158",
+      "Seven operands, n = 322",
+      "Eight operands, n = 421"
+    ],
+    "rows": [
+      {
+        "Setting": "R524-B4096-D16-short",
+        "Evaluation depth": "16 (primary)",
+        "Five operands, n = 39": "",
+        "Six operands, n = 158": "",
+        "Seven operands, n = 322": "",
+        "Eight operands, n = 421": ""
+      },
+      {
+        "Setting": "R524-B4096-D16-long",
+        "Evaluation depth": "16 (primary)",
+        "Five operands, n = 39": "",
+        "Six operands, n = 158": "",
+        "Seven operands, n = 322": "",
+        "Eight operands, n = 421": ""
+      },
+      {
+        "Setting": "S65",
+        "Evaluation depth": "1 (primary)",
+        "Five operands, n = 39": "",
+        "Six operands, n = 158": "",
+        "Seven operands, n = 322": "",
+        "Eight operands, n = 421": ""
+      },
+      {
+        "Setting": "S524",
+        "Evaluation depth": "1 (primary)",
+        "Five operands, n = 39": "",
+        "Six operands, n = 158": "",
+        "Seven operands, n = 322": "",
+        "Eight operands, n = 421": ""
+      },
+      {
+        "Setting": "R524-B4096-D8-short",
+        "Evaluation depth": "8 (primary)",
+        "Five operands, n = 39": "",
+        "Six operands, n = 158": "",
+        "Seven operands, n = 322": "",
+        "Eight operands, n = 421": ""
+      },
+      {
+        "Setting": "R65-resampled",
+        "Evaluation depth": "8 (primary)",
+        "Five operands, n = 39": "",
+        "Six operands, n = 158": "",
+        "Seven operands, n = 322": "",
+        "Eight operands, n = 421": ""
+      },
+      {
+        "Setting": "R131",
+        "Evaluation depth": "8 (primary)",
+        "Five operands, n = 39": "",
+        "Six operands, n = 158": "",
+        "Seven operands, n = 322": "",
+        "Eight operands, n = 421": ""
+      },
+      {
+        "Setting": "R262",
+        "Evaluation depth": "8 (primary)",
+        "Five operands, n = 39": "",
+        "Six operands, n = 158": "",
+        "Seven operands, n = 322": "",
+        "Eight operands, n = 421": ""
+      }
+    ]
+  }
+}

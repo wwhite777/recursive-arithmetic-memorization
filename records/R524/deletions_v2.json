@@ -1,0 +1,16 @@
+{
+ "pruned_utc": "2026-10-19T11:38:50.557766+00:00",
+ "reason": "R524 terminal; experiment used the final u196608, which is kept",
+ "files": [
+  {
+   "path": "curve/checkpoints/u000178176-905b054278a34a91aaaa9eb869a22d9c.pt",
+   "bytes": 976779735,
+   "sha256": "d9c645ea89511f232f332bfdb9797d497d93b9ae2c82134113011554dce5ee53"
+  },
+  {
+   "path": "curve/checkpoints/u000194560-d20c0ae84eae401e95fe94c81733e1ad.pt",
+   "bytes": 976796567,
+   "sha256": "7288a8d5d0318dc98281c97d9ff7cad6bb836f0d2e2f872661014b6df3be600d"
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+{
+ "pruned_utc": "2026-10-25T20:35:22.190106+00:00",
+ "reason": "storage headroom; R65-resampled final u196608 and best u96256 kept",
+ "files": [
+  {
+   "path": "curve/checkpoints/u000194560-4ec9177f2e4c4fa3a7948f5a7d965690.pt",
+   "bytes": 273712515,
+   "sha256": "7a4709908cf730a6c3804e658d90c0cec25c3a54740a301b0a6c594d21647241"
+  }
+ ]
+}

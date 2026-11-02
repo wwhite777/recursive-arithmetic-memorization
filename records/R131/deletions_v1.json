@@ -1,0 +1,16 @@
+{
+ "pruned_utc": "2026-10-25T20:36:06.241814+00:00",
+ "reason": "R131 calibration probes",
+ "files": [
+  {
+   "path": "segment-01/probe-b1024-s8/checkpoints/u000000000-946dca66c9144ed09f7e4e3d66f13eeb.pt",
+   "bytes": 109215194,
+   "sha256": "5fd1be7e98be2e9a21ca89698228ac23ff814ccfffb80445828e7f7fa2a9e077"
+  },
+  {
+   "path": "segment-01/probe-b1024-s8/checkpoints/u000000048-0e6a95656e0c452b8139b3dec7e4da0e.pt",
+   "bytes": 274042435,
+   "sha256": "16ed4aac8b0135f45636e8fd1d55f6b47b3498fa56315a8f5ee7cc5d90b22484"
+  }
+ ]
+}

@@ -1,0 +1,885 @@
+{
+  "supplement_A01_components": {
+    "fields": [
+      "Component label",
+      "Component",
+      "Status",
+      "Implemented detail"
+    ],
+    "rows": [
+      {
+        "Component label": "A01",
+        "Component": "Arithmetic problem and operand range",
+        "Status": "Follows",
+        "Implemented detail": "Reverse Polish expressions; 3–8 operands, each drawn from 1–9."
+      },
+      {
+        "Component label": "A02",
+        "Component": "Operator set and exact division",
+        "Status": "Follows",
+        "Implemented detail": "Addition, subtraction, multiplication, and nonzero exact-integer division."
+      },
+      {
+        "Component label": "A03",
+        "Component": "Expression proposal distribution",
+        "Status": "Departs",
+        "Implemented detail": "Uniform proposed operand counts, digits, and Catalan shapes; enumerate attainable results instead of sampling operator assignments."
+      },
+      {
+        "Component label": "A04",
+        "Component": "Attainable targets, ties, and duplicates",
+        "Status": "Not Specified",
+        "Implemented detail": "Uniform attainable in-range target; lexicographically first valid tuple in +,-,*,/ order; reject duplicate inputs."
+      },
+      {
+        "Component label": "A05",
+        "Component": "Multiset split",
+        "Status": "Departs",
+        "Implemented detail": "Salted SHA256 assigns separate train/ID/OOD multiset buckets of 80/10/10."
+      },
+      {
+        "Component label": "A06",
+        "Component": "Target ranges",
+        "Status": "Follows",
+        "Implemented detail": "Training and ID results 0–101; OOD results 102–201."
+      },
+      {
+        "Component label": "A07",
+        "Component": "Training and evaluation population sizes",
+        "Status": "Not Specified",
+        "Implemented detail": "Dataset sizes vary across the completed settings; the development population is fixed."
+      },
+      {
+        "Component label": "A08",
+        "Component": "Padded input and supervised positions",
+        "Status": "Follows",
+        "Implemented detail": "Padded input, maximum 19 tokens; final result appended; loss at masked operator positions only."
+      },
+      {
+        "Component label": "A09",
+        "Component": "Arithmetic tokenization",
+        "Status": "Not Specified",
+        "Implemented detail": "Vocabulary 13; pad 0, mask 11, separator 12; result encoded digit by digit; digit tokens offset by 1."
+      },
+      {
+        "Component label": "A10",
+        "Component": "Output head",
+        "Status": "Not Specified",
+        "Implemented detail": "Bias-free four-class operator head applied to high states; loss gathers masked positions."
+      },
+      {
+        "Component label": "A11",
+        "Component": "Backbone dimensions and sharing",
+        "Status": "Follows",
+        "Implemented detail": "One shared four-layer stack; hidden width 512; eight heads."
+      },
+      {
+        "Component label": "A12",
+        "Component": "Activation, positional encoding, normalization",
+        "Status": "Follows",
+        "Implemented detail": "SwiGLU expansion setting 4, rotary positions, RMSNorm, bfloat16 forward."
+      },
+      {
+        "Component label": "A13",
+        "Component": "Backbone numerical conventions",
+        "Status": "Not Specified",
+        "Implemented detail": "Weighted RMSNorm epsilon 1e-5; RoPE theta 10000; SwiGLU width 1536, rounded to 256; noncausal valid-key attention; bias-free projections."
+      },
+      {
+        "Component label": "A14",
+        "Component": "Inner recurrence",
+        "Status": "Follows",
+        "Implemented detail": "Four high cycles; two low calls then one high call per cycle; inputs injected into low calls; shared stack."
+      },
+      {
+        "Component label": "A15",
+        "Component": "Bounded, gated low updates",
+        "Status": "Follows",
+        "Implemented detail": "Per-token low-update relative bound .7, epsilon 1e-8; detached divisor; sigmoid scalar gate; post-cycle low/high normalization."
+      },
+      {
+        "Component label": "A16",
+        "Component": "Gate initialization",
+        "Status": "Follows",
+        "Implemented detail": "Scale low-gate weights by .1; zero bias."
+      },
+      {
+        "Component label": "A17",
+        "Component": "Gradient horizon",
+        "Status": "Follows",
+        "Implemented detail": "S22 retains final two high cycles and both low calls in each; earlier high-cycle ancestry detached."
+      },
+      {
+        "Component label": "A18",
+        "Component": "Indirect truncation semantics",
+        "Status": "Not Specified",
+        "Implemented detail": "Earlier calls use no_grad; boundary low/high detach; no derivative transport through unrecorded low calls."
+      },
+      {
+        "Component label": "A19",
+        "Component": "ACT and training depth",
+        "Status": "Departs",
+        "Implemented detail": "Fixed eight-step trajectories in the default recursive, shallower larger-batch, and sweep settings; fixed sixteen-step trajectories in both deeper larger-batch settings. No adaptive stopping."
+      },
+      {
+        "Component label": "A20",
+        "Component": "Halting head and losses",
+        "Status": "Departs",
+        "Implemented detail": "No Q-head or auxiliary halting losses; operator supervision only."
+      },
+      {
+        "Component label": "A21",
+        "Component": "Detached carry",
+        "Status": "Follows",
+        "Implemented detail": "Return detached low/high states and detach incoming carry between fixed recurrence optimizer updates."
+      },
+      {
+        "Component label": "A22",
+        "Component": "ACT clock, resets, and row replacement",
+        "Status": "Not Specified",
+        "Implemented detail": "One optimizer/EMA update per fixed recurrence step; recompute embeddings; hold whole batch for 8/16 steps; reset all slots together."
+      },
+      {
+        "Component label": "A23",
+        "Component": "Initial states and effective learning",
+        "Status": "Departs",
+        "Implemented detail": "Parameterized low/high initial vectors receive no gradients in S22; optimizer skips them, including weight decay."
+      },
+      {
+        "Component label": "A24",
+        "Component": "Other initialization",
+        "Status": "Not Specified",
+        "Implemented detail": "Linear/embedding truncated normals at 1/sqrt(width or fan-in), bounds ±2 SD; initial-state SD 1; norm weights 1; biases zero."
+      },
+      {
+        "Component label": "A25",
+        "Component": "Dropout placement and mask lifetime",
+        "Status": "Follows",
+        "Implemented detail": "Masks at listed sites, embeddings and states; state masks share token positions; reuse across all cycles and fixed recurrence steps of held trajectory."
+      },
+      {
+        "Component label": "A26",
+        "Component": "Arithmetic regularization settings",
+        "Status": "Follows",
+        "Implemented detail": "Core dropout .025; low/high dropout .010; no convolution; relative noise .005; low gate enabled."
+      },
+      {
+        "Component label": "A27",
+        "Component": "ACT-step Gaussian noise",
+        "Status": "Follows",
+        "Implemented detail": "Perturb embeddings and both states each fixed recurrence step with detached per-position norm times .005 times standard Gaussian noise."
+      },
+      {
+        "Component label": "A28",
+        "Component": "Random stream details",
+        "Status": "Not Specified",
+        "Implemented detail": "SHA256-keyed seed/trajectory/site draws; noise also keys fixed recurrence step; full-batch draws sliced across micro-batches."
+      },
+      {
+        "Component label": "A29",
+        "Component": "Supervised objective",
+        "Status": "Follows",
+        "Implemented detail": "Stablemax cross-entropy at masked operator positions."
+      },
+      {
+        "Component label": "A30",
+        "Component": "Stablemax map and reduction",
+        "Status": "Not Specified",
+        "Implemented detail": "Piecewise s(x)=x+1 for x≥0, 1/(1−x) otherwise; class normalization; valid-token-weighted mean; one global accumulation denominator."
+      },
+      {
+        "Component label": "A31",
+        "Component": "Optimizer family and betas",
+        "Status": "Follows",
+        "Implemented detail": "Adam-atan2; beta1 .9 and beta2 .95 as Table 6 specifies."
+      },
+      {
+        "Component label": "A32",
+        "Component": "Optimizer numerical constants and decay mechanics",
+        "Status": "Not Specified",
+        "Implemented detail": "a=1.27, b=1, bias-corrected moments; no additive epsilon; LR-scaled decoupled decay on parameters with gradients."
+      },
+      {
+        "Component label": "A33",
+        "Component": "Peak rate, floor, beta2, decay, puzzle rate",
+        "Status": "Follows",
+        "Implemented detail": "Peak 5e-4; floor .01 of peak; beta2 .95; weight decay 1.0. No puzzle-rate parameter group."
+      },
+      {
+        "Component label": "A34",
+        "Component": "Warm-up and clipping",
+        "Status": "Follows",
+        "Implemented detail": "2,000 effective-update warm-up; global norm clipping at 1 after accumulated backward calls."
+      },
+      {
+        "Component label": "A35",
+        "Component": "Schedule function and indexing",
+        "Status": "Not Specified",
+        "Implemented detail": "Linear warm-up from update one; cosine decay; completed schedules of 196,608, 38,912, or 155,648 updates."
+      },
+      {
+        "Component label": "A36",
+        "Component": "Physical batch and accumulation",
+        "Status": "Departs",
+        "Implemented detail": "Default recursive and sweep settings: physical/effective batch 1,024. Both deeper larger-batch schedules and their shallower counterpart: micro-batch 2,048 × 2, effective batch 4,096."
+      },
+      {
+        "Component label": "A37",
+        "Component": "Training length",
+        "Status": "Departs",
+        "Implemented detail": "Completed runs use 196,608, 38,912, or 155,648 updates; allocation caps and schedules define their endpoints."
+      },
+      {
+        "Component label": "A38",
+        "Component": "Seed and training-row order",
+        "Status": "Departs",
+        "Implemented detail": "All completed runs use seed 101; proposed additional seeds were superseded by the conditional sweep. Sampling uses permutations without replacement."
+      },
+      {
+        "Component label": "A39",
+        "Component": "EMA decay and evaluation weights",
+        "Status": "Follows",
+        "Implemented detail": "Decay .999; EMA evaluation weights."
+      },
+      {
+        "Component label": "A40",
+        "Component": "EMA initialization and update clock",
+        "Status": "Not Specified",
+        "Implemented detail": "Initialize EMA from model parameters; one lerp after each effective optimizer update."
+      },
+      {
+        "Component label": "A41",
+        "Component": "Full-budget evaluation and stochastic disabling",
+        "Status": "Departs",
+        "Implemented detail": "EMA reset-state inference at each recorded depth; primary eight or sixteen steps for recursive settings; one pass for controls; dropout/noise disabled."
+      },
+      {
+        "Component label": "A42",
+        "Component": "Exact metric and evaluation aggregation",
+        "Status": "Not Specified",
+        "Implemented detail": "Final-step canonical tuple equality; pool correct rows across strata; report selected best and final ID scores separately."
+      },
+      {
+        "Component label": "A43",
+        "Component": "Evaluation frequency and stopping",
+        "Status": "Departs",
+        "Implemented detail": "Every 2,048 updates on reused ID rows; threshold 1,844/2,048; bounded allocation and schedule stops; FLAT diagnostic after continuation."
+      },
+      {
+        "Component label": "A44",
+        "Component": "Puzzle embeddings",
+        "Status": "Departs",
+        "Implemented detail": "No puzzle-identity table or sign-SGD group; paper Arithmetic Puzzle LR .005 has no corresponding parameter."
+      },
+      {
+        "Component label": "A45",
+        "Component": "Forward and loss precision",
+        "Status": "Not Specified",
+        "Implemented detail": "Bfloat16 forward; FP32 master parameters, norm/bound/attention reductions; FP64 stablemax loss; CPU train-fit checks FP32."
+      }
+    ]
+  },
+  "supplement_A12_published_results": {
+    "fields": [
+      "Derivative horizons",
+      "Final ID, %",
+      "Final OOD, %"
+    ],
+    "rows": [
+      {
+        "Derivative horizons": "(1,3)",
+        "Final ID, %": "99.60",
+        "Final OOD, %": "8.80"
+      },
+      {
+        "Derivative horizons": "(2,2)",
+        "Final ID, %": "96.34",
+        "Final OOD, %": "71.16"
+      }
+    ]
+  },
+  "supplement_B01_readout_coverage": {
+    "fields": [
+      "Planned readout",
+      "Status",
+      "Reason and reported location"
+    ],
+    "rows": [
+      {
+        "Planned readout": "Live-training versus development gap for original and expanded recursive runs",
+        "Status": "Reported",
+        "Reason and reported location": "Original journals support both measurements; Table A.10 reports final-window gaps, with different states, rows, and weights."
+      },
+      {
+        "Planned readout": "Live-training trajectories for the single-pass controls and shallower larger-batch run",
+        "Status": "Reported",
+        "Reason and reported location": "Reconstructed from retained update journals; live_training_windows.csv includes every pooled window."
+      },
+      {
+        "Planned readout": "Short deep run's training fit at evaluation depth eight",
+        "Status": "Reported",
+        "Reason and reported location": "Existing saved measurements are restored in Table 4 and cpu_scores.csv."
+      },
+      {
+        "Planned readout": "Additional training seeds",
+        "Status": "Superseded",
+        "Reason and reported location": "The long-run shortfall selected the nested sweep under the recorded conditional rule."
+      },
+      {
+        "Planned readout": "Comparison with the source implementation",
+        "Status": "Not possible",
+        "Reason and reported location": "The authors' code was not obtained; the comparison remains limited to its published description."
+      }
+    ]
+  },
+  "supplement_source_classes": {
+    "fields": [
+      "Record label",
+      "Record class"
+    ],
+    "rows": [
+      {
+        "Record label": "D1",
+        "Record class": "Differenced inherited failed-allocation charge"
+      },
+      {
+        "Record label": "D2",
+        "Record class": "Differenced inherited failed-allocation charge"
+      },
+      {
+        "Record label": "D3",
+        "Record class": "Differenced inherited failed-allocation charge"
+      },
+      {
+        "Record label": "F01",
+        "Record class": "Historical double-precision check report"
+      },
+      {
+        "Record label": "F02",
+        "Record class": "Historical double-precision check report"
+      },
+      {
+        "Record label": "F03",
+        "Record class": "Historical double-precision check report"
+      },
+      {
+        "Record label": "F04",
+        "Record class": "Historical double-precision check report"
+      },
+      {
+        "Record label": "L01",
+        "Record class": "Live-training update journal"
+      },
+      {
+        "Record label": "L02",
+        "Record class": "Live-training update journal"
+      },
+      {
+        "Record label": "L03",
+        "Record class": "Live-training update journal"
+      },
+      {
+        "Record label": "L04",
+        "Record class": "Live-training update journal"
+      },
+      {
+        "Record label": "L05",
+        "Record class": "Live-training update journal"
+      },
+      {
+        "Record label": "L06",
+        "Record class": "Live-training update journal"
+      },
+      {
+        "Record label": "L07",
+        "Record class": "Live-training update journal"
+      },
+      {
+        "Record label": "L08",
+        "Record class": "Live-training update journal"
+      },
+      {
+        "Record label": "L09",
+        "Record class": "Live-training update journal"
+      },
+      {
+        "Record label": "L10",
+        "Record class": "Live-training update journal"
+      },
+      {
+        "Record label": "R010",
+        "Record class": "Historical CPU readout"
+      },
+      {
+        "Record label": "R014",
+        "Record class": "Historical CPU readout"
+      },
+      {
+        "Record label": "R018",
+        "Record class": "Saved CPU score record"
+      },
+      {
+        "Record label": "R019",
+        "Record class": "Saved CPU operand and result-width strata"
+      },
+      {
+        "Record label": "R021",
+        "Record class": "Saved CPU score record"
+      },
+      {
+        "Record label": "R022",
+        "Record class": "Saved CPU operand and result-width strata"
+      },
+      {
+        "Record label": "R024",
+        "Record class": "Saved CPU score record"
+      },
+      {
+        "Record label": "R025",
+        "Record class": "Saved CPU operand and result-width strata"
+      },
+      {
+        "Record label": "R027",
+        "Record class": "Saved CPU score record"
+      },
+      {
+        "Record label": "R028",
+        "Record class": "Saved CPU operand and result-width strata"
+      },
+      {
+        "Record label": "R033",
+        "Record class": "Retained numerical record"
+      },
+      {
+        "Record label": "R043",
+        "Record class": "Checkpoint identity and retention index"
+      },
+      {
+        "Record label": "R044",
+        "Record class": "Recorded development trajectory"
+      },
+      {
+        "Record label": "R049",
+        "Record class": "Checkpoint identity and retention index"
+      },
+      {
+        "Record label": "R050",
+        "Record class": "Recorded development trajectory"
+      },
+      {
+        "Record label": "R055",
+        "Record class": "Checkpoint identity and retention index"
+      },
+      {
+        "Record label": "R056",
+        "Record class": "Recorded development trajectory"
+      },
+      {
+        "Record label": "R061",
+        "Record class": "Checkpoint identity and retention index"
+      },
+      {
+        "Record label": "R062",
+        "Record class": "Recorded development trajectory"
+      },
+      {
+        "Record label": "R067",
+        "Record class": "Checkpoint identity and retention index"
+      },
+      {
+        "Record label": "R068",
+        "Record class": "Recorded development trajectory"
+      },
+      {
+        "Record label": "R073",
+        "Record class": "Checkpoint identity and retention index"
+      },
+      {
+        "Record label": "R074",
+        "Record class": "Recorded development trajectory"
+      },
+      {
+        "Record label": "R079",
+        "Record class": "Checkpoint identity and retention index"
+      },
+      {
+        "Record label": "R080",
+        "Record class": "Recorded development trajectory"
+      },
+      {
+        "Record label": "R087",
+        "Record class": "Checkpoint identity and retention index"
+      },
+      {
+        "Record label": "R088",
+        "Record class": "Recorded development trajectory"
+      },
+      {
+        "Record label": "R094",
+        "Record class": "Checkpoint identity and retention index"
+      },
+      {
+        "Record label": "R095",
+        "Record class": "Recorded development trajectory"
+      },
+      {
+        "Record label": "R100",
+        "Record class": "Checkpoint identity and retention index"
+      },
+      {
+        "Record label": "R101",
+        "Record class": "Recorded development trajectory"
+      }
+    ]
+  },
+  "supplement_component_passages": {
+    "fields": [
+      "Component",
+      "Source section or table",
+      "Short quotation",
+      "Scope"
+    ],
+    "rows": [
+      {
+        "Component": "A01",
+        "Source section or table": "A.5",
+        "Short quotation": "“We generate expressions in reverse Polish notation containing between three and eight operands.”",
+        "Scope": "Comparison passage"
+      },
+      {
+        "Component": "A02",
+        "Source section or table": "A.5",
+        "Short quotation": "“Division is permitted only when it produces an exact integer result.”",
+        "Scope": "Comparison passage"
+      },
+      {
+        "Component": "A03",
+        "Source section or table": "A.5",
+        "Short quotation": "Operands and operators are sampled before masking.",
+        "Scope": "Paraphrase of the generation description"
+      },
+      {
+        "Component": "A04",
+        "Source section or table": "A.5",
+        "Short quotation": "“The model is trained to reconstruct the hidden operator sequence”",
+        "Scope": "Nearest passage; detail unspecified"
+      },
+      {
+        "Component": "A05",
+        "Source section or table": "A.5",
+        "Short quotation": "“We construct train and test sets by splitting over operand multisets.”",
+        "Scope": "Comparison passage"
+      },
+      {
+        "Component": "A06",
+        "Source section or table": "A.5",
+        "Short quotation": "“form the out-of-distribution value split.”",
+        "Scope": "Comparison passage"
+      },
+      {
+        "Component": "A07",
+        "Source section or table": "A.5",
+        "Short quotation": "“We generate expressions in reverse Polish notation”",
+        "Scope": "Nearest passage; detail unspecified"
+      },
+      {
+        "Component": "A08",
+        "Source section or table": "A.5",
+        "Short quotation": "“with the loss applied only at the masked operator positions.”",
+        "Scope": "Comparison passage"
+      },
+      {
+        "Component": "A09",
+        "Source section or table": "A.5",
+        "Short quotation": "“the final value of the expression is appended to the input.”",
+        "Scope": "Nearest passage; detail unspecified"
+      },
+      {
+        "Component": "A10",
+        "Source section or table": "A.5",
+        "Short quotation": "“The model is trained to reconstruct the hidden operator sequence”",
+        "Scope": "Nearest passage; detail unspecified"
+      },
+      {
+        "Component": "A11",
+        "Source section or table": "B.1",
+        "Short quotation": "“The recurrent module consists of four post-norm Transformer layers with hidden size 512 and eight attention heads.”",
+        "Scope": "Comparison passage"
+      },
+      {
+        "Component": "A12",
+        "Source section or table": "B.1",
+        "Short quotation": "“We use rotary position embeddings and RMSNorm, and execute the model in bfloat16.”",
+        "Scope": "Comparison passage"
+      },
+      {
+        "Component": "A13",
+        "Source section or table": "B.1",
+        "Short quotation": "“We use rotary position embeddings and RMSNorm”",
+        "Scope": "Nearest passage; detail unspecified"
+      },
+      {
+        "Component": "A14",
+        "Source section or table": "4.1",
+        "Short quotation": "“Within each high-level cycle, the low-level state is updated”",
+        "Scope": "Comparison passage"
+      },
+      {
+        "Component": "A15",
+        "Source section or table": "B.2",
+        "Short quotation": "“The scaling coefficient is detached from the computation graph.”",
+        "Scope": "Comparison passage"
+      },
+      {
+        "Component": "A16",
+        "Source section or table": "B.2",
+        "Short quotation": "“and setting its bias to zero”",
+        "Scope": "Comparison passage"
+      },
+      {
+        "Component": "A17",
+        "Source section or table": "4.4",
+        "Short quotation": "“The model executes the full recurrent trajectory”",
+        "Scope": "Comparison passage"
+      },
+      {
+        "Component": "A18",
+        "Source section or table": "4.4",
+        "Short quotation": "“gradients propagate only through the final”",
+        "Scope": "Nearest passage; detail unspecified"
+      },
+      {
+        "Component": "A19",
+        "Source section or table": "B.3",
+        "Short quotation": "“maximum budget of 16 ACT steps”",
+        "Scope": "Comparison passage"
+      },
+      {
+        "Component": "A20",
+        "Source section or table": "B.3",
+        "Short quotation": "“together with the two halting losses.”",
+        "Scope": "Comparison passage"
+      },
+      {
+        "Component": "A21",
+        "Source section or table": "B.3",
+        "Short quotation": "“the resulting states are stored in the carry and detached before the next ACT step.”",
+        "Scope": "Comparison passage"
+      },
+      {
+        "Component": "A22",
+        "Source section or table": "B.3",
+        "Short quotation": "“the resulting states are stored in the carry”",
+        "Scope": "Nearest passage; detail unspecified"
+      },
+      {
+        "Component": "A23",
+        "Source section or table": "B.3",
+        "Short quotation": "“Recurrent states are initialized from learned vectors.”",
+        "Scope": "Comparison passage"
+      },
+      {
+        "Component": "A24",
+        "Source section or table": "B.3",
+        "Short quotation": "“Recurrent states are initialized from learned vectors.”",
+        "Scope": "Nearest passage; detail unspecified"
+      },
+      {
+        "Component": "A25",
+        "Source section or table": "B.2",
+        "Short quotation": "“The same masks are reused at every recurrent cycle and every ACT step until that sequence halts.”",
+        "Scope": "Comparison passage"
+      },
+      {
+        "Component": "A26",
+        "Source section or table": "Table 5",
+        "Short quotation": "“Arithmetic .025 .010 no .005 yes”",
+        "Scope": "Comparison passage"
+      },
+      {
+        "Component": "A27",
+        "Source section or table": "B.2",
+        "Short quotation": "“At the beginning of each ACT step during training, we perturb the input embeddings and both recurrent states”",
+        "Scope": "Comparison passage"
+      },
+      {
+        "Component": "A28",
+        "Source section or table": "B.2",
+        "Short quotation": "“Dropout masks are sampled when an example enters an ACT trajectory and are stored in the recurrent carry.”",
+        "Scope": "Nearest passage; detail unspecified"
+      },
+      {
+        "Component": "A29",
+        "Source section or table": "B.3",
+        "Short quotation": "“The training objective is stablemax cross-entropy over the supervised output positions”",
+        "Scope": "Comparison passage"
+      },
+      {
+        "Component": "A30",
+        "Source section or table": "B.3",
+        "Short quotation": "“The training objective is stablemax cross-entropy”",
+        "Scope": "Nearest passage; detail unspecified"
+      },
+      {
+        "Component": "A31",
+        "Source section or table": "B.1; Table 6",
+        "Short quotation": "“We optimize the model with Adam-atan2.”",
+        "Scope": "Comparison passage"
+      },
+      {
+        "Component": "A32",
+        "Source section or table": "B.1",
+        "Short quotation": "“We optimize the model with Adam-atan2.”",
+        "Scope": "Nearest passage; detail unspecified"
+      },
+      {
+        "Component": "A33",
+        "Source section or table": "Table 6",
+        "Short quotation": "“Arithmetic 4096 2000 50”",
+        "Scope": "Comparison passage"
+      },
+      {
+        "Component": "A34",
+        "Source section or table": "B.1; Table 6",
+        "Short quotation": "“Gradients are clipped to a global norm of 1”",
+        "Scope": "Comparison passage"
+      },
+      {
+        "Component": "A35",
+        "Source section or table": "B.1",
+        "Short quotation": "“Training uses warm-up followed by either cosine or exponential decay, depending on the domain configuration.”",
+        "Scope": "Nearest passage; detail unspecified"
+      },
+      {
+        "Component": "A36",
+        "Source section or table": "4.4",
+        "Short quotation": "“use large physical batches rather than equivalent gradient accumulation”",
+        "Scope": "Comparison passage"
+      },
+      {
+        "Component": "A37",
+        "Source section or table": "D.1",
+        "Short quotation": "“They run for 2000 epochs (439,600 optimizer updates) with global batch size 4096, EMA weights, and seed 125.”",
+        "Scope": "Comparison passage"
+      },
+      {
+        "Component": "A38",
+        "Source section or table": "D.1",
+        "Short quotation": "“with global batch size 4096, EMA weights, and seed 125.”",
+        "Scope": "Comparison passage"
+      },
+      {
+        "Component": "A39",
+        "Source section or table": "B.1",
+        "Short quotation": "“We maintain an exponential moving average of all trainable parameters”",
+        "Scope": "Comparison passage"
+      },
+      {
+        "Component": "A40",
+        "Source section or table": "B.1",
+        "Short quotation": "“We maintain an exponential moving average of all trainable parameters”",
+        "Scope": "Nearest passage; detail unspecified"
+      },
+      {
+        "Component": "A41",
+        "Source section or table": "4.6",
+        "Short quotation": "“Adaptive halting is disabled during the main evaluation, and all examples execute the full ACT budget.”",
+        "Scope": "Comparison passage"
+      },
+      {
+        "Component": "A42",
+        "Source section or table": "4.6",
+        "Short quotation": "“We report exact accuracy on all domains”",
+        "Scope": "Nearest passage; detail unspecified"
+      },
+      {
+        "Component": "A43",
+        "Source section or table": "D.1",
+        "Short quotation": "“Evaluation is performed every 50 epochs”",
+        "Scope": "Comparison passage"
+      },
+      {
+        "Component": "A44",
+        "Source section or table": "B.1",
+        "Short quotation": "“Puzzle embeddings are optimized separately using distributed sign-SGD.”",
+        "Scope": "Comparison passage"
+      },
+      {
+        "Component": "A45",
+        "Source section or table": "B.1",
+        "Short quotation": "“We use rotary position embeddings and RMSNorm, and execute the model in bfloat16.”",
+        "Scope": "Nearest passage; detail unspecified"
+      }
+    ]
+  },
+  "main_01": {
+    "fields": [
+      "Component",
+      "Published detail",
+      "Implemented choice",
+      "Status / reason"
+    ],
+    "rows": [
+      {
+        "Component": "Data generation",
+        "Published detail": "Sample operands and operators",
+        "Implemented choice": "Sample attainable targets; canonical labels",
+        "Status / reason": "Departs / deterministic labels"
+      },
+      {
+        "Component": "Multiset split",
+        "Published detail": "Common held-out pool",
+        "Implemented choice": "Separate ID and OOD buckets",
+        "Status / reason": "Departs / study design"
+      },
+      {
+        "Component": "Dataset cardinality",
+        "Published detail": "Unspecified",
+        "Implemented choice": "Finite training files and fixed development rows",
+        "Status / reason": "Unspecified / bounded comparison"
+      },
+      {
+        "Component": "Backbone",
+        "Published detail": "Shared post-normalization Transformer",
+        "Implemented choice": "Shared stack and operator head",
+        "Status / reason": "Follows / head details unspecified"
+      },
+      {
+        "Component": "Halting",
+        "Published detail": "Learned halting with auxiliary losses",
+        "Implemented choice": "Fixed recurrence counts; supervised loss",
+        "Status / reason": "Departs / explicit computation"
+      },
+      {
+        "Component": "Initial states",
+        "Published detail": "Learned vectors",
+        "Implemented choice": "Parameterized vectors; derivative truncation prevents their learning",
+        "Status / reason": "Departs / truncation interaction"
+      },
+      {
+        "Component": "Batch",
+        "Published detail": "Physical batch",
+        "Implemented choice": "Physical batch or exact gradient accumulation",
+        "Status / reason": "Departs / memory bound"
+      },
+      {
+        "Component": "Carry and clocks",
+        "Published detail": "Detached carry; incomplete clock details",
+        "Implemented choice": "Held batches; update-based schedule and averaging",
+        "Status / reason": "Unspecified / explicit conventions"
+      },
+      {
+        "Component": "Puzzle embeddings",
+        "Published detail": "Vectors indexed by puzzle identity",
+        "Implemented choice": "No puzzle-identity parameter table",
+        "Status / reason": "Departs / unspecified arithmetic interface"
+      },
+      {
+        "Component": "Evaluation",
+        "Published detail": "Full recurrence budget; exact accuracy",
+        "Implemented choice": "Final-step strict and semantic scores",
+        "Status / reason": "Departs / fixed evaluation convention"
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+Setting,Evaluation depth,"Five operands, n = 39","Six operands, n = 158","Seven operands, n = 322","Eight operands, n = 421"
+R524-B4096-D16-short,16 (primary),27 / 28,55 / 61,75 / 80,64 / 77
+R524-B4096-D16-long,16 (primary),29 / 30,64 / 71,100 / 110,90 / 102
+S65,1 (primary),9 / 9,18 / 21,8 / 13,6 / 7
+S524,1 (primary),11 / 13,23 / 29,29 / 31,21 / 21
+R524-B4096-D8-short,8 (primary),32 / 32,76 / 85,109 / 123,115 / 134
+R65-resampled,8 (primary),16 / 17,19 / 24,17 / 22,7 / 17
+R131,8 (primary),20 / 21,50 / 60,63 / 72,50 / 57
+R262,8 (primary),18 / 19,33 / 39,53 / 56,57 / 59

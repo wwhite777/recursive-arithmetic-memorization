@@ -1,0 +1,141 @@
+{
+  "config": {
+    "arm": "S22",
+    "checkpoint_interval": 2048,
+    "data": {
+      "id_dev": {
+        "count": 2048,
+        "path": "sources/bb6c1491c94271119a72/id_dev.jsonl",
+        "sha256": "af1ef4eec173f637f19ef3db881ce413f7cab557e722d13a73db5ab0e2e6b70b"
+      },
+      "train": {
+        "count": 65536,
+        "path": "sources/6ea7bfcb45e9a7de3c1c/train.jsonl",
+        "sha256": "f18a58445a9d0159cd407cbfaf5de8e108df36b66ce1a4fd754ebaf8f854e942"
+      }
+    },
+    "data_order_seed": 101,
+    "evaluation_batch": 512,
+    "evaluation_interval": 2048,
+    "model": {
+      "bound_eps": 1e-08,
+      "dropout_core": 0.025,
+      "dropout_state": 0.01,
+      "engineering_fixture": false,
+      "expansion": 4.0,
+      "ff_multiple": 256,
+      "forward_dtype": "bfloat16",
+      "heads": 8,
+      "hidden_size": 512,
+      "layers": 4,
+      "noise_scale": 0.005,
+      "norm_eps": 1e-05,
+      "pad_id": 0,
+      "rope_theta": 10000.0,
+      "seq_len": 19,
+      "update_bound": 0.7,
+      "vocab_size": 13
+    },
+    "schema": "experiment",
+    "seed": 101,
+    "training": {
+      "act_steps": 8,
+      "beta1": 0.9,
+      "beta2": 0.95,
+      "clip_norm": 1.0,
+      "ema_decay": 0.999,
+      "engineering_fixture": false,
+      "min_lr_ratio": 0.01,
+      "peak_lr": 0.0005,
+      "physical_batch": 1024,
+      "seed": 101,
+      "total_updates": 196608,
+      "warmup_updates": 2000,
+      "weight_decay": 1.0
+    }
+  },
+  "continuation": {
+    "flat_stops_enabled": false,
+    "lineage_sha256": "b46f7f7edf2b1753dcd52dd7e3a9b50b5aa211c984d1d8355398a1f048fd55f9"
+  },
+  "disk_projection": {
+    "T": 196608,
+    "additional_peak_bytes": 6072514554,
+    "checkpoint_bytes": 973827607,
+    "checkpoint_copies": 2,
+    "checkpoint_x2_plus_logs_plus_metrics_bytes": 2161335950,
+    "controller_log_allowance_bytes": 67108864,
+    "copied_prefix_bytes": 112380785,
+    "existing_project_environment_bytes": 12723189386,
+    "imported": false,
+    "imported_checkpoint_bytes": 973033175,
+    "interrupted_write_allowance_bytes": 973827607,
+    "logs_bytes": 148611680,
+    "metrics_bytes": 65069056,
+    "projected_aggregate_peak_bytes": 18795703940,
+    "protected_resume_bytes": 973827607,
+    "remaining_logs_bytes": 71209764,
+    "remaining_metrics_bytes": 31178923,
+    "remaining_updates": 94208,
+    "schema": "experiment",
+    "segment_log_multiplier": 10,
+    "storage_cap_bytes": 20000000000,
+    "temporary_write_bytes": 973827607,
+    "within_storage_cap": true
+  },
+  "environment": {
+    "cuda_build": "12.6",
+    "deterministic_algorithms": true,
+    "interop_threads": 1,
+    "python": "sources/5679dedf48847a55bd3e/python",
+    "python_sha256": "df23391eb5ab66f005be15f792d55766d7ce96198e9e10df2aea72aec8c686ea",
+    "threads": 1,
+    "torch_version": "2.9.1+cu126"
+  },
+  "inputs_sha256": "770812e2f081c6af5f0f505cf562a422e2916871c8411a3ec9484ae0871ddf06",
+  "prior_charge": {
+    "accounting_path": "sources/f6908e3f1eba6964c3f5/ACCOUNTING.json",
+    "accounting_sha256": "2824e504b7b25a0d469311dcffa49be3f91216b06ca255a12a7661a6a8ba29cd",
+    "allocation_count": 3,
+    "charged_seconds": 42621.31248654984,
+    "root": "sources/c92a040902c599f76290/source"
+  },
+  "schedule": {
+    "T": 196608,
+    "available_main_seconds": 72256.8209291054,
+    "batch": 1024,
+    "calibration_charged_seconds": 3343.1790708946064,
+    "cap_seconds": 86400,
+    "memory_threshold_bytes": 44000000000,
+    "next_block_projected_seconds": 72694.98374631349,
+    "planning_seconds": 75600,
+    "preferred_failure": "selected calibration did not complete",
+    "projected_seconds": 71945.57301758882,
+    "projected_total_charged_seconds": 75288.75208848342,
+    "reserve_seconds": 10800,
+    "selection_reason": "preferred_calibration_failed",
+    "steps": 8,
+    "timing_inputs": {
+      "checkpoint_seconds": 5.507208078168333,
+      "evaluation_seconds": 5.125614169053733,
+      "fixed_overhead_seconds": 2.143060020171106,
+      "seconds_per_update": 0.36073139964719303
+    }
+  },
+  "schema": "experiment",
+  "source_sha256": {
+    "qdriver/__init__.py": "ba790d0de73821e68dc699227653386f56f341c3baf524178f5b4e2829f1694d",
+    "qdriver/__main__.py": "93f5b36bd8295d11cd1f7ae48a0507bd065c6913fbbcb12b28aab8961032f85f",
+    "qdriver/accounting.py": "96d4490b80b4ba50b0a1d8329f59d29bfd0a9562655f5fca92153c91d5815a87",
+    "qdriver/common.py": "4b5ec15778057f521b7ae34780b62617f83afa244b13a58ac689e2ce08257f75",
+    "qdriver/continuation.py": "c1132e96f369285c8e697ecd885df2e997c444c3efc453b76cd74293b090959b",
+    "qdriver/controller.py": "8478e8f589761667df30238e5b92fddda92b6ba0223534282eb1ff30ad21f212",
+    "qdriver/engine.py": "cb7643136ede79038817b464de480b046ad9b2fd1889286574d3524af140212c",
+    "qdriver/guard.py": "133453631130b1d3b5195a03d4822096171d6e6d78318b0a05391896137ecb43",
+    "qdriver/rules.py": "f82841403fedd6f19206bf5ec34609650e25e465cf2edfebb9b95661f42b0cf4",
+    "qdriver/storage.py": "8f19b03e8f541bfecfc6478836f09d7f31bf42130247f30fa211688131bd90af",
+    "qdriver/training.py": "452be859c23c9cba14807fad3bce75f0f175b36af809e379f22b9641311f8b86",
+    "qdriver/executor.py": "55ebac29947e13b291f05482df336cbe6f063b4b858d1071ee6540f503f5b73a",
+    "qdriver/workload.py": "9a70d284715f8957bdd46b699f9c6e98e4336367d401a2dbd6824fc837fdb873"
+  }
+}

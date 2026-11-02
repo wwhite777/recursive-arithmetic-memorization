@@ -1,0 +1,15 @@
+{
+  "cap_seconds": 86400.0,
+  "charged_seconds": 41.249642917886376,
+  "gpu_hours": 0.011458234143857327,
+  "result": {
+    "error": "projected aggregate peak exceeds 20 GB storage cap",
+    "status": "ERROR",
+    "traceback": "Traceback (most recent call last):\n  File \"sources/0c1d1f1c4687c537543a/controller.py\", line 309, in run\n    return self._run(mode)\n  File \"sources/0c1d1f1c4687c537543a/controller.py\", line 373, in _run\n    require(projection['within_storage_cap'], 'projected aggregate peak exceeds 20 GB storage cap')\n  File \"sources/3f646b4e6eba1df53937/common.py\", line 26, in require\n    raise ValueError(message)\nValueError: projected aggregate peak exceeds 20 GB storage cap\n"
+  },
+  "schema": "experiment",
+  "scope": "One S22 seed101 engineering qualification; no policy efficacy/audit verdict",
+  "segment_count": 1,
+  "status": "ERROR",
+  "updated_utc": "2026-10-26T16:43:12.909718+00:00"
+}

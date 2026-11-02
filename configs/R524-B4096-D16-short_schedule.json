@@ -1,0 +1,23 @@
+{
+  "T": 38912,
+  "accumulation_steps": 2,
+  "available_main_seconds": 75458.12379387766,
+  "batch": 2048,
+  "calibration_charged_seconds": 141.87620612233877,
+  "cap_seconds": 86400,
+  "effective_batch": 4096,
+  "memory_threshold_bytes": 44000000000,
+  "next_block_projected_seconds": 77064.97106073517,
+  "planning_seconds": 75600,
+  "projected_seconds": 73212.27609261777,
+  "projected_total_charged_seconds": 73354.15229874011,
+  "reserve_seconds": 10800,
+  "selection_reason": "first_complete_ACT16_microbatch_within_44GB",
+  "steps": 16,
+  "timing_inputs": {
+    "checkpoint_seconds": 1.4037351114675403,
+    "evaluation_seconds": 15.497920277528465,
+    "fixed_overhead_seconds": 11.071698387153447,
+    "seconds_per_update": 1.8729459534806665
+  }
+}

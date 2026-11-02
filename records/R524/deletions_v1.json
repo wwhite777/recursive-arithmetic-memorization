@@ -1,0 +1,16 @@
+{
+ "pruned_utc": "2026-10-18T11:24:28.935200+00:00",
+ "reason": "R524 calibration probes; main-run manifest references no probe files",
+ "files": [
+  {
+   "path": "segment-01/probe-b1024-s8/checkpoints/u000000000-50b3ebdd406e4ff1aaa68d3c48811932.pt",
+   "bytes": 109215258,
+   "sha256": "9587a65b89d8693e0a6033ba52387e6ae1788ac251fffb47946112d5e00480be"
+  },
+  {
+   "path": "segment-01/probe-b1024-s8/checkpoints/u000000048-63911feff7bb4850a3f949ea50c51e2d.pt",
+   "bytes": 976603479,
+   "sha256": "584f8883d162ab75169aa8199096575143ea488bc4864d0b999cc67fc6388982"
+  }
+ ]
+}
