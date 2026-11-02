@@ -4,6 +4,8 @@
 
 This release contains the code, arithmetic datasets, saved predictions, evaluation records, and table calculations for ten exploratory training runs. The model reconstructs missing operators in arithmetic expressions. Small training files were nearly memorized; larger files remained incompletely fitted within the tested budgets. The comparisons use one training seed, 101. The motivating paper's code was not used; the implementation follows its published description.
 
+Repository v1.0.2 is a GitHub documentation and record-label release. It clarifies device-count scopes, allocation identities and test provenance, updates citation labels, and adjusts the verifier to check the released counts. Training code, datasets, predictions and recorded measurement values are unchanged. The published Zenodo dataset remains version 1.0.1 and retains the earlier documentation and labels; no archive files were replaced.
+
 Strict accuracy requires the complete canonical operator tuple, the chosen ordered list of operators. Semantic accuracy instead accepts any valid tuple producing the supplied result. Development rows are held-out examples reused for configuration choices and repeated evaluation; the development set contains 2,048 in-distribution (ID) rows. Out-of-distribution (OOD) rows combine a separate multiset bucket with larger target values. Multisets retain operand values and multiplicities while ignoring order.
 
 | Measurement | Result |
@@ -40,13 +42,13 @@ python3 -B analysis/check_tables.py tables rebuilt
 
 `check_tables.py` requires identical file inventories and compares every CSV cell as an exact string, including float representations and empty strata. The rebuild independently executes predicted operators, checks canonical row identities, recomputes stratum counts and Wilson intervals, reconstructs all 197 live windows, and derives the displayed supplement tables. It does not read expected table cells. Table layout files contain selectors and documentary locators; measurement answer cells are computed. Method comparison, cited source results, source classes, and readout coverage are transcribed documentary records. Internal decision chronology is excluded from this public package.
 
-After the Zenodo record is published, the same verified importer uses its record file links:
+The Zenodo record is published. The same verified importer uses its record file links:
 
 ```bash
 python3 -B data/fetch.py --online
 ```
 
-The importer uses `https://zenodo.org/records/23880859/files/<file name>?download=1`, fetches each named part, verifies its length and SHA256, reassembles it, and verifies the complete compressed and decompressed payloads. The reserved DOI resolves after publication. Offline reproduction is complete without online access. The same part-fetch path can be used locally with `--parts-dir ../zenodo/parts`, or pointed at a flat download directory.
+The importer uses `https://zenodo.org/records/23880859/files/<file name>?download=1`, fetches each named part, verifies its length and SHA256, reassembles it, and verifies the complete compressed and decompressed payloads. The DOI resolves to the published version 1.0.1 record. Offline reproduction is complete without online access. The same part-fetch path can be used locally with `--parts-dir ../zenodo/parts`, or pointed at a flat download directory.
 
 To redraw all eight figures from table CSVs:
 
@@ -55,6 +57,8 @@ OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 python3 -B analysis/f
 ```
 
 `src/reasoning/` contains the generator, model, optimizer, and base training implementation. `src/qdriver/` contains accumulation, single-pass, evaluation, and resumable execution code. Double-precision accumulation and checkpoint fixtures are in `src/tests/`. Training and these fixtures require a separately provisioned compatible PyTorch environment; they are shipped as source and were not executed by the record-reproduction test. The historical precision reports and negative controls are in `records/fixtures/`.
+
+The model fixtures shipped in `src/tests/` are adaptations of the suites whose historical reports are included, written against later source versions than the earlier reports bind. Those historical reports do not attest execution of the shipped adapted bytes. The `test_provenance` section of [TRANSFORMATIONS.json](TRANSFORMATIONS.json) lists every historical source hash from the shipped suite reports that has no exact byte copy in this repository, with its historical relative filename and report locations; adaptation-source hashes remain in the per-file entries. `test_workload.py` was added for v1.0.1 and is a separate standard-library schedule check. No historical model fixture was rerun for v1.0.2.
 
 In such an environment, source entry points include:
 
@@ -67,15 +71,19 @@ Create `fixture-output` before running the fixtures. The training command descri
 
 `TRANSFORMATIONS.json` records source hashes, released hashes, and exact transformation rules for adaptations and generated artifacts. Source paths use neutral aliases. Checkpoint retention columns describe the source collection at paper preparation time; no checkpoint payload is distributed. `SHA256SUMS` binds the repository files. `data/archive_manifest.json` binds the additional payloads.
 
+[records/allocations/INDEX.md](records/allocations/INDEX.md) identifies every allocation record and its recorded charge, including the preliminary roots charged to R524, R524-B4096-D16-short and R262. The device inventory distinguishes occurrences in the full project run records (not all released) from reproducible released-record counts. `analysis/verify.py` excludes the inventory itself, scans plain and decompressed gzip records, and checks every recorded UUID against the four listed devices.
+
 ## Data and citation
 
 GitHub repository: https://github.com/wwhite777/recursive-arithmetic-memorization
 
-Zenodo record: https://zenodo.org/records/23880859. Reserved DOI: https://doi.org/10.5281/zenodo.23880859 (resolves after publication).
+Published Zenodo dataset, version 1.0.1: https://zenodo.org/records/23880859. DOI: https://doi.org/10.5281/zenodo.23880859.
 
-Jeong, W., & Oh, H. (2026). Memorization and incomplete fitting in a recursive arithmetic reasoner rebuilt from its published description: data, predictions and reproducible analysis (Version 1.0.1) [Data set and software]. Zenodo. https://doi.org/10.5281/zenodo.23880859
+Jeong, W., & Oh, H. (2026). Memorization and incomplete fitting in a recursive arithmetic reasoner rebuilt from its published description: data, predictions and reproducible analysis (Version 1.0.1) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.23880859
 
-Machine-readable citation and both authors' ORCIDs are in `CITATION.cff`.
+Repository software: Jeong, W., & Oh, H. (2026). Memorization and incomplete fitting in a recursive arithmetic reasoner rebuilt from its published description (Version 1.0.2) [Software]. https://github.com/wwhite777/recursive-arithmetic-memorization
+
+`CITATION.cff` identifies repository software version 1.0.2 and gives the published dataset version 1.0.1 as the preferred citation and a reference, with both authors' ORCIDs. The dataset DOI identifies the archived dataset version, not repository version 1.0.2.
 
 ## Third-party notices
 

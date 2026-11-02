@@ -1,9 +1,9 @@
 cff-version: 1.2.0
-message: "If you use these data or software, please cite this record."
-type: dataset
-version: "1.0.1"
+message: "Cite this repository for software version 1.0.2; cite the preferred dataset record for archived data version 1.0.1."
+type: software
+version: "1.0.2"
 date-released: 2026-11-02
-title: "Memorization and incomplete fitting in a recursive arithmetic reasoner rebuilt from its published description: data, predictions and reproducible analysis"
+title: "Memorization and incomplete fitting in a recursive arithmetic reasoner rebuilt from its published description"
 authors:
   - family-names: Jeong
     given-names: Woncheol
@@ -11,12 +11,12 @@ authors:
   - family-names: Oh
     given-names: Hayoung
     orcid: "https://orcid.org/0000-0002-7362-5138"
-doi: "10.5281/zenodo.23880859"
-url: "https://zenodo.org/records/23880859"
+url: "https://github.com/wwhite777/recursive-arithmetic-memorization"
 repository-code: "https://github.com/wwhite777/recursive-arithmetic-memorization"
 license: MIT
 preferred-citation:
   type: data
+  version: "1.0.1"
   title: "Memorization and incomplete fitting in a recursive arithmetic reasoner rebuilt from its published description: data, predictions and reproducible analysis"
   authors:
     - family-names: Jeong
@@ -30,3 +30,19 @@ preferred-citation:
     name: Zenodo
   doi: "10.5281/zenodo.23880859"
   url: "https://zenodo.org/records/23880859"
+references:
+  - type: data
+    version: "1.0.1"
+    title: "Memorization and incomplete fitting in a recursive arithmetic reasoner rebuilt from its published description: data, predictions and reproducible analysis"
+    authors:
+      - family-names: Jeong
+        given-names: Woncheol
+        orcid: "https://orcid.org/0000-0001-9484-7808"
+      - family-names: Oh
+        given-names: Hayoung
+        orcid: "https://orcid.org/0000-0002-7362-5138"
+    year: 2026
+    publisher:
+      name: Zenodo
+    doi: "10.5281/zenodo.23880859"
+    url: "https://zenodo.org/records/23880859"

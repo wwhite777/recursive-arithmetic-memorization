@@ -4,15 +4,15 @@
   "entries": [
     {
       "released_path": "CHANGELOG.md",
-      "released_sha256": "89ff35685862cc36e0a59ebdc5a7d13876ba3a65fec66ec3f39831182d743cd1",
+      "released_sha256": "9bf64f25b2627cdeb4bc71bf42ef7879b381bc9da43147c73e9bce4b5c382871",
       "sources": [],
-      "exact_rule": "New release history: initial 1.0.0 archived commit a95ab090 and the scoped 1.0.1 changes."
+      "exact_rule": "New release history: initial 1.0.0 archived commit a95ab090 and the scoped 1.0.1 changes. Release 1.0.2: Add the 1.0.2 documentation and record-label release history; preserve previous entries."
     },
     {
       "released_path": "CITATION.cff",
-      "released_sha256": "4ceb2d916370a36470d76a35f2b57c47048b41c41b53f9b6074df21fe8cf65c8",
+      "released_sha256": "63dcfa88105dea7d41dcb0513c1de1e4e4096a065ec7d6aa93407cea5d0d1ea1",
       "sources": [],
-      "exact_rule": "Newly authored citation metadata using the supplied reserved DOI, repository URL, dataset title, author names, ORCIDs and year; no venue or publication status asserted. Release 1.0.1: Set version 1.0.1 and date-released 2026-11-02."
+      "exact_rule": "Newly authored citation metadata using the supplied reserved DOI, repository URL, dataset title, author names, ORCIDs and year; no venue or publication status asserted. Release 1.0.1: Set version 1.0.1 and date-released 2026-11-02. Release 1.0.2: Identify repository software version 1.0.2; retain the published dataset DOI as preferred citation and reference with dataset version 1.0.1."
     },
     {
       "released_path": "LICENSE",
@@ -22,14 +22,14 @@
     },
     {
       "released_path": "README.md",
-      "released_sha256": "19115d598b0fbdc71fb28747ef5f04af09e1ccaa565ffea83939184d49c77809",
+      "released_sha256": "75827fd4d79145ff4fbf65ac94f3e33b4762ccc92a8fd9584d9e0ece357eb8c2",
       "sources": [
         {
           "source_path": "sources/2adc82acbc82f901bf04/manuscript_v5_3.md",
           "source_sha256": "4b2334263ac15af07fe2356dfe7b3dd909757d2284a67d300e02433990bca135"
         }
       ],
-      "exact_rule": "Compose a release README from the scientific definitions, key numbers and limitations; preserve those definitions and displayed values, exclude administrative prose, and add relative reproduction commands and the original Figure 1 reference. Release 1.0.1: Add the third-party notices section and Version 1.0.1 to the citation."
+      "exact_rule": "Compose a release README from the scientific definitions, key numbers and limitations; preserve those definitions and displayed values, exclude administrative prose, and add relative reproduction commands and the original Figure 1 reference. Release 1.0.1: Add the third-party notices section and Version 1.0.1 to the citation. Release 1.0.2: State the supplied published DOI status, distinguish repository 1.0.2 from dataset 1.0.1, explain test-source lineage and allocation/count labels; no scientific values changed."
     },
     {
       "released_path": "SHA256SUMS",
@@ -86,9 +86,9 @@
     },
     {
       "released_path": "analysis/verify.py",
-      "released_sha256": "94387318f4a6de22f9c7059acf170b00e15b7c504a613b7f7379dac377ea8b58",
+      "released_sha256": "e6785c9337ac3f5281d7bb56712293fd0a7b67236314c203ead7c6d9dd837c93",
       "sources": [],
-      "exact_rule": "Newly authored release file; no pre-existing source file was transformed. Release 1.0.1: Verify the four NVIDIA L40S inventory entries and membership of every GPU UUID in plain and gzip-compressed records."
+      "exact_rule": "Newly authored release file; no pre-existing source file was transformed. Release 1.0.1: Verify the four NVIDIA L40S inventory entries and membership of every GPU UUID in plain and gzip-compressed records. Release 1.0.2: Exclude the inventory file; verify UUID membership and exact released plain, decompressed-gzip and combined occurrence counts."
     },
     {
       "released_path": "archive/dataset-new_train.jsonl.gz",
@@ -5061,7 +5061,7 @@
           "source_sha256": "e993fb230a6a242dfbe9ba6a952e63f651c5dcb7a68ecb4bd6334b7fc7d09400"
         }
       ],
-      "exact_rule": "Lossless gzip compression, empty original filename, timestamp zero, compression level six; decompressed bytes equal source. Rename every execution-role substring consistently; remove non-scientific paper-progress and disposition fields; preserve numerical measurements."
+      "exact_rule": "Lossless gzip compression, empty original filename, timestamp zero, compression level six; decompressed bytes equal source. Only the outer released path is renamed; no fields, labels or bytes inside the journal are changed."
     },
     {
       "released_path": "records/R131/deletions_v1.json",
@@ -5167,7 +5167,7 @@
           "source_sha256": "2c035e84c8c14518c86309ed8d5ed40c7b81240b8a602fd0493e4ffd3c84a98a"
         }
       ],
-      "exact_rule": "Lossless gzip compression, empty original filename, timestamp zero, compression level six; decompressed bytes equal source. Rename every execution-role substring consistently; remove non-scientific paper-progress and disposition fields; preserve numerical measurements."
+      "exact_rule": "Lossless gzip compression, empty original filename, timestamp zero, compression level six; decompressed bytes equal source. Only the outer released path is renamed; no fields, labels or bytes inside the journal are changed."
     },
     {
       "released_path": "records/R262/deletions_v1.json",
@@ -5251,7 +5251,7 @@
           "source_sha256": "eb20f3792e3a3e98843baa4112ba3c078257cf1b5e5a7cb2787f0f85bea33c0f"
         }
       ],
-      "exact_rule": "Lossless gzip compression, empty original filename, timestamp zero, compression level six; decompressed bytes equal source. Rename every execution-role substring consistently; remove non-scientific paper-progress and disposition fields; preserve numerical measurements."
+      "exact_rule": "Lossless gzip compression, empty original filename, timestamp zero, compression level six; decompressed bytes equal source. Only the outer released path is renamed; no fields, labels or bytes inside the journal are changed."
     },
     {
       "released_path": "records/R524-B4096-D16-long/deletions_v1.json",
@@ -5346,7 +5346,7 @@
           "source_sha256": "a3a1d8cd109ee8218dcb850a24f78d2c94f3a050d9dd6d1e5f1b56db64a0a34d"
         }
       ],
-      "exact_rule": "Lossless gzip compression, empty original filename, timestamp zero, compression level six; decompressed bytes equal source. Rename every execution-role substring consistently; remove non-scientific paper-progress and disposition fields; preserve numerical measurements."
+      "exact_rule": "Lossless gzip compression, empty original filename, timestamp zero, compression level six; decompressed bytes equal source. Only the outer released path is renamed; no fields, labels or bytes inside the journal are changed."
     },
     {
       "released_path": "records/R524-B4096-D16-short/deletions_v1.json",
@@ -5447,7 +5447,7 @@
           "source_sha256": "f009d0f67f6ea4a5e9918376504b10937311fdb04036f7fdf082d022860a717c"
         }
       ],
-      "exact_rule": "Lossless gzip compression, empty original filename, timestamp zero, compression level six; decompressed bytes equal source. Rename every execution-role substring consistently; remove non-scientific paper-progress and disposition fields; preserve numerical measurements."
+      "exact_rule": "Lossless gzip compression, empty original filename, timestamp zero, compression level six; decompressed bytes equal source. Only the outer released path is renamed; no fields, labels or bytes inside the journal are changed."
     },
     {
       "released_path": "records/R524-B4096-D8-short/deletions_v1.json",
@@ -5542,7 +5542,7 @@
           "source_sha256": "efb4289d7fa52ba9b249fef39238a10daddfb4e4d836ce03c35320b3f052a58e"
         }
       ],
-      "exact_rule": "Lossless gzip compression, empty original filename, timestamp zero, compression level six; decompressed bytes equal source. Rename every execution-role substring consistently; remove non-scientific paper-progress and disposition fields; preserve numerical measurements."
+      "exact_rule": "Lossless gzip compression, empty original filename, timestamp zero, compression level six; decompressed bytes equal source. Only the outer released path is renamed; no fields, labels or bytes inside the journal are changed."
     },
     {
       "released_path": "records/R524/curve/resume.json",
@@ -5659,7 +5659,7 @@
           "source_sha256": "9b81c2453ef6edd51a63a8f0e02c51df1433d61e5c606155228352acfaa02f58"
         }
       ],
-      "exact_rule": "Lossless gzip compression, empty original filename, timestamp zero, compression level six; decompressed bytes equal source. Rename every execution-role substring consistently; remove non-scientific paper-progress and disposition fields; preserve numerical measurements."
+      "exact_rule": "Lossless gzip compression, empty original filename, timestamp zero, compression level six; decompressed bytes equal source. Only the outer released path is renamed; no fields, labels or bytes inside the journal are changed."
     },
     {
       "released_path": "records/R65-original/curve/resume.json",
@@ -5766,7 +5766,7 @@
           "source_sha256": "8faf08a7de03ee11d9f69c86f15514c2c09ca590a9bb11a0037b2b8e746a9ae7"
         }
       ],
-      "exact_rule": "Lossless gzip compression, empty original filename, timestamp zero, compression level six; decompressed bytes equal source. Rename every execution-role substring consistently; remove non-scientific paper-progress and disposition fields; preserve numerical measurements."
+      "exact_rule": "Lossless gzip compression, empty original filename, timestamp zero, compression level six; decompressed bytes equal source. Only the outer released path is renamed; no fields, labels or bytes inside the journal are changed."
     },
     {
       "released_path": "records/R65-resampled/deletions_v1.json",
@@ -5872,7 +5872,7 @@
           "source_sha256": "462c9078c122a4054ea6faa3c92a37ea7ce9330f8778df42bd98ef6408438fc3"
         }
       ],
-      "exact_rule": "Lossless gzip compression, empty original filename, timestamp zero, compression level six; decompressed bytes equal source. Rename every execution-role substring consistently; remove non-scientific paper-progress and disposition fields; preserve numerical measurements."
+      "exact_rule": "Lossless gzip compression, empty original filename, timestamp zero, compression level six; decompressed bytes equal source. Only the outer released path is renamed; no fields, labels or bytes inside the journal are changed."
     },
     {
       "released_path": "records/S524/deletions_v1.json",
@@ -5978,7 +5978,7 @@
           "source_sha256": "b1e7e85e4448c884c063a5ccef5b2033d4752300761839bd19fea6d373e9f9c4"
         }
       ],
-      "exact_rule": "Lossless gzip compression, empty original filename, timestamp zero, compression level six; decompressed bytes equal source. Rename every execution-role substring consistently; remove non-scientific paper-progress and disposition fields; preserve numerical measurements."
+      "exact_rule": "Lossless gzip compression, empty original filename, timestamp zero, compression level six; decompressed bytes equal source. Only the outer released path is renamed; no fields, labels or bytes inside the journal are changed."
     },
     {
       "released_path": "records/S65/deletions_v1.json",
@@ -6188,6 +6188,12 @@
         }
       ],
       "exact_rule": "Replace private labels by scientific setting labels, local absolute paths by source aliases, and private project, task and execution-role tokens by neutral terms; preserve all numeric values and hashes. Rename every execution-role substring consistently; remove non-scientific paper-progress and disposition fields; preserve numerical measurements."
+    },
+    {
+      "released_path": "records/allocations/INDEX.md",
+      "released_sha256": "9fec5673d938366e4fbc84fd84443a8b7c3ee7683217ee9c53681807334865ab",
+      "sources": [],
+      "exact_rule": "New documentation naming the setting, role and recorded charges of every allocation record, including preliminary or refused roots 05–07; no allocation record bytes changed."
     },
     {
       "released_path": "records/checkpoint_retention.json",
@@ -6561,14 +6567,14 @@
     },
     {
       "released_path": "records/gpu_inventory_20261102.json",
-      "released_sha256": "9f4c488e5ea004f3ec7ce6d098a0c1d754dbfe2de0deb045c5dd4cb4c688102a",
+      "released_sha256": "8dab688a778d20c75a4f5f9c728a5ac735d5e44d816e0563d597d6d3db746334",
       "sources": [
         {
           "source_path": "sources/dffde40a0e0462856cc4/gpu_inventory_20261102.json",
           "source_sha256": "9f4c488e5ea004f3ec7ce6d098a0c1d754dbfe2de0deb045c5dd4cb4c688102a"
         }
       ],
-      "exact_rule": "Byte-for-byte copy of the supplied dated device inventory; no hardware query executed during release preparation."
+      "exact_rule": "Byte-for-byte copy of the supplied dated device inventory; no hardware query executed during release preparation. Release 1.0.2: Preserve the device list and original count values, relabel their full-project scope, and add independently computed released-record counts with the inventory excluded."
     },
     {
       "released_path": "records/main_layouts.json",
@@ -9552,5 +9558,874 @@
       ],
       "exact_rule": "Byte-for-byte copy; preserve original copyright and license text."
     }
-  ]
+  ],
+  "test_provenance": {
+    "statement": "The model fixtures shipped in src/tests are adaptations of the suites whose historical reports are included, written against later source versions than the earlier reports bind. Historical reports attest their bound source versions, not execution of the shipped adapted bytes. test_workload.py is a separate standard-library check added in 1.0.1. No historical model fixture was rerun for 1.0.2.",
+    "historical_reports": [
+      {
+        "path": "records/fixtures/suite01.json",
+        "sha256": "e4fa8361ea1b2a26fa723c7b9afd2382a956de40e8c829ebfaa5f4edcd2c825b"
+      },
+      {
+        "path": "records/fixtures/suite02.json",
+        "sha256": "f3d44be3fb9dfb6e38e7134ba7578c58765fcc1a468709eb31a367dc07d92e1e"
+      },
+      {
+        "path": "records/fixtures/suite03.json",
+        "sha256": "b819244e493190ac3e4ce68163dd1631aa89ce4ada788ad9f30693bf1cca854f"
+      },
+      {
+        "path": "records/fixtures/suite04.json",
+        "sha256": "23325807dd565401f105a80ab40f0196e6296916b672002d0f6ea7fe38750790"
+      },
+      {
+        "path": "records/fixtures/suite05.json",
+        "sha256": "ce59ae73a0c63e5bb808a9f7612b1d4b1e17da94f367d375b2722117ccac89d9"
+      },
+      {
+        "path": "records/fixtures/suite06.json",
+        "sha256": "9d094ca2cf962a8df2a0b467d406333268e4604b61dee8636a633acb1edc5537"
+      },
+      {
+        "path": "records/fixtures/suite07.json",
+        "sha256": "eead4e607f80d10d3ba0678cb5cac67cb481e9bf9c05d78ac98943f66ea587bf"
+      }
+    ],
+    "historical_model_bindings_sha256": "7d03bc1f596a35decb556bb39b8c1ccb5052510c9f059028c7c760e5606a429a",
+    "enumeration_scope": "All distinct source and test-source SHA256 values in the seven shipped suite reports, plus the four historical model-source bindings. Compare to exact shipped src/**/*.py bytes. A source hash may identify an adaptation input without an exact shipped byte copy.",
+    "historical_source_hashes": 74,
+    "exact_shipped_source_hashes": 5,
+    "historical_source_versions_without_shipped_bytes": [
+      {
+        "sha256": "13031b953caa447c3b405236a3cc5fc5e91b9d2384d24f16590a254822c5a9d8",
+        "historical_relative_paths": [
+          "qdriver/engine.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite01.json",
+          "records/fixtures/suite03.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "133453631130b1d3b5195a03d4822096171d6e6d78318b0a05391896137ecb43",
+        "historical_relative_paths": [
+          "qdriver/guard.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite01.json",
+          "records/fixtures/suite02.json",
+          "records/fixtures/suite03.json",
+          "records/fixtures/suite04.json",
+          "records/fixtures/suite05.json",
+          "records/fixtures/suite06.json",
+          "records/fixtures/suite07.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "16a4b1696eb9b0f1e378447823a8a0fcd062ae2c65fdbffb7ba0254879f067af",
+        "historical_relative_paths": [
+          "qdriver/executor.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite06.json",
+          "records/fixtures/suite07.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "1978f6651b243e9dd1da15565eaf81ed0fb1d17f5c4077fb6497885ab454f57d",
+        "historical_relative_paths": [
+          "tests/test_checkpoint.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite04.json",
+          "records/fixtures/suite05.json",
+          "records/fixtures/suite06.json",
+          "records/fixtures/suite07.json"
+        ],
+        "is_source_of_a_shipped_adaptation": true
+      },
+      {
+        "sha256": "19885b3ca670d8b811dc97aae1e86a82de3f206a8d9d29115ac4a3b2d3309f5f",
+        "historical_relative_paths": [
+          "tests/test_c2_accumulation.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite04.json",
+          "records/fixtures/suite05.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "1a57b63fd98bd97bd5d9a64ac7d2ed118bb0c56dc28627c851cb7bbbe874524b",
+        "historical_relative_paths": [
+          "reasoning/arithmetic.py"
+        ],
+        "historical_reports": [],
+        "is_source_of_a_shipped_adaptation": true
+      },
+      {
+        "sha256": "1df4ddec993fdf519ca2564cdb75b5f90ea8d7c5359042a16675c2af4010693a",
+        "historical_relative_paths": [
+          "tests/test_act_steps.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite06.json",
+          "records/fixtures/suite07.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "1f7a57deba158a65d1709ac2ecfc07c2d24c97f890b446db71ca286953f87eb8",
+        "historical_relative_paths": [
+          "qdriver/rules.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite06.json",
+          "records/fixtures/suite07.json"
+        ],
+        "is_source_of_a_shipped_adaptation": true
+      },
+      {
+        "sha256": "23a34d7b451fdda6b662abde1e553827a026debfaa86215972154a1aa104d81a",
+        "historical_relative_paths": [
+          "tests/c2_split_executor.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite01.json",
+          "records/fixtures/suite03.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "2452fa3c57a538cd09d7fb69ba53e78f1d557d54b8b03c6852246aefc86a6b3d",
+        "historical_relative_paths": [
+          "qdriver/rules.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite01.json",
+          "records/fixtures/suite03.json",
+          "records/fixtures/suite04.json",
+          "records/fixtures/suite05.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "27789d75f7f87f2406de99ffa8d594fb44517a9e780eab54c71cc80bf0e871ce",
+        "historical_relative_paths": [
+          "tests/test_rules.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite01.json",
+          "records/fixtures/suite02.json",
+          "records/fixtures/suite03.json",
+          "records/fixtures/suite04.json",
+          "records/fixtures/suite05.json",
+          "records/fixtures/suite06.json",
+          "records/fixtures/suite07.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "2deb7f511cebb7bb4463034f87532e03897ddbc2f88f986bcb5bba0e1cf2321f",
+        "historical_relative_paths": [
+          "tests/test_c2l.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite06.json",
+          "records/fixtures/suite07.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "2e1c3737e9b76146f204118845d863e5c954036e41f659e98bfcc80bae81ff5d",
+        "historical_relative_paths": [
+          "tests/run.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite02.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "2ef00157e35baea1ae1ca8c236acf824edd85e6fd2d90498f7056255e7d1231d",
+        "historical_relative_paths": [
+          "tests/test_c2_pipeline.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite04.json",
+          "records/fixtures/suite05.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "307fe471a3b78d392298c73a37d7581a8bbf4b81ca11ad4b5a940a282709fc37",
+        "historical_relative_paths": [
+          "qdriver/engine.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite04.json",
+          "records/fixtures/suite05.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "316a6d46501e7466ff655ca3d07fd6cd10828eab309509e1b493ff2295c9f016",
+        "historical_relative_paths": [
+          "qdriver/engine.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite06.json",
+          "records/fixtures/suite07.json"
+        ],
+        "is_source_of_a_shipped_adaptation": true
+      },
+      {
+        "sha256": "32b16475d5626b09f45ed01dc365d089587666d4355db80f380a63d32299870d",
+        "historical_relative_paths": [
+          "tests/helpers.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite01.json",
+          "records/fixtures/suite02.json",
+          "records/fixtures/suite03.json",
+          "records/fixtures/suite04.json",
+          "records/fixtures/suite05.json",
+          "records/fixtures/suite06.json",
+          "records/fixtures/suite07.json"
+        ],
+        "is_source_of_a_shipped_adaptation": true
+      },
+      {
+        "sha256": "34d695bcd8bc7ec1896a24e4e7caf3a3ffe0220074ca7ca925468553356c617f",
+        "historical_relative_paths": [
+          "tests/test_equivalence.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite01.json",
+          "records/fixtures/suite02.json",
+          "records/fixtures/suite03.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "3951380a1f4f1ba855162a9386a38a79089baaaa309e774eb8feb8482494c427",
+        "historical_relative_paths": [
+          "qdriver/workload.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite01.json",
+          "records/fixtures/suite03.json",
+          "records/fixtures/suite04.json",
+          "records/fixtures/suite05.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "3965b9fc05ce88d2b3a84cb987ef355679965762021b8f0cae7e9af44d399717",
+        "historical_relative_paths": [
+          "tests/test_pipeline.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite01.json",
+          "records/fixtures/suite02.json",
+          "records/fixtures/suite03.json",
+          "records/fixtures/suite04.json",
+          "records/fixtures/suite05.json",
+          "records/fixtures/suite06.json",
+          "records/fixtures/suite07.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "41cb35ee68bceb95fa63bcbac8db14ffbd99793baff83e5e080fa166022c6f78",
+        "historical_relative_paths": [
+          "tests/test_amendment_a3.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite01.json",
+          "records/fixtures/suite02.json",
+          "records/fixtures/suite03.json",
+          "records/fixtures/suite04.json",
+          "records/fixtures/suite05.json",
+          "records/fixtures/suite06.json",
+          "records/fixtures/suite07.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "452be859c23c9cba14807fad3bce75f0f175b36af809e379f22b9641311f8b86",
+        "historical_relative_paths": [
+          "qdriver/training.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite02.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "45bbe2eb28f509d863185dffdbbc999cc4857bc1abc1d29c068a7ba027d18712",
+        "historical_relative_paths": [
+          "tests/test_amendment_a2.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite06.json",
+          "records/fixtures/suite07.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "4b5ec15778057f521b7ae34780b62617f83afa244b13a58ac689e2ce08257f75",
+        "historical_relative_paths": [
+          "qdriver/common.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite01.json",
+          "records/fixtures/suite02.json",
+          "records/fixtures/suite03.json",
+          "records/fixtures/suite04.json",
+          "records/fixtures/suite05.json",
+          "records/fixtures/suite06.json",
+          "records/fixtures/suite07.json"
+        ],
+        "is_source_of_a_shipped_adaptation": true
+      },
+      {
+        "sha256": "4f5bab6d47c61fa91e66254c1f365bc15db900ef4603c06ed9d56fa7f4c2a773",
+        "historical_relative_paths": [
+          "tests/run.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite01.json",
+          "records/fixtures/suite03.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "55ebac29947e13b291f05482df336cbe6f063b4b858d1071ee6540f503f5b73a",
+        "historical_relative_paths": [
+          "qdriver/executor.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite02.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "61ef1a63f0f945c13aa9de4493b3f1a28dda1e4b4697dbfebd8f97ef3fafae96",
+        "historical_relative_paths": [
+          "reasoning/model.py"
+        ],
+        "historical_reports": [],
+        "is_source_of_a_shipped_adaptation": true
+      },
+      {
+        "sha256": "6568a8e3313883b6253f39cacd0b6e3c984ffb6608df99af3e464d35b3118784",
+        "historical_relative_paths": [
+          "qdriver/controller.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite06.json",
+          "records/fixtures/suite07.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "6829817617c66f22e5a98a64081105c5862b52d8283861459c89845cb06fc72f",
+        "historical_relative_paths": [
+          "tests/run.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite04.json",
+          "records/fixtures/suite05.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "6dff0d257d5cd9d4ce8e9fbd4cd2b83fd57b455d199d32df0dbbc178b2c5f347",
+        "historical_relative_paths": [
+          "qdriver/training.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite01.json",
+          "records/fixtures/suite03.json",
+          "records/fixtures/suite04.json",
+          "records/fixtures/suite05.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "72248361d7e58e3f328d95ce22c5c613dfcf867d85047c011f3c133c2c40c207",
+        "historical_relative_paths": [
+          "tests/test_c2_calibration.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite01.json",
+          "records/fixtures/suite03.json",
+          "records/fixtures/suite04.json",
+          "records/fixtures/suite05.json",
+          "records/fixtures/suite06.json",
+          "records/fixtures/suite07.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "7a4436c79c8e81d9a66dfbeb8b06323f62859e3672f6ac48d723e12b8e09e8f0",
+        "historical_relative_paths": [
+          "tests/test_c2m.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite04.json",
+          "records/fixtures/suite05.json",
+          "records/fixtures/suite06.json",
+          "records/fixtures/suite07.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "8442aaedbf79df78808b8636b19aef9eb566b67b5982026915cf5319c4f49886",
+        "historical_relative_paths": [
+          "tests/test_seeds.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite06.json",
+          "records/fixtures/suite07.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "846f355a72e52d4dd5c907127ce5eb8ea4e8b80ee26a9426834f4fa979bbe7bd",
+        "historical_relative_paths": [
+          "qdriver/storage.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite06.json",
+          "records/fixtures/suite07.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "8478e8f589761667df30238e5b92fddda92b6ba0223534282eb1ff30ad21f212",
+        "historical_relative_paths": [
+          "qdriver/controller.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite02.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "858139477c400c45dd4c8baf9d13cbc9c44a0a2740c4fbcb29a6eb7364e67a9c",
+        "historical_relative_paths": [
+          "tests/test_amendment_a2.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite01.json",
+          "records/fixtures/suite02.json",
+          "records/fixtures/suite03.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "87eca305e574460ba320b20d515234c0c462b8336c23e5e9001c6f504c9670c1",
+        "historical_relative_paths": [
+          "tests/c2_helpers.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite01.json",
+          "records/fixtures/suite03.json",
+          "records/fixtures/suite04.json",
+          "records/fixtures/suite05.json",
+          "records/fixtures/suite06.json",
+          "records/fixtures/suite07.json"
+        ],
+        "is_source_of_a_shipped_adaptation": true
+      },
+      {
+        "sha256": "8f19b03e8f541bfecfc6478836f09d7f31bf42130247f30fa211688131bd90af",
+        "historical_relative_paths": [
+          "qdriver/storage.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite02.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "8f59f9bfaaae62f843bd2462b5effc8981b3c10788a69e15da63dc6730f249a8",
+        "historical_relative_paths": [
+          "tests/test_c2_accumulation.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite01.json",
+          "records/fixtures/suite03.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "906592ca8d18d346881cefe9d121d7e0117e0e4647beca4a10f0eb0dbca2bc9d",
+        "historical_relative_paths": [
+          "tests/test_accounting.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite01.json",
+          "records/fixtures/suite02.json",
+          "records/fixtures/suite03.json",
+          "records/fixtures/suite04.json",
+          "records/fixtures/suite05.json",
+          "records/fixtures/suite06.json",
+          "records/fixtures/suite07.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "93f5b36bd8295d11cd1f7ae48a0507bd065c6913fbbcb12b28aab8961032f85f",
+        "historical_relative_paths": [
+          "qdriver/__main__.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite01.json",
+          "records/fixtures/suite02.json",
+          "records/fixtures/suite03.json",
+          "records/fixtures/suite04.json",
+          "records/fixtures/suite05.json",
+          "records/fixtures/suite06.json",
+          "records/fixtures/suite07.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "94516a4069a95fd52dc89266f73e9b727e10c25e7fd46b3a5b1b244d7518db85",
+        "historical_relative_paths": [
+          "qdriver/storage.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite01.json",
+          "records/fixtures/suite03.json",
+          "records/fixtures/suite04.json",
+          "records/fixtures/suite05.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "9499efe473f046760a1486e39de7695411b6fd9cf2f8bff56abf30f5536c8e0e",
+        "historical_relative_paths": [
+          "qdriver/training.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite06.json",
+          "records/fixtures/suite07.json"
+        ],
+        "is_source_of_a_shipped_adaptation": true
+      },
+      {
+        "sha256": "96d4490b80b4ba50b0a1d8329f59d29bfd0a9562655f5fca92153c91d5815a87",
+        "historical_relative_paths": [
+          "qdriver/accounting.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite01.json",
+          "records/fixtures/suite02.json",
+          "records/fixtures/suite03.json",
+          "records/fixtures/suite04.json",
+          "records/fixtures/suite05.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "9a70d284715f8957bdd46b699f9c6e98e4336367d401a2dbd6824fc837fdb873",
+        "historical_relative_paths": [
+          "qdriver/workload.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite02.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "a0c072c413670338461b51ad63b31e1ef2c13516335dcf06859e16f519245e79",
+        "historical_relative_paths": [
+          "qdriver/executor.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite01.json",
+          "records/fixtures/suite03.json",
+          "records/fixtures/suite04.json",
+          "records/fixtures/suite05.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "a0c293cb7d4b0def8055985c00eee918727335a58512050092d000dfab661f37",
+        "historical_relative_paths": [
+          "tests/test_c2_pipeline.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite06.json",
+          "records/fixtures/suite07.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "a14fefe45bacf63fa538814809ceac3fb1d73871bd32f6ae00f84f2b05e7bebc",
+        "historical_relative_paths": [
+          "tests/test_c2_pipeline.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite01.json",
+          "records/fixtures/suite03.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "a37ea2e4ba6b91e9bab87d22691509fbfb1b05f21b2d4bfcf9e7ce6041070620",
+        "historical_relative_paths": [
+          "tests/test_c2m.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite01.json",
+          "records/fixtures/suite03.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "a3891717df1699aad0526fb76125bd2b1101265a2e3de27349af210a402d05d2",
+        "historical_relative_paths": [
+          "tests/test_continuation.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite02.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "ba790d0de73821e68dc699227653386f56f341c3baf524178f5b4e2829f1694d",
+        "historical_relative_paths": [
+          "qdriver/__init__.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite01.json",
+          "records/fixtures/suite02.json",
+          "records/fixtures/suite03.json",
+          "records/fixtures/suite04.json",
+          "records/fixtures/suite05.json",
+          "records/fixtures/suite06.json",
+          "records/fixtures/suite07.json"
+        ],
+        "is_source_of_a_shipped_adaptation": true
+      },
+      {
+        "sha256": "ba9885020f1eda0d4b0617c7edf6c09cbba4db368eda1737bda6638a89bb2068",
+        "historical_relative_paths": [
+          "tests/test_equivalence.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite04.json",
+          "records/fixtures/suite05.json",
+          "records/fixtures/suite06.json",
+          "records/fixtures/suite07.json"
+        ],
+        "is_source_of_a_shipped_adaptation": true
+      },
+      {
+        "sha256": "c1132e96f369285c8e697ecd885df2e997c444c3efc453b76cd74293b090959b",
+        "historical_relative_paths": [
+          "qdriver/continuation.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite02.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "c77df8ca540ae043df553ae05e079ac92c78b98a5352569a7770edcfa4414914",
+        "historical_relative_paths": [
+          "qdriver/workload.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite06.json",
+          "records/fixtures/suite07.json"
+        ],
+        "is_source_of_a_shipped_adaptation": true
+      },
+      {
+        "sha256": "cb7643136ede79038817b464de480b046ad9b2fd1889286574d3524af140212c",
+        "historical_relative_paths": [
+          "qdriver/engine.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite02.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "ce5e59071639b48a0eaa1e29791434ebeddf9e31a074b82e8d06dcb19b460d58",
+        "historical_relative_paths": [
+          "tests/test_c2_accumulation.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite06.json",
+          "records/fixtures/suite07.json"
+        ],
+        "is_source_of_a_shipped_adaptation": true
+      },
+      {
+        "sha256": "cf5d4a67609e40bc0eef02627b368d8c7f6c769cb7b2f76fa633f63f991d64bb",
+        "historical_relative_paths": [
+          "tests/run.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite06.json",
+          "records/fixtures/suite07.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "cf654f8f4c473cec9e14a745b4c868c94f77a82fa2ef83de362d628ec5532431",
+        "historical_relative_paths": [
+          "tests/test_amendment.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite04.json",
+          "records/fixtures/suite05.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "d8a2334bd95a2af335de2f045efce1fb5940375e9a93920019d1897bdf3691e9",
+        "historical_relative_paths": [
+          "tests/test_best_ema.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite06.json",
+          "records/fixtures/suite07.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "d92a470fddc7f04433208fa1c228d7454e3539dcbdc570cbd84aba446cee37b4",
+        "historical_relative_paths": [
+          "qdriver/controller.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite01.json",
+          "records/fixtures/suite03.json",
+          "records/fixtures/suite04.json",
+          "records/fixtures/suite05.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "dd2b29cf72e2803191f1017458497538d28006453d04f3c2e9d4c14a4004ec68",
+        "historical_relative_paths": [
+          "tests/test_guard.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite01.json",
+          "records/fixtures/suite02.json",
+          "records/fixtures/suite03.json",
+          "records/fixtures/suite04.json",
+          "records/fixtures/suite05.json",
+          "records/fixtures/suite06.json",
+          "records/fixtures/suite07.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "dd5fb3c29383e91a93fb777ebbb130a3a6391730f391f33fd4e653a3b5843376",
+        "historical_relative_paths": [
+          "tests/test_schedule.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite01.json",
+          "records/fixtures/suite02.json",
+          "records/fixtures/suite03.json",
+          "records/fixtures/suite04.json",
+          "records/fixtures/suite05.json",
+          "records/fixtures/suite06.json",
+          "records/fixtures/suite07.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "e589e6d13bea11ee24f4bbf8887e4e2f1edf3db9974f187067efc973760c8c77",
+        "historical_relative_paths": [
+          "tests/experiment_split_executor.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite06.json",
+          "records/fixtures/suite07.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "eb7e398d2965ff372bccc26be6798115fcad92ab8a9b01c04ebb5ba0eba43269",
+        "historical_relative_paths": [
+          "tests/test_amendment.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite06.json",
+          "records/fixtures/suite07.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "f3c5ae59715130cd76152f0238707c869f4ba7df5957c2565be7a3c67d621215",
+        "historical_relative_paths": [
+          "tests/test_amendment.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite01.json",
+          "records/fixtures/suite02.json",
+          "records/fixtures/suite03.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "f8089553a98d3d48914593fb3958bcb34af636d2c74e9373d62fefd62db20134",
+        "historical_relative_paths": [
+          "tests/test_amendment_a2.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite04.json",
+          "records/fixtures/suite05.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "f82841403fedd6f19206bf5ec34609650e25e465cf2edfebb9b95661f42b0cf4",
+        "historical_relative_paths": [
+          "qdriver/rules.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite02.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "fb580f034c56e0748494530654939ba17c0e94b0383b61a699e529d2606ac580",
+        "historical_relative_paths": [
+          "qdriver/accounting.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite06.json",
+          "records/fixtures/suite07.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      },
+      {
+        "sha256": "fcea837f4fc6de51b3fe400fb8dfdee1f80da84c7d241f3ebf5b7d353d6a3c3a",
+        "historical_relative_paths": [
+          "tests/test_nonrecursive.py"
+        ],
+        "historical_reports": [
+          "records/fixtures/suite06.json",
+          "records/fixtures/suite07.json"
+        ],
+        "is_source_of_a_shipped_adaptation": false
+      }
+    ]
+  }
 }
