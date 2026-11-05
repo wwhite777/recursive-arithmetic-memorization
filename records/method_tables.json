@@ -329,6 +329,11 @@
         "Planned readout": "Comparison with the source implementation",
         "Status": "Not possible",
         "Reason and reported location": "The authors' code was not obtained; the comparison remains limited to its published description."
+      },
+      {
+        "Planned readout": "Fresh-batch single-pass controls at both training-file cardinalities",
+        "Status": "Reported",
+        "Reason and reported location": "S65f and S524f records include compact sampling commitments, complete curves, inclusive charges, and final/best row predictions; fresh_batch_*.csv reports the reconstructed readouts."
       }
     ]
   },

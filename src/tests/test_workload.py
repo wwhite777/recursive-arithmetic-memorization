@@ -10,11 +10,11 @@ BASE = Path(__file__).resolve().parents[2]
 class ScheduleTests(unittest.TestCase):
     def test_every_shipped_schedule(self):
         schedules = sorted((BASE/'configs').glob('*_schedule.json'))
-        self.assertEqual(len(schedules), 10)
+        self.assertEqual(len(schedules), 12)
         for path in schedules:
             with self.subTest(schedule=path.name):
                 schedule = json.loads(path.read_text())
-                config = config_for_schedule(schedule)
+                config = config_for_schedule(schedule, training_data=json.loads((BASE/'configs'/(path.name.removesuffix('_schedule.json')+'.json')).read_text())['data']['train'])
                 validate_config(config)
                 training = config['training']
                 self.assertEqual(training['act_steps'], schedule['steps'])

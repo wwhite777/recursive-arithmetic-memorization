@@ -1,0 +1,191 @@
+{
+  "calibration": {
+    "path": "sources/aacc29aac232900b10e5/CALIBRATION.json",
+    "sha256": "b10bfef403f9d6befa3952f8296eb2dd1f0b61e88a44dda249f5efae2a4ea8f7"
+  },
+  "config": {
+    "arm": "S22",
+    "checkpoint_interval": 2048,
+    "data": {
+      "id_dev": {
+        "count": 2048,
+        "path": "sources/bb6c1491c94271119a72/id_dev.jsonl",
+        "sha256": "af1ef4eec173f637f19ef3db881ce413f7cab557e722d13a73db5ab0e2e6b70b"
+      },
+      "train": {
+        "count": 65536,
+        "path": "sources/6ea7bfcb45e9a7de3c1c/train.jsonl",
+        "sha256": "f18a58445a9d0159cd407cbfaf5de8e108df36b66ce1a4fd754ebaf8f854e942"
+      }
+    },
+    "data_order_seed": 101,
+    "evaluation_batch": 512,
+    "evaluation_interval": 2048,
+    "fixed_T": true,
+    "fresh_batch": true,
+    "model": {
+      "bound_eps": 1e-08,
+      "dropout_core": 0.025,
+      "dropout_state": 0.01,
+      "engineering_fixture": false,
+      "expansion": 4.0,
+      "ff_multiple": 256,
+      "forward_dtype": "bfloat16",
+      "heads": 8,
+      "hidden_size": 512,
+      "layers": 4,
+      "noise_scale": 0.005,
+      "norm_eps": 1e-05,
+      "pad_id": 0,
+      "rope_theta": 10000.0,
+      "seq_len": 19,
+      "update_bound": 0.7,
+      "vocab_size": 13
+    },
+    "model_mode": "nonrecursive",
+    "schema": "experiment",
+    "seed": 101,
+    "training": {
+      "act_steps": 1,
+      "beta1": 0.9,
+      "beta2": 0.95,
+      "clip_norm": 1.0,
+      "ema_decay": 0.999,
+      "engineering_fixture": false,
+      "min_lr_ratio": 0.01,
+      "peak_lr": 0.0005,
+      "physical_batch": 1024,
+      "seed": 101,
+      "total_updates": 196608,
+      "warmup_updates": 2000,
+      "weight_decay": 1.0
+    },
+    "training_override": true
+  },
+  "data_exposure": {
+    "A": 1,
+    "B": 1024,
+    "F": 201326592,
+    "U": 196608
+  },
+  "disk_projection": {
+    "T": 196608,
+    "additional_peak_bytes": 2008450921,
+    "best_ema_checkpoint_bytes": 275490227,
+    "checkpoint_bytes": 275490227,
+    "checkpoint_copies": 3,
+    "checkpoint_extra_allowance_bytes": 1048576,
+    "checkpoint_x2_plus_logs_plus_metrics_bytes": 645914524,
+    "checkpoint_x3_plus_logs_plus_metrics_bytes": 921404751,
+    "compact_log_bound_bytes": 24941622,
+    "controller_log_allowance_bytes": 67108864,
+    "data_exposure": {
+      "A": 1,
+      "B": 1024,
+      "F": 201326592,
+      "U": 196608
+    },
+    "epoch_count": 3072,
+    "epoch_record_max_bytes": 217,
+    "evaluation_record_allowance_bytes": 9146,
+    "existing_project_environment_bytes": 20674778921,
+    "fresh_record": {
+      "batch_size": 1024,
+      "calibration_updates": 48,
+      "epoch_bytes": 209,
+      "length": 65536,
+      "metadata_bytes": 630,
+      "sample_bytes": 5366,
+      "schema": "fresh-record-v1"
+    },
+    "interrupted_write_allowance_bytes": 275490227,
+    "logs_bytes": 24941622,
+    "metrics_bytes": 69992448,
+    "metrics_bytes_per_update_reserved": 356,
+    "projected_aggregate_peak_bytes": 22683229842,
+    "protected_resume_bytes": 275490227,
+    "replay_logs_bytes": 2860209,
+    "replay_metrics_bytes": 8019968,
+    "replay_tail_allocations": 11,
+    "replay_tail_updates_each": 2048,
+    "retained_after_pruning_bytes": 796293922,
+    "safety_margin_bytes": 182586448,
+    "safety_margin_denominator": 10,
+    "safety_margin_numerator": 1,
+    "sample_record_max_bytes": 119,
+    "schema": "experiment",
+    "segment_log_multiplier": 1,
+    "storage_cap_bytes": 24000000000,
+    "subtotal_bytes": 1825864473,
+    "temporary_write_bytes": 275490227,
+    "within_storage_cap": true
+  },
+  "environment": {
+    "cuda_build": "12.6",
+    "deterministic_algorithms": true,
+    "interop_threads": 1,
+    "python": "sources/5679dedf48847a55bd3e/python",
+    "python_sha256": "df23391eb5ab66f005be15f792d55766d7ce96198e9e10df2aea72aec8c686ea",
+    "threads": 1,
+    "torch_version": "2.9.1+cu126"
+  },
+  "inputs_sha256": "5e2c1f65e0c10ac1a3234df76c1c997c9975bcc84c5ee9b0883bf1776114c06e",
+  "run_options": {
+    "execution": {
+      "cap_seconds": 21600.0,
+      "fixed_T": 196608,
+      "max_allocations": 10,
+      "reserve_seconds": 2700.0
+    },
+    "fresh_batch": true,
+    "model": "nonrecursive",
+    "storage_cap_bytes": 24000000000,
+    "training_data": {
+      "count": 65536,
+      "path": "sources/6ea7bfcb45e9a7de3c1c/train.jsonl",
+      "sha256": "f18a58445a9d0159cd407cbfaf5de8e108df36b66ce1a4fd754ebaf8f854e942"
+    }
+  },
+  "schedule": {
+    "T": 196608,
+    "available_main_seconds": 18882.59489873983,
+    "batch": 1024,
+    "calibration_charged_seconds": 17.40510126017034,
+    "cap_seconds": 21600.0,
+    "fixed_T": 196608,
+    "fresh_batch": true,
+    "memory_threshold_bytes": 44000000000,
+    "model_mode": "nonrecursive",
+    "next_block_projected_seconds": 10750.227942971513,
+    "planning_seconds": 18900.0,
+    "preferred_failure": null,
+    "projected_seconds": 10639.437637508847,
+    "projected_total_charged_seconds": 10656.842738769017,
+    "reserve_seconds": 2700.0,
+    "selection_reason": "R65-original_configuration_and_T_fixed_memory_throughput_storage_checks_only",
+    "steps": 1,
+    "timing_inputs": {
+      "checkpoint_seconds": 1.396514005959034,
+      "evaluation_seconds": 0.09905745554715395,
+      "fixed_overhead_seconds": 3.5683130929246545,
+      "seconds_per_update": 0.053366569336503744
+    }
+  },
+  "schema": "experiment",
+  "source_sha256": {
+    "qdriver/__init__.py": "ba790d0de73821e68dc699227653386f56f341c3baf524178f5b4e2829f1694d",
+    "qdriver/__main__.py": "93f5b36bd8295d11cd1f7ae48a0507bd065c6913fbbcb12b28aab8961032f85f",
+    "qdriver/accounting.py": "59b089892863a7a077f5c4d9776083e449b427db65166ea84e56c89b25517534",
+    "qdriver/common.py": "4b5ec15778057f521b7ae34780b62617f83afa244b13a58ac689e2ce08257f75",
+    "qdriver/controller.py": "36f25a045ea724e1d12c32c7cd03056cc39a74c3ebaaa1c60a18812c497558e8",
+    "qdriver/engine.py": "ccbe1536281ac99df7cc97514be2a4889529f340f1ebc92512af47a9783a7e72",
+    "qdriver/fresh_record.py": "de18b8563660aa1e00d5325a22da88cc6b6ca8636c3c9f465c8f021192cd8606",
+    "qdriver/guard.py": "133453631130b1d3b5195a03d4822096171d6e6d78318b0a05391896137ecb43",
+    "qdriver/rules.py": "922e2531ebc76cdaf9115b9a499679c29116ec99308680205d1701464e552d8b",
+    "qdriver/storage.py": "cab141bef369c33dbb1e1fa2b9f486646c4eb1f98085a51821097354065b6f0d",
+    "qdriver/training.py": "0f421c15473a068160bbf8c903a14aa68ba895a91bd9bd696462655e9f74968b",
+    "qdriver/executor.py": "ceec57a5e4e414e416ec115c4496f9de9919f6aa8140ca03df6ab2c2e5230bc0",
+    "qdriver/workload.py": "a004d50fcfd4271987eca2d78d6d26cb8cfb50def2bf74482bf8288c762a3c2f"
+  },
+  "storage_cap_bytes": 24000000000
+}

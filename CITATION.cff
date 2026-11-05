@@ -1,8 +1,8 @@
 cff-version: 1.2.0
-message: "Cite this repository for software version 1.0.2; cite the preferred dataset record for archived data version 1.0.1."
+message: "Cite this repository for software version 1.1.0; cite the preferred dataset record for archived data version 1.0.1."
 type: software
-version: "1.0.2"
-date-released: 2026-11-02
+version: "1.1.0"
+date-released: 2026-11-04
 title: "Memorization and incomplete fitting in a recursive arithmetic reasoner rebuilt from its published description"
 authors:
   - family-names: Jeong

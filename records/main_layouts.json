@@ -110,6 +110,26 @@
         "Fresh presentations": "",
         "Participations": "",
         "GPU-h": ""
+      },
+      {
+        "Setting": "S65f",
+        "Training rows": "",
+        "Batch": "",
+        "Depth": "1",
+        "Updates": "",
+        "Fresh presentations": "",
+        "Participations": "",
+        "GPU-h": ""
+      },
+      {
+        "Setting": "S524f",
+        "Training rows": "",
+        "Batch": "",
+        "Depth": "1",
+        "Updates": "",
+        "Fresh presentations": "",
+        "Participations": "",
+        "GPU-h": ""
       }
     ]
   },
@@ -226,6 +246,22 @@
         "Best strict / semantic": "",
         "Best update": "",
         "Evaluations": ""
+      },
+      {
+        "Setting": "S65f",
+        "Evaluation depth": "1",
+        "Final strict / semantic": "",
+        "Best strict / semantic": "",
+        "Best update": "",
+        "Evaluations": ""
+      },
+      {
+        "Setting": "S524f",
+        "Evaluation depth": "1",
+        "Final strict / semantic": "",
+        "Best strict / semantic": "",
+        "Best update": "",
+        "Evaluations": ""
       }
     ]
   },
@@ -290,6 +326,20 @@
       {
         "Setting": "R524-B4096-D8-short",
         "Evaluation depth": "8 (primary)",
+        "Original training sample": "",
+        "Added training sample": "",
+        "CPU development": ""
+      },
+      {
+        "Setting": "S65f",
+        "Evaluation depth": "1",
+        "Original training sample": "",
+        "Added training sample": "",
+        "CPU development": ""
+      },
+      {
+        "Setting": "S524f",
+        "Evaluation depth": "1",
         "Original training sample": "",
         "Added training sample": "",
         "CPU development": ""
@@ -446,6 +496,22 @@
         "Fresh ID": "",
         "Fresh OOD": "",
         "Gap, pp": ""
+      },
+      {
+        "Setting": "S65f",
+        "Evaluation depth": "1",
+        "CPU development": "",
+        "Fresh ID": "",
+        "Fresh OOD": "",
+        "Gap, pp": ""
+      },
+      {
+        "Setting": "S524f",
+        "Evaluation depth": "1",
+        "CPU development": "",
+        "Fresh ID": "",
+        "Fresh OOD": "",
+        "Gap, pp": ""
       }
     ]
   },
@@ -518,6 +584,22 @@
       {
         "Setting": "R262",
         "Evaluation depth": "8 (primary)",
+        "Five operands, n = 39": "",
+        "Six operands, n = 158": "",
+        "Seven operands, n = 322": "",
+        "Eight operands, n = 421": ""
+      },
+      {
+        "Setting": "S65f",
+        "Evaluation depth": "1",
+        "Five operands, n = 39": "",
+        "Six operands, n = 158": "",
+        "Seven operands, n = 322": "",
+        "Eight operands, n = 421": ""
+      },
+      {
+        "Setting": "S524f",
+        "Evaluation depth": "1",
         "Five operands, n = 39": "",
         "Six operands, n = 158": "",
         "Seven operands, n = 322": "",

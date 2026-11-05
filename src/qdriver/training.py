@@ -32,7 +32,7 @@ class TrainingConfig:
     effective_batch: int = None
 
     def __post_init__(self):
-        require(self.total_updates > 0 and self.physical_batch > 0 and self.act_steps in (8, 16), 'training dimensions')
+        require(self.total_updates > 0 and self.physical_batch > 0 and self.act_steps in (1, 8, 16), 'training dimensions')
         if self.effective_batch is not None:
             require(type(self.effective_batch) is int and self.effective_batch > 0
                     and self.effective_batch % self.physical_batch == 0
@@ -41,7 +41,7 @@ class TrainingConfig:
                 require(self.effective_batch == 4096, 'C2 effective batch4096')
                 require(self.total_updates % self.act_steps == 0, 'complete trajectories')
         elif not self.engineering_fixture:
-            require((self.physical_batch, self.act_steps) in ((1024, 8), (4096, 16)), 'fixed candidate schedules')
+            require((self.physical_batch, self.act_steps) in ((1024, 1), (1024, 8), (4096, 16)), 'fixed candidate schedules')
             require(self.total_updates % self.act_steps == 0, 'complete trajectories')
         require(type(self.seed) is int and -(2**63) <= self.seed < 2**64, 'integer seed required')
 
@@ -106,6 +106,7 @@ class Trainer(PilotTrainer):
     def step(self, batch, *, collect_displacement=False):
         if isinstance(self.model, NonrecursiveModel):
             return self.nonrecursive_step(batch)
+        require(self.config.act_steps != 1, 'held1 requires the nonrecursive model')
         if self.config.effective_batch is not None:
             return self.accumulated_step(batch, collect_displacement=collect_displacement)
         if self.config.act_steps == 8:
@@ -148,11 +149,12 @@ class Trainer(PilotTrainer):
                 'total': len(correct), 'optimizer_steps': self.optimizer_steps, 'ema_steps': self.ema_steps, 'latent_displacement': trace}
 
     def nonrecursive_step(self, batch):
-        require(self.config.effective_batch is None and self.config.act_steps == 8, 'NR requires standard held8 training')
+        require(self.config.effective_batch is None and self.config.act_steps in (1, 8), 'NR requires held1/held8 training')
         require(self.updates < self.config.total_updates, 'update budget reached')
         require(batch['token_ids'].shape[0] == self.config.physical_batch, 'physical batch mismatch')
         identity = batch_identity(batch)
-        act_step, trajectory = self.updates % 8, self.updates // 8
+        steps = self.config.act_steps
+        act_step, trajectory = self.updates % steps, self.updates // steps
         if act_step == 0:
             self.current_batch_identity = identity
             plan = stochastic_plan(self.model.config, batch['token_ids'].shape, self.config.seed, trajectory,

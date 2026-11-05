@@ -9,12 +9,15 @@ import uuid
 from .common import INTERVAL, atomic_bytes, canonical, fsync_dir, identity, object_sha, owned, read_json, require, save_json, sha
 from .training import AccumulationModel, ArithmeticModel, NonrecursiveModel, PilotConfig, Trainer, TrainingConfig, evaluate, tensors, torch
 from .rules import StopRules
+from .fresh_record import batch_record, epoch_record, record_metadata
 
 
 class Journal:
     NAMES = ('metrics', 'samples', 'evaluations')
 
-    def __init__(self, root):
+    def __init__(self, root, fresh_batch=False):
+        if fresh_batch:
+            self.NAMES = (*self.NAMES, 'epochs')
         self.root = owned(root)
         self.root.mkdir(parents=True, exist_ok=True)
         for name in self.NAMES:
@@ -42,6 +45,18 @@ class Journal:
         for name, spec in state.items():
             p = self.root/(name+'.jsonl')
             require(sha(p, spec['bytes']) == spec['sha256'], 'checkpoint log identity changed: '+name)
+        if 'epochs' in self.NAMES:
+            # Enforce the replay-tail premise used by the fresh projection,
+            # including explicit attempts to rewind farther than one interval.
+            meta = read_json(self.root/'FRESH_RECORD.json')
+            batches_per_epoch = meta['length']//meta['batch_size']
+            limits = dict(metrics=INTERVAL, samples=INTERVAL, evaluations=1,
+                          epochs=(INTERVAL+batches_per_epoch-1)//batches_per_epoch+1)
+            for name, spec in state.items():
+                with (self.root/(name+'.jsonl')).open('rb') as stream:
+                    stream.seek(spec['bytes'])
+                    for count, _ in enumerate(stream, 1):
+                        require(count <= limits[name], 'fresh replay tail exceeds reserved interval: '+name)
         for name, spec in state.items():
             p = self.root/(name+'.jsonl')
             if p.stat().st_size > spec['bytes']:
@@ -60,7 +75,9 @@ class Journal:
 
 
 class Sampler:
-    def __init__(self, train, batch_size, steps, device, seed=101):
+    def __init__(self, train, batch_size, steps, device, seed=101, fresh_batch=False):
+        require(not fresh_batch or steps == 1, 'compact record requires fresh batches')
+        self.fresh_batch = fresh_batch
         self.train, self.batch_size, self.steps, self.device = train, batch_size, steps, device
         self.length = len(train['token_ids'])
         require(self.length >= batch_size and self.length % batch_size == 0, 'full physical training batches required')
@@ -70,13 +87,20 @@ class Sampler:
     def batch(self, update, journal):
         if update % self.steps == 0:
             if self.cursor >= self.length:
+                if self.fresh_batch:
+                    generator_state = self.generator.get_state()
                 self.order = torch.randperm(self.length, generator=self.generator)
                 self.cursor = 0
                 self.epoch += 1
+                if self.fresh_batch:
+                    journal.append('epochs', epoch_record(self.epoch, update, self.order, generator_state))
             self.indices = self.order[self.cursor:self.cursor+self.batch_size].clone()
             self.cursor += self.batch_size
             self.current = {k: v.index_select(0, self.indices).to(self.device) for k, v in self.train.items()}
-            journal.append('samples', {'trajectory': update//self.steps, 'epoch': self.epoch, 'indices': self.indices.tolist()})
+            if self.fresh_batch:
+                journal.append('samples', batch_record(update, self.epoch, self.indices))
+            else:
+                journal.append('samples', {'trajectory': update//self.steps, 'epoch': self.epoch, 'indices': self.indices.tolist()})
         require(self.current is not None, 'missing held batch')
         return self.current
 
@@ -118,8 +142,9 @@ class Engine:
         random.seed(config['seed'])
         model_class = AccumulationModel if config['training'].get('effective_batch') is not None else ArithmeticModel
         if config.get('model_mode') == 'nonrecursive':
-            require(config['training'].get('effective_batch') is None and config['training']['act_steps'] == 8,
-                    'NR requires standard held8 training')
+            require(config['training'].get('effective_batch') is None
+                    and config['training']['act_steps'] == (1 if config.get('fresh_batch') else 8),
+                    'NR requires held1 with fresh_batch, otherwise held8 training')
             model_class = NonrecursiveModel
         model = model_class(PilotConfig(**config['model']))
         if model.config.forward_dtype == 'float64':
@@ -127,9 +152,18 @@ class Engine:
         model = model.to(self.device)
         self.trainer = Trainer(model, TrainingConfig(**config['training']), 'S22')
         self.sampler = Sampler(tensors(train_rows), self.trainer.config.effective_batch or self.trainer.config.physical_batch,
-                               self.trainer.config.act_steps, self.device, seed=config['data_order_seed'])
+                               self.trainer.config.act_steps, self.device, seed=config['data_order_seed'],
+                               fresh_batch=config.get('fresh_batch', False))
         self.id_rows = id_rows
-        self.journal = Journal(self.output)
+        self.journal = Journal(self.output, fresh_batch=config.get('fresh_batch', False))
+        if config.get('fresh_batch'):
+            meta = record_metadata(config['data_order_seed'], self.sampler.length, self.sampler.batch_size,
+                                   self.trainer.config.total_updates, self.identities, torch.__version__)
+            path = self.output/'FRESH_RECORD.json'
+            if path.exists():
+                require(read_json(path) == meta, 'fresh record metadata changed')
+            else:
+                save_json(path, meta, new=True)
         self.evaluations = []
         self.compute_seconds = self.evaluation_seconds = self.checkpoint_seconds = 0.0
 

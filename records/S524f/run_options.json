@@ -1,0 +1,16 @@
+{
+  "execution": {
+    "cap_seconds": 21600.0,
+    "fixed_T": 196608,
+    "max_allocations": 10,
+    "reserve_seconds": 2700.0
+  },
+  "fresh_batch": true,
+  "model": "nonrecursive",
+  "storage_cap_bytes": 24000000000,
+  "training_data": {
+    "count": 524288,
+    "path": "sources/77b94a1642bbfd76843b/train.jsonl",
+    "sha256": "04d38aa13ec71c6f7fe6a8fbdba7b7d682bfc956007bdcef520bea050da5e009"
+  }
+}

@@ -146,7 +146,7 @@ class Evidence:
     k,n=v[r['metric']],v['total'];lo,hi=wilson(k,n);put(correct=k,accuracy=k/n,wilson_low=lo,wilson_high=hi)
   elif name.startswith('membership_'):
    model=m+'_'+r['selection'];sp=r['source_sample'];g='operand_count' if name=='membership_by_operand' else 'overall';n=r.get('operands')
-   a=self.score(model,8,sp+'_seen',g,n);b=self.score(model,8,sp+'_unseen',g,n)
+   a=self.score(model,self.primary[m],sp+'_seen',g,n);b=self.score(model,self.primary[m],sp+'_unseen',g,n)
    put(seen_n=a['total'],seen_strict=a['strict'],seen_semantic=a['semantic'],unseen_n=b['total'],unseen_strict=b['strict'],unseen_semantic=b['semantic'],strict_gap_pp=100*(a['strict']/a['total']-b['strict']/b['total']) if a['total'] and b['total'] else '')
   elif name in ['fresh_id_standardization','standardization_uncertainty']:put(**self.standard(m+'_final',d,name=='standardization_uncertainty'))
   elif name=='shared_untouched_profiles':
@@ -200,5 +200,7 @@ def main():
  build(ev,args.output)
  from main_tables import build as main_tables
  main_tables(ev,args.output)
+ from fresh_tables import build as fresh_tables
+ fresh_tables(args.base,args.output)
  print(json.dumps(dict(tables=len(list(args.output.glob("*.csv"))),source_table_cells=cells,prediction_groups=len(ev.ps),recomputed_score_sets=len(ev.scores),live_windows=len(ev.live))))
 if __name__=='__main__':main()

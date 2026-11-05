@@ -1,0 +1,31 @@
+{
+  "schema": "executor-prune-receipt-v1",
+  "run": "S524f",
+  "created_utc": "2026-11-04T14:04:40.875781+00:00",
+  "kept": {
+    "LATEST": "checkpoints/u000196608-19aa3387eb4f4b2699a94d89bddb5c2a.pt",
+    "BEST_EMA": "checkpoints/u000153600-3e8f1b05dc2c46a186486fcbb4370737.pt"
+  },
+  "removed": [
+    {
+      "path": "experiment/curve/checkpoints/u000194560-e6380c5d5f1641babeef665d07a1dbc7.pt",
+      "bytes": 277338355,
+      "sha256": "a683f884e431018aeeb376e8ddb27a2bbce3cd161573bc24a6f000c4f1547e5f",
+      "role": "penultimate generation"
+    },
+    {
+      "path": "experiment/segment-01/probe-b1024-s1/checkpoints/u000000000-54a76311e6e4469e9e52ce3de301f682.pt",
+      "bytes": 109190974,
+      "sha256": "951f9cc96f757c3e0e1c19926ce56ea549722ee68c3c87f45ff278272ef580c7",
+      "role": "calibration probe"
+    },
+    {
+      "path": "experiment/segment-01/probe-b1024-s1/checkpoints/u000000048-ff63f31589514ac792b76e2f816d4d4d.pt",
+      "bytes": 277142067,
+      "sha256": "051ee66dd300e36e46e3e5f235cd305df61535619dc168dc7dad4a9b8ca36795",
+      "role": "calibration probe"
+    }
+  ],
+  "removed_bytes": 663671396,
+  "json_sidecars_kept": true
+}

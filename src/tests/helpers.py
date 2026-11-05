@@ -3,6 +3,12 @@ import json
 import os
 from pathlib import Path
 from qdriver.common import PROJECT, require
+import torch
+
+torch.set_num_threads(1)
+if torch.get_num_interop_threads() != 1:
+    torch.set_num_interop_threads(1)
+require(not torch.cuda.is_available() and not torch.cuda.is_initialized(), 'CPU fixtures require CUDA hidden')
 
 
 def tiny_config(steps=8, total=32):
@@ -15,11 +21,11 @@ def tiny_config(steps=8, total=32):
 
 
 def rows():
-    def take(name, count):
-        path = PROJECT/'data'/('original_train.jsonl' if name == 'train' else 'id_dev.jsonl')
-        with path.open() as stream:
-            return [json.loads(next(stream)) for _ in range(count)]
-    return take('train', 8), take('id_dev', 8)
+    # Exact released sample rows make small CPU fixtures self-contained.
+    train = json.loads((PROJECT/'records/scoring_samples/original_train_rows.json').read_text())
+    with (PROJECT/'data/id_dev.jsonl').open() as stream:
+        dev = [json.loads(next(stream)) for _ in range(8)]
+    return [item['row'] for item in train[:8]], dev
 
 
 def run_root():

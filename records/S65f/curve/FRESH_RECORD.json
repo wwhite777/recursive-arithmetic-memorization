@@ -1,0 +1,16 @@
+{
+  "algorithm": "torch.randperm-cpu-int64",
+  "batch_size": 1024,
+  "hash_encoding": "ordered-uint64-little-endian",
+  "identities": {
+    "config_sha256": "1572c833239056b0408a9089bd91b2ae6194abbb445d279b625e567b23970294",
+    "inputs_sha256": "5e2c1f65e0c10ac1a3234df76c1c997c9975bcc84c5ee9b0883bf1776114c06e",
+    "manifest_sha256": "82df3ae4b3b61843c7d84c2c42907d7fd293eef32ec1793bdc78ed6baec23bfc",
+    "source_sha256": "f1d9ff95c1f1ad50810ebaa021c89edf159fdf36b8c468fe64bc25e2f616e1bf"
+  },
+  "length": 65536,
+  "schema": "fresh-record-v1",
+  "seed": 101,
+  "torch_version": "2.9.1+cu126",
+  "total_updates": 196608
+}

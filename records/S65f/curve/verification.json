@@ -1,0 +1,19 @@
+{
+  "result": {
+    "batch_size": 1024,
+    "complete": true,
+    "length": 65536,
+    "schema": "fresh-record-v1",
+    "seed": 101,
+    "status": "PASS",
+    "torch_version": "2.9.1+cu126",
+    "verified_epochs": 3072,
+    "verified_updates": 196608
+  },
+  "record_files": {
+    "samples.jsonl": "85a20f497635c34ce5e7d52739ae9aa37c079176647b4ff64c9b7ef634ff675c",
+    "epochs.jsonl": "dc5727ff8663d277beff08842a59a98060448e06f7166d449437235ae5f0947b",
+    "FRESH_RECORD.json": "18e3367dc9f4e4db7b5bff95c41a4c0f56bfdfe6b0eac11a670a6c576cf2885a"
+  },
+  "scope": "Sampling commitments only; no model weights or optimizer execution checked."
+}

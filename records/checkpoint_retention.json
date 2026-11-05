@@ -98,5 +98,29 @@
     "model": "R262",
     "kind": "best",
     "retained": "True"
+  },
+  {
+    "model": "S65f",
+    "kind": "final",
+    "retained": "True",
+    "record": "records/S65f"
+  },
+  {
+    "model": "S65f",
+    "kind": "best",
+    "retained": "True",
+    "record": "records/S65f"
+  },
+  {
+    "model": "S524f",
+    "kind": "final",
+    "retained": "True",
+    "record": "records/S524f"
+  },
+  {
+    "model": "S524f",
+    "kind": "best",
+    "retained": "True",
+    "record": "records/S524f"
   }
 ]

@@ -89,16 +89,22 @@ def choose_schedule(calibration, charged_seconds=0, *, fixed_T=None, cap_seconds
     require(calibration['schema'] == 'experiment', 'calibration schema')
     candidates = calibration['candidates']
     model_mode = calibration.get('model_mode', 'recursive')
+    fresh = calibration.get('fresh_batch', False)
+    require(type(fresh) is bool and (not fresh or model_mode == 'nonrecursive' and fixed_T == 196608),
+            'fresh batch requires fixed S65f/S524f schedule')
     require(model_mode in ('recursive', 'nonrecursive'), 'unknown calibration model')
     if fixed_T is not None or model_mode == 'nonrecursive':
         require(fixed_T is None or (type(fixed_T) is int and fixed_T == 196608), 'standard fixed T must equal 196608; other T requires recipe-matched mode')
-        require([(x['batch'], x['steps']) for x in candidates] == [(1024, 8)], 'standard fixed T calibrates only batch1024/ACT8')
+        require([(x['batch'], x['steps']) for x in candidates] == [(1024, 1 if fresh else 8)],
+                'standard fixed T calibrates only batch1024 with validated held updates')
         require(candidate_fits(candidates[0]), 'standard calibration must complete within 44 GB')
         result = project_schedule(candidates[0], charged_seconds, fixed_T=fixed_T,
                                   cap_seconds=cap_seconds, reserve_seconds=reserve_seconds)
         result.update(selection_reason='R65-original_configuration_and_T_fixed_memory_throughput_storage_checks_only', preferred_failure=None)
         if model_mode == 'nonrecursive':
             result['model_mode'] = model_mode
+        if fresh:
+            result['fresh_batch'] = True
         return result
     require([(x['batch'], x['steps']) for x in candidates] == [(4096, 16), (1024, 8)], 'two fixed calibration candidates')
     preferred, fallback = candidates

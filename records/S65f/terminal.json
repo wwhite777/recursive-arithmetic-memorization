@@ -1,0 +1,34 @@
+{
+  "cap_seconds": 21600.0,
+  "charged_seconds": 11637.340264891274,
+  "gpu_hours": 3.232594518025354,
+  "result": {
+    "best_strict_correct": 284,
+    "completed_updates": 196608,
+    "evaluation_count": 96,
+    "final_gain_last_ten_correct": -4,
+    "final_strict_correct": 237,
+    "fired_monotonic": 5794779.630390058,
+    "flat_record": {
+      "plateau_strict_correct": 284,
+      "running_max_gain_correct": 0,
+      "status": "FLAT",
+      "total": 2048,
+      "window_end_update": 196608,
+      "window_start_update": 176128
+    },
+    "flat_stops": false,
+    "reached": false,
+    "reason": "not reached within T; no continuation without a new PI decision",
+    "running_max_gain_last_ten_correct": 0,
+    "running_max_gain_last_ten_pp": 0.0,
+    "status": "SCHEDULE_END",
+    "ten_interval_change_available": true,
+    "total": 2048
+  },
+  "schema": "experiment",
+  "scope": "One S22 seed101 engineering qualification; no policy efficacy/audit verdict",
+  "segment_count": 2,
+  "status": "SCHEDULE_END",
+  "updated_utc": "2026-11-04T10:51:44.700047+00:00"
+}

@@ -35,13 +35,13 @@
   "note": "The original run_record_uuids counts are retained with their full-project scope. Released counts scan records/ recursively, excluding this inventory file; count every textual UUID occurrence in plain files and in each gzip file decompressed once. The combined counts equal plain plus gzip counts. These are occurrences, not distinct allocations or GPU-hours. No hardware query was executed for this documentation release.",
   "run_record_uuids_scope": "occurrences in the full project run records (not all released)",
   "released_record_uuid_occurrences": {
-    "GPU-26e90bc4-7802-06f5-7081-0009afd44199": 0,
+    "GPU-26e90bc4-7802-06f5-7081-0009afd44199": 4,
     "GPU-6e5c74a9-0057-b179-9a24-1344073e4674": 0,
     "GPU-8fa90a6e-aacc-d125-bd24-88549c38e1ea": 19,
     "GPU-ac3026d5-0332-dbc3-c317-4214c505044e": 14
   },
   "released_record_uuid_occurrences_plain": {
-    "GPU-26e90bc4-7802-06f5-7081-0009afd44199": 0,
+    "GPU-26e90bc4-7802-06f5-7081-0009afd44199": 4,
     "GPU-6e5c74a9-0057-b179-9a24-1344073e4674": 0,
     "GPU-8fa90a6e-aacc-d125-bd24-88549c38e1ea": 19,
     "GPU-ac3026d5-0332-dbc3-c317-4214c505044e": 14
@@ -51,5 +51,6 @@
     "GPU-6e5c74a9-0057-b179-9a24-1344073e4674": 0,
     "GPU-8fa90a6e-aacc-d125-bd24-88549c38e1ea": 0,
     "GPU-ac3026d5-0332-dbc3-c317-4214c505044e": 0
-  }
+  },
+  "released_record_uuid_count_scope": "Version 1.1.0 records, excluding this inventory itself; gzip bytes decompressed once. Historical full-project occurrence counts retain their original 2026-11-02 scope."
 }

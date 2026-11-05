@@ -4,3 +4,4 @@ Live-training trajectories for the single-pass controls and shallower larger-bat
 Short deep run's training fit at evaluation depth eight,Reported,Existing saved measurements are restored in Table 4 and cpu_scores.csv.
 Additional training seeds,Superseded,The long-run shortfall selected the nested sweep under the recorded conditional rule.
 Comparison with the source implementation,Not possible,The authors' code was not obtained; the comparison remains limited to its published description.
+Fresh-batch single-pass controls at both training-file cardinalities,Reported,"S65f and S524f records include compact sampling commitments, complete curves, inclusive charges, and final/best row predictions; fresh_batch_*.csv reports the reconstructed readouts."

@@ -1,0 +1,13 @@
+checkpoint,sample,seen_total,seen_strict,seen_semantic,unseen_total,unseen_strict,unseen_semantic,strict_gap_pp,semantic_gap_pp
+S65f_final,original_train,2048,2048,2048,0,0,0,,
+S65f_final,new_train,0,0,0,2048,116,127,,
+S65f_final,combined_train,2048,2048,2048,2048,116,127,94.3359375,93.798828125
+S65f_best,original_train,2048,2048,2048,0,0,0,,
+S65f_best,new_train,0,0,0,2048,120,139,,
+S65f_best,combined_train,2048,2048,2048,2048,120,139,94.140625,93.212890625
+S524f_final,original_train,2048,1063,1085,0,0,0,,
+S524f_final,new_train,2048,940,967,0,0,0,,
+S524f_final,combined_train,4096,2003,2052,0,0,0,,
+S524f_best,original_train,2048,1036,1059,0,0,0,,
+S524f_best,new_train,2048,916,946,0,0,0,,
+S524f_best,combined_train,4096,1952,2005,0,0,0,,

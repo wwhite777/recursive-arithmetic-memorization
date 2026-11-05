@@ -1,0 +1,25 @@
+{
+  "T": 196608,
+  "available_main_seconds": 18882.59489873983,
+  "batch": 1024,
+  "calibration_charged_seconds": 17.40510126017034,
+  "cap_seconds": 21600.0,
+  "fixed_T": 196608,
+  "fresh_batch": true,
+  "memory_threshold_bytes": 44000000000,
+  "model_mode": "nonrecursive",
+  "next_block_projected_seconds": 10750.227942971513,
+  "planning_seconds": 18900.0,
+  "preferred_failure": null,
+  "projected_seconds": 10639.437637508847,
+  "projected_total_charged_seconds": 10656.842738769017,
+  "reserve_seconds": 2700.0,
+  "selection_reason": "R65-original_configuration_and_T_fixed_memory_throughput_storage_checks_only",
+  "steps": 1,
+  "timing_inputs": {
+    "checkpoint_seconds": 1.396514005959034,
+    "evaluation_seconds": 0.09905745554715395,
+    "fixed_overhead_seconds": 3.5683130929246545,
+    "seconds_per_update": 0.053366569336503744
+  }
+}

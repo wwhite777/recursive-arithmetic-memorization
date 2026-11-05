@@ -12,7 +12,7 @@ def safe(base,name):
     p=(base/name).resolve();p.relative_to(base.resolve());return p
 
 def main():
-    p=argparse.ArgumentParser();g=p.add_mutually_exclusive_group(required=True);g.add_argument('--archive-dir',type=Path);g.add_argument('--base-url');g.add_argument('--online',action='store_true',help='Fetch the reserved Zenodo record after publication.');g.add_argument('--parts-dir',type=Path);a=p.parse_args()
+    p=argparse.ArgumentParser();g=p.add_mutually_exclusive_group(required=True);g.add_argument('--archive-dir',type=Path);g.add_argument('--base-url');g.add_argument('--online',action='store_true',help='Fetch inherited payloads from the published version 1.0.1 record; supply the extension parts locally or a complete new-version --base-url.');g.add_argument('--parts-dir',type=Path);a=p.parse_args()
     cache=BASE/'data/downloads';cache.mkdir(parents=True,exist_ok=True)
     for v in json.loads((BASE/'data/archive_manifest.json').read_text()):
         dest=cache/v['file']

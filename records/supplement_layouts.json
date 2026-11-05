@@ -201,6 +201,34 @@
         "Update": "",
         "Weights retained": "",
         "Recorded SHA256": ""
+      },
+      {
+        "Setting": "S65f",
+        "Selection": "final",
+        "Update": "",
+        "Weights retained": "",
+        "Recorded SHA256": ""
+      },
+      {
+        "Setting": "S65f",
+        "Selection": "best",
+        "Update": "",
+        "Weights retained": "",
+        "Recorded SHA256": ""
+      },
+      {
+        "Setting": "S524f",
+        "Selection": "final",
+        "Update": "",
+        "Weights retained": "",
+        "Recorded SHA256": ""
+      },
+      {
+        "Setting": "S524f",
+        "Selection": "best",
+        "Update": "",
+        "Weights retained": "",
+        "Recorded SHA256": ""
       }
     ],
     "kind": "A03_checkpoint_retention"
@@ -269,6 +297,18 @@
       },
       {
         "Setting": "R262",
+        "Charged seconds": "",
+        "Additional refused-root seconds": "",
+        "Complete-pass equivalents": ""
+      },
+      {
+        "Setting": "S65f",
+        "Charged seconds": "",
+        "Additional refused-root seconds": "",
+        "Complete-pass equivalents": ""
+      },
+      {
+        "Setting": "S524f",
         "Charged seconds": "",
         "Additional refused-root seconds": "",
         "Complete-pass equivalents": ""
@@ -359,6 +399,18 @@
       {
         "Setting": "R262",
         "Depth": "8",
+        "Best semantic count": "",
+        "Update": ""
+      },
+      {
+        "Setting": "S65f",
+        "Depth": "1",
+        "Best semantic count": "",
+        "Update": ""
+      },
+      {
+        "Setting": "S524f",
+        "Depth": "1",
         "Best semantic count": "",
         "Update": ""
       }
@@ -809,6 +861,24 @@
         "Raw deficit, pp": "",
         "Standardized fresh, %": "",
         "Standardized deficit, pp": ""
+      },
+      {
+        "Setting": "S65f",
+        "Depth": "1",
+        "Development, %": "",
+        "Fresh, %": "",
+        "Raw deficit, pp": "",
+        "Standardized fresh, %": "",
+        "Standardized deficit, pp": ""
+      },
+      {
+        "Setting": "S524f",
+        "Depth": "1",
+        "Development, %": "",
+        "Fresh, %": "",
+        "Raw deficit, pp": "",
+        "Standardized fresh, %": "",
+        "Standardized deficit, pp": ""
       }
     ],
     "kind": "A08_standardized_fresh"
@@ -1021,6 +1091,22 @@
       },
       {
         "Setting": "R262",
+        "Window, updates": "",
+        "Live correct / row participations": "",
+        "Live, %": "",
+        "Development, %": "",
+        "Live minus development, pp": ""
+      },
+      {
+        "Setting": "S65f",
+        "Window, updates": "",
+        "Live correct / row participations": "",
+        "Live, %": "",
+        "Development, %": "",
+        "Live minus development, pp": ""
+      },
+      {
+        "Setting": "S524f",
         "Window, updates": "",
         "Live correct / row participations": "",
         "Live, %": "",
